@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../Styles/login.css" />
+  </head>
+  <body>
+    <div class="cont">
+      <div class="form sign-in">
+        <h2>sign in</h2>
+        <label>
+          <span>Email Address</span>
+          <input type="email" id="email" required />
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" id="password" required />
+        </label>
+        <button class="submit" type="button" onclick="signIn()">Sign In</button>
+        <p class="forgot-pass">Forgot Password</p>
+
+        <div class="social-media">
+          <ul>
+            <li><img src="../Assets/images/icon/facebook.png" alt="" /></li>
+            <li><img src="../Assets/images/icon/linkedin.png" alt="" /></li>
+            <li>
+              <img src="../Assets/images/icon/instagram (1).png" alt="" />
+            </li>
+            <li><img src="../Assets/images/icon/twitter (1).png" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-cont">
+        <div class="img">
+          <div class="img-text m--up">
+            <h2>new here?</h2>
+            <p>sign up and discover greate amount of new oppurtunity</p>
+          </div>
+          <div class="img-text m--in">
+            <h2>one of us></h2>
+            <p>
+              if you already have an account, just sign in. we have missed you!
+            </p>
+          </div>
+          <div class="img-btn">
+            <span class="m--up">Sign Up</span>
+            <span class="m--in">Sign In</span>
+          </div>
+        </div>
+        <div class="form sign-up">
+          <h2>Sign Up</h2>
+          <label>
+            <span>Name</span>
+            <input type="text" id="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" id="Email" required />
+          </label>
+          <label>
+            <span>Mobile Number</span>
+            <input type="number" id="number" required />
+          </label>
+          <label>
+            <span>Password</span>
+            <input type="password" id="Password" required />
+          </label>
+          <button class="submit" onclick="signUp()">Sign Up Now</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../JS/login.js"></script>
+  </body>
+</html>
