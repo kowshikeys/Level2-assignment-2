@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper .container {
+  max-width: 500px;
+  height: auto;
+  margin: 50px auto;
+  background: #9d2860;
+  padding: 20px 40px 30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 7px solid #5f6c7d;
+}
+
+.wrapper .container .title {
+  color: #5f6c7d;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.wrapper .container .input_form .items {
+  margin-bottom: 20px;
+}
+
+.wrapper .container .input_form .items .label {
+  display: block;
+  font-size: 1em;
+  color: gold;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.wrapper .container .input_form .items .input {
+  background: transparent;
+  border: 2px solid #bdbdbd;
+  width: 95%;
+  padding: 10px;
+  color: aqua;
+  border-radius: 3px;
+}
+
+.wrapper .container .input_form .section_3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .container .input_form .section_3 .items {
+  width: 100%;
+}
+
+.wrapper .container .btn {
+  background: #5f6c7d;
+  color: #fff;
+  font-size: 1.25em;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 460px) {
+  .input_form .items {
+    margin-bottom: 15px;
+  }
+  .input_form .section_3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=checkout.css.map */

@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(/suganya/public/Assets/images/login_background_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+.container {
+  max-width: 850px;
+  width: 150%;
+  background: #fff;
+  padding: 50px 30px;
+  position: relative;
+  -webkit-perspective: 2700px;
+          perspective: 2700px;
+}
+
+.container #flip:checked ~ .cover {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.container .cover {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  z-index: 98;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container .cover::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #430541;
+  opacity: 0.5;
+  z-index: 100;
+}
+
+.container .cover .front img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 12;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.container form {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+.container .form_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .form_content .Login_form {
+  width: calc(100% / 2 - 25px);
+}
+
+.container .form_content .title {
+  position: relative;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+.container .form_content .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 25px;
+  background: #430541;
+}
+
+.container .form_content .input_boxes {
+  margin-top: 30px;
+}
+
+.container .form_content .input_boxes .para p {
+  color: #800b7c;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.container .form_content .input_boxes .para p:hover {
+  text-decoration: underline;
+}
+
+.container .form_content .input_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+
+.container .form_content .input_box i {
+  position: absolute;
+  color: #430541;
+  font-size: 17px;
+}
+
+.container .form_content .input_box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.container .form_content .input_box input:focus {
+  border-color: #430541;
+}
+
+.container .form_content .input_box input:valid {
+  border-color: #430541;
+}
+
+.container .form_content .input_box .btn {
+  color: #fff;
+  background: #430541;
+  border-radius: 6px;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 35px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.container .form_content .input_box .btn:hover {
+  background: #681065;
+}
+
+.container .form_content .text label {
+  color: #8a1886;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.container .form_content .text label:hover {
+  text-decoration: underline;
+}
+
+.container .form_content .Signup_form {
+  width: calc(100% / 2 - 25px);
+}
+
+.container .form_content .Signup_form .title::before {
+  width: 20px;
+}
+
+.container .form_content .Signup_form .sub_btn {
+  color: #fff;
+  background: #430541;
+  border-radius: 6px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.container .form_content .Signup_form .sub_btn:hover {
+  background: #681065;
+}
+
+.container .form_content .Signup_form .signup_text {
+  text-align: center;
+  margin-top: 35px;
+}
+
+@media (max-width: 700px) {
+  .container .cover {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .container .form_content .Login_form {
+    width: 100%;
+  }
+  .container .form_content .Signup_form {
+    width: 100%;
+  }
+  .container .form_content .Signup_form {
+    display: none;
+  }
+  .container #flip:checked ~ .form .Signup_form {
+    display: block;
+  }
+  .container #flip:checked ~ .form .Login_form {
+    display: none;
+  }
+}
+/*# sourceMappingURL=login.css.map */
