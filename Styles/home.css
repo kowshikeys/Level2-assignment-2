@@ -20,6 +20,27 @@ body {
           align-items: center;
 }
 
+@media (max-width: 900px) {
+  .header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.header .menu-bar {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .header .menu-bar {
+    display: block;
+    padding-left: 30px;
+    font-size: 30px;
+  }
+}
+
 .header .logo-left img {
   width: 150px;
 }
@@ -34,10 +55,58 @@ body {
   gap: 20px;
 }
 
+.header .logo-right .search {
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -10px;
+  border: 1px solid black;
+}
+
+@media (max-width: 900px) {
+  .header .logo-right .search {
+    border: none;
+  }
+}
+
+.header .logo-right .search input {
+  padding: 10px;
+  width: 550px;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 900px) {
+  .header .logo-right .search input {
+    display: none;
+  }
+}
+
+.header .logo-right .search i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
 .header .logo-right .cart a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 900px) {
+  .header .logo-right .cart a p {
+    display: none;
+  }
+}
+
+.navbar .close-nav-menu {
+  display: none;
 }
 
 .navbar ul {
@@ -720,5 +789,34 @@ footer .footer-details .copy-right {
 footer .footer-details .copy-right p {
   margin: 20px 0;
   color: #fff;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    color: #fff;
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    background: url(../Public/Assets/images/home/footer/footer_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px 0;
+  }
+  .navbar .close-nav-menu {
+    display: block;
+  }
+  .navbar ul {
+    display: block;
+    text-align: left;
+  }
+  .navbar ul li {
+    padding: 25px;
+  }
+  .navbar ul li a {
+    color: #fff;
+  }
 }
 /*# sourceMappingURL=home.css.map */
