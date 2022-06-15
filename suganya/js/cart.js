@@ -1,14 +1,15 @@
 const products = [
   {
     id: 1,
-    title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    title: "Padmaavat Collections: Special Jewellery Design for Padmavati",
     price: 109.95,
     description:
-      "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-    category: "Men's Clothing",
-    like: "like",
+      "Antique Floral Necklace with Kundan Stones crafted in 22 Karat Yellow Gold",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://5.imimg.com/data5/TestImages/FG/XL/FI/SELLER-45281882/gold-necklace-5-500x500.jpg",
+      "https://www.tanishq.co.in/wps/wcm/connect/tanishq/b629da6f-83f0-465d-ad64-7dfa6e871abc/images%252Fsecondary-collection-banner-mobile.jpg?MOD=AJPERES&CVID=",
     rating: {
       rate: 3.9,
       count: 120,
@@ -16,14 +17,14 @@ const products = [
   },
   {
     id: 2,
-    title: "Mens Casual Premium Slim Fit T-Shirts ",
+    title: "Gold jewellery",
     price: 22.3,
-    description:
-      "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-    category: "Men's Clothing",
-    like: "like",
+    description: "Lavanyam tanishq | Buy gold jewellery online, Gold jewellery",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://content3.jdmagicbox.com/comp/bhubaneshwar/dc/0674px674.x674.1231930748r6g9d6.dc/catalogue/hare-krishna-khimji-jewellers-nayapalli-bhubaneshwar-jewellery-showrooms-mhlkgt-250.jpg",
+      "https://i.pinimg.com/736x/b3/0c/d6/b30cd6e498122bfac2dbb0801971dffa.jpg",
     rating: {
       rate: 4.1,
       count: 259,
@@ -31,14 +32,15 @@ const products = [
   },
   {
     id: 3,
-    title: "Mens Cotton Jacket",
+    title: "South India Jewellery",
     price: 55.99,
     description:
-      "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
-    category: "Men's Clothing",
-    like: "like",
+      "Matt Finish Gold Antique Mango Mala Designs, Matt Finish Indian Necklace Designs",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://5.imimg.com/data5/SELLER/Default/2021/1/UM/MV/EI/94335171/gold-necklace-2--250x250.jpeg",
+      "https://static.peachmode.com/media/images/product/80067/original/1609248300_1_FCLAXMI05.jpg",
     rating: {
       rate: 4.7,
       count: 500,
@@ -46,14 +48,14 @@ const products = [
   },
   {
     id: 4,
-    title: "Mens Casual Slim Fit",
+    title: "Peacock Necklace",
     price: 15.99,
     description:
-      "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
-    category: "Men's Clothing",
-    like: "like",
-    image:
-      "https://5.imimg.com/data5/TestImages/WV/SK/TP/SELLER-45281882/gold-necklace-in-choker-style-250x250.jpg",
+      "We offers an exclusive collection of finest quality 63632 CZ Peacock Necklace with matte gold plating Fashion Jewellery manufacturer in india.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image: "https://d25xd2afqp2r8a.cloudfront.net/products/63632_RUBYGREEN.JPG",
     rating: {
       rate: 2.1,
       count: 430,
@@ -61,15 +63,14 @@ const products = [
   },
   {
     id: 5,
-    title:
-      "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+    title: "Manubhai Jewellers ",
     price: 695,
-    description:
-      "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
-    category: "Jewelery",
-    like: "like",
+    description: "This stunning beauty in matt gold on florals GoldNeckpiece",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://www.southjewellery.com/wp-content/uploads/2020/11/latest-gold-necklace-designs-2020-4.jpg",
+      "https://i.pinimg.com/originals/a7/47/a0/a747a0c4d383154fe4c407815229a25d.jpg",
     rating: {
       rate: 4.6,
       count: 400,
@@ -77,14 +78,15 @@ const products = [
   },
   {
     id: 6,
-    title: "Solid Gold Petite Micropave ",
+    title: "CRK WORLD - Beautiful South Indian Jewellery",
     price: 168,
     description:
-      "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+      "Buy CRK WORLD - Beautiful South Indian Jewellery Set for Women's wear online India, best price",
     category: "Jewelery",
-    like: "like",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://www.krishnajewellers.com/blog/wp-content/uploads/2020/09/Gold-Choker-design.jpg",
+      "https://static.peachmode.com/media/images/product/80065/original/1609248299_1_FCLAXMI03.jpg",
     rating: {
       rate: 3.9,
       count: 70,
@@ -92,29 +94,30 @@ const products = [
   },
   {
     id: 7,
-    title: "White Gold Plated Princess",
+    title: "Gold plated ruby emerald CZ necklace",
     price: 9.99,
     description:
-      "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+      "South indian gold plated ruby emerald CZ Necklace set with matching earings designer polki real pearl necklace jewelry bridal jewellery",
     category: "Jewelery",
-    like: "like",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://www.southjewellery.com/wp-content/uploads/2020/01/123VG5312-copy.jpg",
+      "https://i.etsystatic.com/20370258/r/il/43fbd6/3356554084/il_340x270.3356554084_1sn8.jpg",
     rating: {
-      rate: 3,
+      rate: 4.0,
       count: 400,
     },
   },
   {
     id: 8,
-    title: "Pierced Owl Rose Gold Plated Stainless Steel Double",
+    title: "Lavanyam jewellery",
     price: 10.99,
-    description:
-      "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+    description: "Lavanyam-Explore Lavanyam Jewellery Designs by Tanishq",
     category: "Jewelery",
-    like: "like",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmP4a-5ko0K-sOMCO3_FeJ_FgD0dcgEUhQw&usqp=CAU",
+      "https://www.tanishq.co.in/wps/wcm/connect/tanishq/11987eac-7e55-4a01-8ea8-3f256aa76271/images%252Fjewellery%252Fj-banner-mob.jpg?MOD=AJPERES&CVID=",
     rating: {
       rate: 1.9,
       count: 100,
@@ -122,14 +125,15 @@ const products = [
   },
   {
     id: 9,
-    title: "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+    title: "Zaveri Pearls Green & Red Stones South Indian Style Long Necklace",
     price: 64,
     description:
-      "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
-    category: "Electronics",
-    like: "like",
+      "Beautiful real zaveri pearls green & red stones south indian long necklace with perfect matching earrings.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://i.pinimg.com/originals/3b/47/4d/3b474da7555837325871c730d9b25387.jpg",
+      "https://images-static.nykaa.com/media/catalog/product/d/0/d0ac28azpfk9388_rev_1.jpg",
     rating: {
       rate: 3.3,
       count: 203,
@@ -137,14 +141,14 @@ const products = [
   },
   {
     id: 10,
-    title: "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+    title: "Antique South Indian Necklace with Matte Gold Plating ",
     price: 109,
     description:
-      "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
-    category: "Electronics",
-    like: "like",
-    image:
-      "https://5.imimg.com/data5/TestImages/FV/FI/IS/SELLER-45281882/stylish-diamonds-necklace-2-500x500.jpg",
+      "We offers an exclusive collection of finest quality 201240 Antique South Indian Necklace With Matte Gold Plating Fashion Jewellery.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image: "https://d25xd2afqp2r8a.cloudfront.net/products/201240_GOLD.JPG",
     rating: {
       rate: 2.9,
       count: 470,
@@ -152,15 +156,14 @@ const products = [
   },
   {
     id: 11,
-    title:
-      "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+    title: "Apara South Indian Gold",
     price: 109,
     description:
-      "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
-    category: "Electronics",
-    like: "like",
-    image:
-      "https://i.pinimg.com/736x/3b/3e/68/3b3e682b01565c5ba646e069f560121d.jpg",
+      "Apara South Indian Gold Plated Long Copper Haram and Short Combo Jhumki One Gram Necklace Jewellery Set for Women/Girls",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image: "https://m.media-amazon.com/images/I/81jypy+iKpL._UL1100_.jpg",
     rating: {
       rate: 4.8,
       count: 319,
@@ -168,15 +171,15 @@ const products = [
   },
   {
     id: 12,
-    title:
-      "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+    title: "Short Kasulaperu Necklace | Bridal Gold Jewellery",
     price: 114,
     description:
-      "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
-    category: "Electronics",
-    like: "like",
+      "Find Fresh gold, Diamond, Silver, Platinum, Handmade, Bridal, Fashion jewelry sets - earrings, bracelet, rings bangles, necklace.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://www.mehtajewellery.com/wp-content/uploads/2020/02/KE-3134-0-KN-1002-0.jpg",
+      "https://i.pinimg.com/736x/a2/13/85/a213857249afcf434dffe9bbbd073105.jpg",
     rating: {
       rate: 4.8,
       count: 400,
@@ -184,14 +187,16 @@ const products = [
   },
   {
     id: 13,
-    title: "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+    title:
+      "Rectangle Faceted Sapphire Blue AD Rhinestone Rhodium Plated Crystal Necklace Set",
     price: 599,
     description:
-      "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
-    category: "Electronics",
-    like: "like",
+      "American Diamond necklace studded with clear CZ stones and encrusted on Silver | Rhodium background. Floral designed settings of Necklace set.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://i.pinimg.com/600x315/ee/81/8a/ee818a3fc171ff1b0fd31225403d45a8.jpg",
+      "https://cdn11.bigcommerce.com/s-ls8hir/images/stencil/1280x1280/products/15890/18495/519CADN02__52110.1557863593.jpg?c=2",
     rating: {
       rate: 2.9,
       count: 250,
@@ -199,16 +204,16 @@ const products = [
   },
   {
     id: 14,
-    title:
-      "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+    title: "Floral-Design Oxidised Silver Necklace with Earrings Set ",
     price: 999.99,
     description:
-      "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
-    category: "Electronics",
-    like: "like",
+      "Buy Silver-Toned Fashion Jewellery Sets for Women by Shining Diva Online in india at Rs. 238. Shop for more Shining Diva Fashion Jewellery Set.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
 
     image:
-      "https://i.pinimg.com/originals/f0/af/79/f0af79283d4aa1b071bec4ad1b65bf51.jpg",
+      "https://assets.ajio.com/medias/sys_master/root/20220204/DuaF/61fc27adf997dd03e2bf5770/-473Wx593H-469119098-multi-MODEL8.jpg",
     rating: {
       rate: 2.2,
       count: 140,
@@ -216,14 +221,16 @@ const products = [
   },
   {
     id: 15,
-    title: "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+    title:
+      "Weibang African Jewelry Silver Color Jewelry Set for Women Marriage Necklace",
     price: 56.99,
     description:
-      "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
-    category: "Women's clothing",
-    like: "like",
+      "Cheap Jewelry Sets, Buy Quality Jewelry & Accessories Directly form China Suppliers: Weibang African Jewelry Silver Color Jewelry Set for Women",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://i.pinimg.com/736x/f6/1d/3d/f61d3d79a0aa1212a1edbc2ec9357456--pakistani-jewelry-diamond-necklaces.jpg",
+      "https://ae01.alicdn.com/kf/HTB1fnSWTW6qK1RjSZFmq6x0PFXa8/Weibang-African-Jewelry-Silver-Color-Jewelry-Set-for-Women-Marriage-Necklace-Earrings-Wedding-Jewelry-Girl-Gift.jpg",
     rating: {
       rate: 2.6,
       count: 235,
@@ -231,15 +238,14 @@ const products = [
   },
   {
     id: 16,
-    title:
-      "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+    title: "Wedding Silver Necklace",
     price: 29.95,
-    description:
-      "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
-    category: "Women's clothing",
-    like: "like",
+    description: "Weddings Silver Necklace Set Best Sale, 56% OFF",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://i.pinimg.com/736x/dd/54/b4/dd54b4ef4708c284365df0b68a874a27--indian-diamond-necklace-diamond-necklace-set.jpg",
+      "https://i.etsystatic.com/13436931/r/il/110b20/2034336850/il_794xN.2034336850_8mcy.jpg",
     rating: {
       rate: 2.9,
       count: 340,
@@ -247,14 +253,15 @@ const products = [
   },
   {
     id: 17,
-    title: "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+    title: "Jiayijiaduo Glamour Women's Wedding Jewelry set Silver color",
     price: 39.99,
     description:
-      "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
-    category: "Women's clothing",
-    like: "like",
+      "Quality accessories with free worldwide shipping. Jewelry gifts and the best choice to match your daily style. Find products of Jewelry set.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://5.imimg.com/data5/SELLER/Default/2021/6/LN/WW/OG/692141/img-20210514-wa0045-250x250.jpg",
+      "https://ae01.alicdn.com/kf/HTB1nHRwmGSWBuNjSsrbq6y0mVXae/jiayijiaduo-Glamour-Women-s-Wedding-Jewelry-Set-Silver-Color-Zircon-Flower-Necklace-Earrings-Set-Girl-Accessories.jpg",
     rating: {
       rate: 3.8,
       count: 679,
@@ -262,14 +269,15 @@ const products = [
   },
   {
     id: 18,
-    title: "MBJ Women's Solid Short Sleeve Boat Neck V ",
+    title: "Cheerfeel Ne-235 Fashion Silver Necklace Bracelet Earrings",
     price: 9.85,
     description:
-      "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
-    category: "Women's clothing",
-    like: "like",
+      "Cheerfeel NE-235 Fashion Silver Necklace Bracelet Earrings Ring Set Zircon Wedding Bridal Necklace Jewelry set.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://i.pinimg.com/originals/35/a2/ba/35a2ba45c3014bbe6cddb127629b0877.jpg",
+      "https://sc04.alicdn.com/kf/H8cee43bb0ccd404e8a432ac142deb2b4Z/223353415/H8cee43bb0ccd404e8a432ac142deb2b4Z.jpg",
     rating: {
       rate: 4.7,
       count: 130,
@@ -277,14 +285,15 @@ const products = [
   },
   {
     id: 19,
-    title: "Opna Women's Short Sleeve Moisture",
+    title: "Bridal diamond jewellery",
     price: 7.95,
     description:
-      "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
-    category: "Women's clothing",
-    like: "like",
+      "Welcome to Arzano | Bridal diamond jewellery, Bridal diamon necklace",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://i.pinimg.com/originals/97/bb/5f/97bb5ffbbf81b00c14ab2d612f0db8c2.jpg",
+      "https://i.pinimg.com/originals/d6/71/36/d671362807398e94cd8c224c037508ed.jpg",
     rating: {
       rate: 4.5,
       count: 146,
@@ -292,14 +301,845 @@ const products = [
   },
   {
     id: 20,
-    title: "DANVOUY Womens T Shirt Casual Cotton Short",
+    title: "Crystal Bridal Jewelry",
     price: 12.99,
     description:
-      "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
-    category: "Women's clothing",
-    like: "like",
+      "Minlover Silver Color Crystal Bridal Jewelry Sets Leaf Shape Choker Necklace Earrings wedding jewellery",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTPizKjJ_W7AWKnj0_vokwp7_eZr9BooNDLh2hpZimFIg_nGT5FlbrVtFqo4UeY6qUSJM&usqp=CAU",
+      "https://i.pinimg.com/originals/c6/a9/b8/c6a9b8cfe68cf5701b1352f2f01a0669.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 21,
+    title: "Artificial Jewellery",
+    price: 12.99,
+    description:
+      "Artificial Jewellery Sets - Buy Fashion jewelry Sets | Necklace Sets & Artificial Bridal, crystal Necklace set",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://rukminim1.flixcart.com/image/612/612/kw2fki80/jewellery-set/z/j/t/na-na-stonechokerset-samridhi-dc-original-imag8u2wxhxpbugd.jpeg?q=70",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 22,
+    title: "Wedding Silver Necklace",
+    price: 12.99,
+    description:
+      "12 Luxury in Silver Necklaces ideas | weddings Jewellery, Silver Necklaces, Jewellery",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6aexUmv3BZhH_uF2KuLA1gq93LWheksqAdA&usqp=CAU",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 23,
+    title: "Unicra Bride Silver Necklace",
+    price: 12.99,
+    description:
+      "Unicra Bride Silver Necklace Earrings Set Crystal Bridal Wedding Jewelry Set Rhinestone Bridesmaid Party Choker Necklace Drop Dangle Earrings Sets for Women and Girls",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://www.ubuy.co.in/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNjErcEdMY2JBUkwuX0FDX1VMMTA1MF8uanBn.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 24,
+    title: "Silver Pendant Artificial Diamon Necklace",
+    price: 12.99,
+    description:
+      "Silver Pendant Artificial Diamond Necklace Set - Style Icon www.dressrent.in",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "http://cdn.shopify.com/s/files/1/0071/4466/9243/products/HTB1EnIrHXXXXXXpaXXXq6xXFXXX1_1200x1200.jpg?v=1533442876",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 25,
+    title: "Platinum Necklace",
+    price: 12.99,
+    description: "Gold Necklace & Platinum Necklace Manufacturer form Guwahati",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://5.imimg.com/data5/TC/GC/GLADMIN-14444939/platinum-necklace-500x500.png",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 26,
+    title: "Platinum Jewelley Designs",
+    price: 12.99,
+    description:
+      "Platinum Jewellery Designs Discount, 57% Off | www.elmonstruodelasgalletas.com",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://i.pinimg.com/originals/80/bf/ce/80bfce1a62b5befad39891712e87ee2a.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 29,
+    title: "Custom Platinum Pear Shaped Diamond Wedding Necklace",
+    price: 12.99,
+    description:
+      "Custom Platinum Pear Shaped Diamond Wedding Necklace Earrings Jewelry Set, Find Complete Details About Custom Platinum Pear Shaped Diamond",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://sc02.alicdn.com/kf/H6f9ba31980be4c9d84512117ab1c9da9i/230072978/H6f9ba31980be4c9d84512117ab1c9da9i.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 30,
+    title: "Platinum Jewellery Showrooms in Guwahati",
+    price: 12.99,
+    description:
+      "Top 20 Platinum Jewellery Showrooms in Guwahati - Best Platinum Jewellery Showrooms - Justdial",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://content.jdmagicbox.com/comp/guwahati/60/9999pmulkolstd57460/catalogue/manikchand-and-sons-pvt-ltd-fancy-bazar-guwahati-jewellery-showrooms-4-250.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 31,
+    title: "Modern Platinum Diamond Necklace",
+    price: 12.99,
+    description:
+      "An exquisite diamond necklace, designed as a series of graduated trefoil pear-shaped diamond links of a foliate motif, alternating with luminous brilliant-cut diamonds, the front set with a fringe of pear-shaped diamonds, finely mounted in platinum. The diamond weighing approximately 150.97 cts.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://i.pinimg.com/736x/c7/5b/05/c75b056f3fab15c35e3cc62284eb5fcd.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 32,
+    title: "Platinum Diamond Necklace",
+    price: 12.99,
+    description: "Classic Platinum Diamond Necklace - Yafa Signed Jewels",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://vintagesignedjewels.com/wp-content/uploads/2018/05/N2131-450x450.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 33,
+    title: "Indian Wedding Jewellery",
+    price: 12.99,
+    description:
+      "Emerald, Diamond and Platinum Choker Necklace | Fine jewelry, Real diamond Necklace",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://i.pinimg.com/736x/e7/a5/19/e7a5197a8028a0f4f591c873bb7766b9.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 34,
+    title: "Silver Plated Floral Fantasy Pearl Bridal Jewellery",
+    price: 12.99,
+    description:
+      "Floral Fantasy Pearl Bridal Jewelry Set This beautiful Bridal jewelry set features creamy freshwater pearls, marquise cut rhinestones and brilliant round clear and ab rhinestones in a delightful silver plated floral pattern. ",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://i.pinimg.com/originals/f0/f4/63/f0f4635428a1e574c972e6682c8b8b69.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 35,
+    title: "China Platinum Jewellery",
+    price: 12.99,
+    description:
+      "Platinum Jewellery, Platinum Jewellery Wholesale, Manufacturers, Price",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image: "https://sc02.alicdn.com/kf/UT8ly4gXGBaXXcUQpbX6.png",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 36,
+    title: "Platinum Necklace Set",
+    price: 12.99,
+    description:
+      "In order to cater the varied demands of our clients, we have come up with a wide range of Platinum Necklace Set. ",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image: "https://3.imimg.com/data3/JX/DM/MY-16580403/s4005732-500x500.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 37,
+    title: "Platinum Wedding Jewelry",
+    price: 12.99,
+    description:
+      "Platinum wedding Jewelry Set Fashion Jewellery for Sale | shop New & Pre-Owned Jewellery",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image: "https://i.ebayimg.com/thumbs/images/g/uHIAAOSw4A9c0e3l/s-l300.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 38,
+    title: "Elegant Gold Silver Two Tones Silver Mixed Stand",
+    price: 12.99,
+    description:
+      "Elegant Gold Silver 2 Tones Silver Mixed Stand-out Bold Cubic Zirconia Necklace UK Dispatch Set Complete set includes; Necklace, Earring, Ring",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://cdn.shopify.com/s/files/1/0086/4986/7311/products/0115642_hypoallergenic-platinum-plated-big-4-piece-jewelry-set-with-easy-return_d57a6c19-a9b2-48cd-8e5f-6cccbb3f7a9d.jpg?v=1623956903",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 39,
+    title: "Silk Thread Necklace",
+    price: 12.99,
+    description:
+      "Silk thread necklace, Brand: MyAngadi.com - online shopping for tanjore | Hand made silk thread necklace with attractive colours.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://www.myangadi.com/image/cache/catalog/silk-thread-jewellery/11492-Silk-Thread-Jewellery-Necklace-Purple-640x852.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 40,
+    title: "Gold Silk Thread Necklace ",
+    price: 12.99,
+    description:
+      "Buy Gold Silk Thread necklace and Designer Jhumkas!!!(ID # 36749) Online at best Price in USA.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://www.desiclik.com/images/P/CBBAFA28-7A25-47A7-8D7C-D675E6FC5B76.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 41,
+    title: "Green Silk Thread Jewellery ",
+    price: 12.99,
+    description:
+      "This set contains: 1 Necklace 1 pair of earring 1 Bangle set A fine thread of silk woven into a lustrous form of jewellery is silk thread",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "http://cdn.shopify.com/s/files/1/1004/5250/products/Green_Silk_Thread_Full_Set_grande.jpg?v=1571439161",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 42,
+    title: "Blue and Black Silk Thread",
+    price: 12.99,
+    description:
+      "Buy Krishna Collection Trendy Blue & Black silk Thread Jewellery.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://4.imimg.com/data4/CG/FB/ANDROID-56556594/product-500x500.jpeg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 43,
+    title: "Silk Thread Necklace & Earrings set",
+    price: 12.99,
+    description:
+      "Silk Thread Necklace with anique pendant and silk thread Jhumka with antique stud. Available in Yellow, Green colours.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://cdn.shopify.com/s/files/1/0477/4576/1434/products/Necklace-silkthread-Green_647x646.jpg?v=1604033124",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 44,
+    title: "Anique yellow - green silk thread peacock designer Necklace",
+    price: 12.99,
+    description:
+      "Product includes A Necklace and pair of Earrings, A Necklace comes with a dori.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "http://cdn.shopify.com/s/files/1/0627/1651/0441/products/DSC_0252.jpg?v=1645865205",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 45,
+    title: "Beautiful handmade silk thread green lue peacocl necklace",
+    price: 12.99,
+    description:
+      "DREAMJWELL Comes in Multicolor color with 1 nacklace:1 pair of earrings.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://assets0.mirraw.com/images/5254056/DJ13182_zoom.JPG?1508939624",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 46,
+    title: "Beautiful Blue Silk Thread Peacock Necklace",
+    price: 12.99,
+    description:
+      "The Product includes A Pair of Earrings - Length: 5cm, Width: 2.5 cm A Necklace-Lenght:34 cm Earrings Types.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://cdn.shopify.com/s/files/1/0627/1651/0441/products/dj-23509-2_a370701d-9880-4554-9baa-b66c23f102ab_1445x.jpg?v=1644884463",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 47,
+    title: "Unique Designer handmade black white peacock silk thread jewellery",
+    price: 12.99,
+    description:
+      "Dreamjwell of DREAMJWELL Comes in multicolor color with 1 Nacklace: 1 pair od earings.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://assets0.mirraw.com/images/4004558/DJ_00916_large.JPG?1487590285",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 48,
+    title: "Beautiful Green Silk Thread",
+    price: 12.99,
+    description:
+      "The Product includes A Necklace - Lenght: 15cm A pair of Earrings - Length: 3.5cm Earrings type.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://cdn.shopify.com/s/files/1/0627/1651/0441/products/dj-24827-2_0a09dcc8-2d2f-45cf-9b5f-f973d36882b6_1445x.jpg?v=1644902973",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 49,
+    title: "Antique Black Silk Thread Peacock Necklace",
+    price: 12.99,
+    description:
+      "The product includes pair of Earrings - Length: 4.2em, Width: 2.5cm Necklace.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwgG449yKmiiZ_DRsMOiyGzQccTQrl0mM_lw&usqp=CAU",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 50,
+    title: "Ailsie Stylish Fashion Beautiful Silk Thread Necklace",
+    price: 12.99,
+    description:
+      "Buy Ailsie Stylish Fashion Beautiful Silk Thread Necklace set with peacock earing online at a discounted price from ShopClues. Shop Earrings",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://cdn.shopclues.com/images1/thumbnails/94495/320/320/142215185-94495090-1541199284.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 51,
+    title: "Beautiful handmade blue green silk thread necklace",
+    price: 12.99,
+    description:
+      "Dreamjwell of DREAMJWELL Comes in Multicolor color with 1 Necklace:1 pair of earrings.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://assets0.mirraw.com/images/5576014/DJ13882_large.JPG?1513925037",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 52,
+    title: "Beautiful Black-White Black Silk Thread",
+    price: 12.99,
+    description:
+      "The Product include A pair of Earrings-Length: 2cm, width: 1cm A Necklace-Length: 13cm Earrings type - push back Necklace.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "http://cdn.shopify.com/s/files/1/0627/1651/0441/products/dj-23968-0.jpg?v=1644891566",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 53,
+    title: "Ethnic Indian style Black Plated Red & Green Polki Necklace",
+    price: 12.99,
+    description:
+      "This jewellery is made using high quality materials. The alloy used is led free. It will be Comfortable on the skin when worn.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image: "https://m.media-amazon.com/images/I/61Rt9WSMBhL.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 54,
+    title: "Peacock Necklace",
+    price: 12.99,
+    description:
+      "Peacock Necklace Set - Buy From Latest Design od Peacock Necklace Sukkhi| Sukkhi.com.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://cdn.shopify.com/s/files/1/1587/9445/products/2191NGLDPP1560_BG_900x.jpg?v=1596880290",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 55,
+    title: "Gold Bead Chain",
+    price: 12.99,
+    description:
+      "14k Solid Gold Bead Chain Necklace Gold Beaded Necklace | Etsy in 2022 | Gold Bead Necklace",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://i.pinimg.com/originals/61/77/21/617721ef7f1af29557a1a566bced4cf5.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 56,
+    title: "Geo Pendant Layered Chain Necklace",
+    price: 12.99,
+    description:
+      "ROMWE Discover the Geo Pendant Layered Chain Necklace you never Knew you needed. At ROMWE.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://img.ltwebstatic.com/images3_pi/2021/08/23/162968327402ff38357f3f371664418ec66c297776.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 57,
+    title: "2pcs Lock & Charm Chain Necklace",
+    price: 12.99,
+    description:
+      "To find out about the 2pcs Lock & Key Charm Chain Necklace at SHEIN, Part of our latest Necklace ready to shop online today! Free Shipping.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://img.ltwebstatic.com/images3_pi/2020/01/14/15789847180a0c0fe94adc1757c294227f046e0164_thumbnail_600x.webp",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 58,
+    title: "4pcs Geo Charm Layered Chain Necklace",
+    price: 12.99,
+    description:
+      "Get discounts for 4pcs Geo Charm Layered Chain Necklace and find more style you'll Enjoy, Students get an extra 15% OFF.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://img.ltwebstatic.com/images3_pi/2020/08/18/159772204520c43255a6048e59e5efa9b3717e6f54_thumbnail_600x.webp",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 59,
+    title: "Light Weight Gold chain",
+    price: 12.99,
+    description:
+      "Latest simple and light weight gold chain designs - Simple Creft Ideas",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image: "https://simplecraftidea.com/wp-content/uploads/2019/06/5-11.png",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 60,
+    title: "Gold Chain",
+    price: 12.99,
+    description:
+      "22 Carat Gold Chain, Weight: 8.040 gm, Rs 255000 / Unit Aashirwad Jewellery | ID: 23444528.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image: "https://5.imimg.com/data5/TG/TW/MY-2534169/gold-chain-500x500.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 61,
+    title: "Gold Chain With Pendant",
+    price: 12.99,
+    description:
+      "Gold Chain With Pendant - Buy Gold Chain With Pendent Designs online at Best Prices in India.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://rukminim1.flixcart.com/image/332/398/ktlu9ow0/mangalsutra-tanmaniya/9/f/h/cp96-jay-khodal-original-imag6ws88bamsenf.jpeg?q=50",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 62,
+    title: "Gold Chain With Floral Pendant ~ South India Jewels",
+    price: 12.99,
+    description:
+      "Gold chain Pendants, Gold Pendant for Chains, Gold Chains with Pendants.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://i.pinimg.com/originals/e0/c2/a3/e0c2a30bff1e67e9a0aa7040822c0383.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 63,
+    title: "Golden Heart Pendant handmade Earrings",
+    price: 12.99,
+    description:
+      "Buy golden heart pendant handmade earrings online in india at 2950, available only at Azilaa.com.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://i.etsystatic.com/25299260/r/il/655cef/3314010533/il_340x270.3314010533_aq0g.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 64,
+    title: "Flower with Diamond Beautiful Gold plated Necklace set",
+    price: 12.99,
+    description:
+      "Necklace Dimension Height: 47 cm(18.5 inch) Pendant Dimension Height: 58 mm(5.8 cm) Width: 35 mm(3.5 cm) Depth: 5mm(0.5 cm) Earrings.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://cdn.shopify.com/s/files/1/0416/8417/2955/products/LNS8A142_grande.jpg?v=1642844408",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 65,
+    title: "Gold Pendants",
+    price: 12.99,
+    description:
+      "Gold pendants - Buy Gold Pendants Online for Men, Women and boys.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/18289356/2022/5/16/d897841a-e700-41e3-8d89-a6ed02d986b41652714164310BrandsoonMenGoldNecklaceandChains1.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+
+  {
+    id: 66,
+    title: "Simple Chain And Pendants",
+    price: 12.99,
+    description:
+      "130 Simple Chain and Pendants ideas | Gold Jewellery fashion, gold pendant jewellery design..",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://i.pinimg.com/550x/fe/d4/b8/fed4b861f9f15678bc65aa7727703c06.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 67,
+    title: "Large Victorian Bull's-Eye Agate Pendant Necklace",
+    price: 12.99,
+    description:
+      "Black is Black! And in this case, it;s back 'big' time! Measuring a sizable 1 3/4 by 1 3/8 inches, this striking Victorian Pendant Necklace.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://d17anp2eo56k6j.cloudfront.net/media/catalog/product/cache/69a9f301de1749073166f9043f4fef2a/l/a/large-victorian-bull-s-eye-agate-pendant-necklace_1_90-1-11635.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 68,
+    title: "Moss Agate Pendant Boho Crystal Necklace",
+    price: 12.99,
+    description:
+      "Boho moss agate crystal slice teardrop-shaped pendant nacklace. Handmade nacklace by Estrella and Luna.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://i.etsystatic.com/13290659/r/il/d64f72/1929839274/il_fullxfull.1929839274_tdb6.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 69,
+    title:
+      "Magic Agate Druzy Emperor Quartz stone Natural Gold Pendant Necklace Jewelry",
+    price: 12.99,
+    description:
+      "Features: \n100% brand new with great quality; \nDecorate your nacklace; \nContracted style make you energetic; \n Prefect for daily use and easy to take.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://n1.sdlcdn.com/imgs/h/f/0/Magic-Agate-Druzy-Emperor-Quartz-SDL408627422-1-52e1b.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+
+  {
+    id: 70,
+    title:
+      "Druzy Necklace Round Druzy Pendant Gold Necklace Druzy | Etsy India",
+    price: 12.99,
+    description:
+      "druzy necklace, round druzy pendant, gold necklace, druzy agate, champagne druzy, Boho, layering necklace",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://i.etsystatic.com/5186479/r/il/2753cb/2693137765/il_fullxfull.2693137765_6sax.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 71,
+    title: "Druzy Agate Pendant",
+    price: 12.99,
+    description:
+      "Natural Black druzy agate electroformed in pure Copper and hung on a 30 inch soldered soldered copper chain with wire wrapped red garnet. Other chain.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://assets.bigcartel.com/product_images/333964782/1651035788830.jpg?auto=format&fit=max&h=1000&w=1000",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 72,
+    title: "Men Stainless Steel Jewellery",
+    price: 12.99,
+    description:
+      "Fashion Men Stainless Steel Jewellery Pendant Druzy Natural Chain",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://image.made-in-china.com/202f0j00NCRVItTPVrqz/Fashion-Men-Stainless-Steel-Jewelry-Pendant-Druzy-Natural-Agate-Stone-Gemstone-Necklace.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 73,
+    title:
+      "What Is Druzy Jewelry? Here's What You Need to Know | Emmaline Bride ",
+    price: 12.99,
+    description:
+      "what is druzy jewelry? We'll share some of our favorite (handmade!) druzy jewelry pieces tell you where to get your hands on and tell you why this.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://i.pinimg.com/originals/fb/50/8b/fb508bf4994a5804365de3a2d53efa1f.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 74,
+    title:
+      "What Is Druzy Jewelry? Here's What You Need to Know | Emmaline Bride ",
+    price: 12.99,
+    description:
+      "what is druzy jewelry? We'll share some of our favorite (handmade!) druzy jewelry pieces tell you where to get your hands on and tell you why this.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://i.pinimg.com/originals/fb/50/8b/fb508bf4994a5804365de3a2d53efa1f.jpg",
     rating: {
       rate: 3.6,
       count: 145,
@@ -310,7 +1150,7 @@ const products = [
 window.onload = () => {
   const product = document.querySelector(".products");
 
-  const cartOld = JSON.parse(localStorage.getItem("like"));
+  const cartOld = JSON.parse(localStorage.getItem("cart"));
   const singleProduct = products.filter((p) => {
     const pro = cartOld.find((f) => f === p.id);
     return pro ? true : false;
@@ -323,18 +1163,27 @@ window.onload = () => {
     const card = document.createElement("div");
     const category = document.createElement("h4");
     const image = document.createElement("img");
-    const like = document.createElement("button");
+    const cart = document.createElement("button");
+    const buy = document.createElement("button");
     const title = document.createElement("h3");
     const price = document.createElement("h2");
-
     const description = document.createElement("p");
     const rating = document.createElement("h5");
 
     a.onclick = () => {
-      window.location.href = `http://192.168.0.106:5501/suganya/public/HTML/productdetails.html?id=${i.id}`;
+      window.location.href = `http://192.168.0.108:5501/suganya/public/HTML/productdetails.html?id=${i.id}`;
     };
+
+    buy.addEventListener("click", function (e) {
+      e.stopPropagation();
+      window.location.href =
+        "http://192.168.0.108:5501/suganya/public/HTML/checkout.html";
+    });
+
     image.src = i.image;
-    like.innerHTML = i.like;
+    cart.innerHTML = i.cart;
+    buy.innerHTML = i.buy;
+    // remove.innerHTML = i.remove;
     category.innerHTML = i.category;
     category.classList.add("category");
     rating.innerHTML = i.rating.rate + "/ 5";
@@ -343,14 +1192,31 @@ window.onload = () => {
     price.innerHTML = i.price;
 
     card.classList.add("card");
+
     a.appendChild(card);
     product.appendChild(a);
     card.appendChild(image);
     card.appendChild(category);
     card.appendChild(rating);
-    card.appendChild(like);
+    card.appendChild(cart);
+    card.appendChild(buy);
     card.appendChild(title);
     card.appendChild(description);
     card.appendChild(price);
+
+    cart.addEventListener("click", function (e) {
+      e.stopPropagation();
+
+      const oldCart = JSON.parse(localStorage.getItem("cart"));
+
+      const isOldId = oldCart.find((p) => p === i.id);
+
+      if (isOldId) {
+        const filteredData = oldCart.filter((p) => p !== i.id);
+        localStorage.setItem("cart", JSON.stringify(filteredData));
+        card.remove();
+        return;
+      }
+    });
   }
 };

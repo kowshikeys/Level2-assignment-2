@@ -16,6 +16,7 @@
             <div class="items">
               <label class="label">Card number</label>
               <input
+                id="cdnumber"
                 type="number"
                 class="input"
                 placeholder="_1234 1234 1234 1234_"
@@ -26,26 +27,36 @@
           <div class="section_2">
             <div class="items">
               <label class="label">Card holder</label>
-              <input type="text" class="input" placeholder="Coding Market" />
+              <input
+                id="cdholder"
+                type="text"
+                class="input"
+                placeholder="Coding Market"
+              />
             </div>
           </div>
 
           <div class="section_3">
             <div class="items">
               <label class="label">Expire date</label>
-              <input type="month" class="input" />
+              <input id="expiredt" type="month" class="input" />
             </div>
 
             <div class="items">
               <div class="cvc">
-                <label class="label">cvc code</label>
+                <label class="label">CVC code</label>
               </div>
-              <input type="text" class="input" placeholder="0000" />
+              <input id="cvc" type="text" class="input" placeholder="0000" />
             </div>
           </div>
         </div>
-        <div class="btn">Proceed</div>
+        <div class="button">
+          <div id="proceed" class="btn">Proceed</div>
+          <div id="cancel" class="btn">Cancel</div>
+        </div>
       </div>
     </div>
   </body>
+
+  <script src="/suganya/js/checkout.js"></script>
 </html>

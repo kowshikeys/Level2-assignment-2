@@ -5,17 +5,13 @@
           box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-}
-
 .products {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  gap: 4em;
-  margin: 0 30px;
+  gap: 2em;
+  padding: 50px;
 }
 
 .products img {
@@ -37,9 +33,10 @@ body {
   font-size: 20px;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  line-clamp: 2;
+  line-clamp: 1;
+  width: 250px;
 }
 
 .products h2 {
@@ -55,6 +52,7 @@ body {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   line-clamp: 2;
+  width: 280px;
 }
 
 .products .card {
@@ -84,4 +82,4 @@ body {
         grid-template-columns: 1fr;
   }
 }
-/*# sourceMappingURL=cart.css.map */
+/*# sourceMappingURL=jewellery.css.map */

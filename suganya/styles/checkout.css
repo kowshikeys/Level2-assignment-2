@@ -71,17 +71,20 @@ body {
   width: 100%;
 }
 
+.wrapper .container .button {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
 .wrapper .container .btn {
-  background: #5f6c7d;
-  color: #fff;
-  font-size: 1.25em;
-  padding: 10px 0;
+  border: 1px solid whitesmoke;
+  color: yellow;
   text-align: center;
-  text-transform: uppercase;
-  border-radius: 5px;
+  padding: 8px;
   cursor: pointer;
-  font-weight: bold;
-  letter-spacing: 2px;
 }
 
 @media (max-width: 460px) {
