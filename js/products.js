@@ -1,321 +1,12 @@
-// const products = [
-//   {
-//     id: 1,
-//     title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-//     price: 109.95,
-//     description:
-//       "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-//     category: "men's clothing",
-//     like: "like",
-//     buy: "buy",
-//     image:
-//       "https://pbx2-pbww-prod-pbww-cdn.getprintbox.com/media/productimage/144663d2-a32f-40d3-a962-b75be12fec09/Pocketful%20Pearl%20Gold%20Necklace_thumb_900x900",
-//     rating: {
-//       rate: 3.9,
-//       count: 120,
-//     },
-//   },
-//   {
-//     id: 2,
-//     title: "Mens Casual Premium Slim Fit T-Shirts ",
-//     price: 22.3,
-//     description:
-//       "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-//     category: "men's clothing",
-//     like: "like",
-//     buy: "buy",
-//     image:
-//       "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-//     rating: {
-//       rate: 4.1,
-//       count: 259,
-//     },
-//   },
-//   {
-//     id: 3,
-//     title: "Mens Cotton Jacket",
-//     price: 55.99,
-//     description:
-//       "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
-//     category: "men's clothing",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-//     rating: {
-//       rate: 4.7,
-//       count: 500,
-//     },
-//   },
-//   {
-//     id: 4,
-//     title: "Mens Casual Slim Fit",
-//     price: 15.99,
-//     description:
-//       "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
-//     category: "men's clothing",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
-//     rating: {
-//       rate: 2.1,
-//       count: 430,
-//     },
-//   },
-//   {
-//     id: 5,
-//     title:
-//       "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
-//     price: 695,
-//     description:
-//       "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
-//     category: "jewelery",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
-//     rating: {
-//       rate: 4.6,
-//       count: 400,
-//     },
-//   },
-//   {
-//     id: 6,
-//     title: "Solid Gold Petite Micropave ",
-//     price: 168,
-//     description:
-//       "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
-//     category: "jewelery",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-//     rating: {
-//       rate: 3.9,
-//       count: 70,
-//     },
-//   },
-//   {
-//     id: 7,
-//     title: "White Gold Plated Princess",
-//     price: 9.99,
-//     description:
-//       "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
-//     category: "jewelery",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
-//     rating: {
-//       rate: 3,
-//       count: 400,
-//     },
-//   },
-//   {
-//     id: 8,
-//     title: "Pierced Owl Rose Gold Plated Stainless Steel Double",
-//     price: 10.99,
-//     description:
-//       "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
-//     category: "jewelery",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
-//     rating: {
-//       rate: 1.9,
-//       count: 100,
-//     },
-//   },
-//   {
-//     id: 9,
-//     title: "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
-//     price: 64,
-//     description:
-//       "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
-//     category: "electronics",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
-//     rating: {
-//       rate: 3.3,
-//       count: 203,
-//     },
-//   },
-//   {
-//     id: 10,
-//     title: "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
-//     price: 109,
-//     description:
-//       "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
-//     category: "electronics",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
-//     rating: {
-//       rate: 2.9,
-//       count: 470,
-//     },
-//   },
-//   {
-//     id: 11,
-//     title:
-//       "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
-//     price: 109,
-//     description:
-//       "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
-//     category: "electronics",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
-//     rating: {
-//       rate: 4.8,
-//       count: 319,
-//     },
-//   },
-//   {
-//     id: 12,
-//     title:
-//       "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
-//     price: 114,
-//     description:
-//       "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
-//     category: "electronics",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
-//     rating: {
-//       rate: 4.8,
-//       count: 400,
-//     },
-//   },
-//   {
-//     id: 13,
-//     title: "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
-//     price: 599,
-//     description:
-//       "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
-//     category: "electronics",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
-//     rating: {
-//       rate: 2.9,
-//       count: 250,
-//     },
-//   },
-//   {
-//     id: 14,
-//     title:
-//       "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
-//     price: 999.99,
-//     description:
-//       "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
-//     category: "electronics",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
-//     rating: {
-//       rate: 2.2,
-//       count: 140,
-//     },
-//   },
-//   {
-//     id: 15,
-//     title: "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
-//     price: 56.99,
-//     description:
-//       "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
-//     category: "women's clothing",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
-//     rating: {
-//       rate: 2.6,
-//       count: 235,
-//     },
-//   },
-//   {
-//     id: 16,
-//     title:
-//       "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
-//     price: 29.95,
-//     description:
-//       "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
-//     category: "women's clothing",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
-//     rating: {
-//       rate: 2.9,
-//       count: 340,
-//     },
-//   },
-//   {
-//     id: 17,
-//     title: "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
-//     price: 39.99,
-//     description:
-//       "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
-//     category: "women's clothing",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
-//     rating: {
-//       rate: 3.8,
-//       count: 679,
-//     },
-//   },
-//   {
-//     id: 18,
-//     title: "MBJ Women's Solid Short Sleeve Boat Neck V ",
-//     price: 9.85,
-//     description:
-//       "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
-//     category: "women's clothing",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
-//     rating: {
-//       rate: 4.7,
-//       count: 130,
-//     },
-//   },
-//   {
-//     id: 19,
-//     title: "Opna Women's Short Sleeve Moisture",
-//     price: 7.95,
-//     description:
-//       "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
-//     category: "women's clothing",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
-//     rating: {
-//       rate: 4.5,
-//       count: 146,
-//     },
-//   },
-//   {
-//     id: 20,
-//     title: "DANVOUY Womens T Shirt Casual Cotton Short",
-//     price: 12.99,
-//     description:
-//       "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
-//     category: "women's clothing",
-//     like: "like",
-//     buy: "buy",
-//     image: "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
-//     rating: {
-//       rate: 3.6,
-//       count: 145,
-//     },
-//   },
-// ];
-
 const products = [
   {
     id: 1,
     title: "Statement Designer bib pearl kundan necklace set",
-    price: 5355.0,
+    price: "₹ 5355.00",
     cart: "cart",
     buy: "buy",
     like: "like",
+    category: "silk",
     image:
       "https://www.azilaa.com/pics/Statement-Designer-bib-pearl-kundan-necklace-set-42799_1_full.jpg",
     description:
@@ -324,10 +15,12 @@ const products = [
   {
     id: 2,
     title: "Sansar India Bib Necklace for Girls (Silver) (410A)",
-    price: 399.0,
+    price: "₹ 399.00",
     cart: "cart",
     buy: "buy",
     like: "like",
+    category: "silk",
+
     image: "https://m.media-amazon.com/images/I/81g6WQvc1YL._UY695_.jpg",
     description:
       "It is advisable to store jewellery in a zip lock pouch (air tight pouch), keep away from water perfume and other chemicals and clean it with dry and soft cloth",
@@ -336,7 +29,7 @@ const products = [
     id: 3,
     title:
       "Fstrend Fashion Openwork Bib Necklace Gold Fish Scale Sequins Chain Statement Necklaces Jewelry for Women and Girls (Black)",
-    price: 1000.0,
+    price: "₹ 1000.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -347,10 +40,12 @@ const products = [
   {
     id: 4,
     title: "The Serina Necklace",
-    price: 64009.0,
+    price: "₹ 6409.00",
     cart: "cart",
     buy: "buy",
     like: "like",
+    category: "silk",
+
     image:
       "https://kinclimg4.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIAB0654N23_YAA18DIG6WHTOCITR_ABCD00-PICS-00000-1024-50036.png",
     description:
@@ -359,10 +54,12 @@ const products = [
   {
     id: 5,
     title: "The Ariella Lariat Necklace",
-    price: 25063,
+    price: "₹ 25063.00",
     cart: "cart",
     buy: "buy",
     like: "like",
+    category: "silk",
+
     image:
       "https://kinclimg9.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIMG0717N08_YAA22XXXXXXXXXXXX_ABCD00-PICS-00003-1024-52910.png",
     description: "Necklace In 22Kt Yellow Gold (4.08 gram)",
@@ -370,7 +67,7 @@ const products = [
   {
     id: 6,
     title: "Gold Butterfly Lariat Necklace",
-    price: 355,
+    price: "₹ 355.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -382,10 +79,12 @@ const products = [
   {
     id: 7,
     title: "Dual Sway Gemstone Necklace",
-    price: 81052.0,
+    price: "₹ 81052.00",
     cart: "cart",
     buy: "buy",
     like: "like",
+    category: "silk",
+
     image:
       "https://cdn.caratlane.com/media/catalog/product/J/L/JL03724-RGP9S0_1_lar.jpg",
     description:
@@ -394,10 +93,12 @@ const products = [
   {
     id: 8,
     title: "The Meliza Lariat Necklace",
-    price: 36057.0,
+    price: "₹ 36057.00",
     cart: "cart",
     buy: "buy",
     like: "like",
+    category: "silk",
+
     image:
       "https://kinclimg8.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIMG0717N02_YAA18DIG6SYRUXXXX_ABCD00-PICS-00001-1024-52913.png",
     description:
@@ -406,9 +107,11 @@ const products = [
   {
     id: 9,
     title: "GOLD CHAIN & EVIL EYE LARIAT NECKLACE SET",
-    price: 525.0,
+    price: "₹ 525.00",
     cart: "cart",
     buy: "buy",
+    category: "silk",
+
     like: "like",
     image:
       "https://backend.pipabella.com/media/catalog/product/1080/o/-/o-oc21nl00215533_1.jpg",
@@ -418,7 +121,7 @@ const products = [
   {
     id: 10,
     title: "Blossom Coin Lariat Necklace in Rose Gold",
-    price: 5447.0,
+    price: "₹ 5447.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -430,7 +133,7 @@ const products = [
   {
     id: 11,
     title: "The Hiwaya Necklace",
-    price: 48004.0,
+    price: "₹ 48004.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -442,7 +145,7 @@ const products = [
   {
     id: 12,
     title: "The Sheen Necklace",
-    price: 52840.0,
+    price: "₹ 52840.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -454,7 +157,7 @@ const products = [
   {
     id: 13,
     title: "Lilia Y necklace",
-    price: 12500.0,
+    price: "₹ 12500.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -465,7 +168,7 @@ const products = [
   {
     id: 14,
     title: "Large Chakra Locket Necklace",
-    price: 7343.0,
+    price: "₹ 7343.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -477,7 +180,7 @@ const products = [
   {
     id: 15,
     title: "Sterling Silver and Peridot Locket Necklace",
-    price: 6227.0,
+    price: "₹ 6227.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -489,7 +192,7 @@ const products = [
     id: 16,
     title:
       "Folding Photo Box Necklace 4 Photos Locket Necklace with Chain and Clasp,oval Shape Locket Necklace",
-    price: 233.0,
+    price: "₹ 233.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -502,7 +205,7 @@ const products = [
     id: 17,
     title:
       "Heart locket necklace with photo and engraving , Stainless Steel locket necklace, Engraved Locket, gift for her, memorial gift",
-    price: 2006.0,
+    price: "₹ 2639.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -514,7 +217,7 @@ const products = [
   {
     id: 18,
     title: "Personalised Silver Locket Necklace With Bee Charm",
-    price: 7009.0,
+    price: "₹ 7009.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -526,7 +229,7 @@ const products = [
   {
     id: 20,
     title: "Silk Thread Necklace",
-    price: 800.0,
+    price: "₹ 800.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -538,7 +241,7 @@ const products = [
   {
     id: 21,
     title: "Elegant Simple Black Thread Necklace",
-    price: 1800.0,
+    price: "₹ 1800.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -550,7 +253,7 @@ const products = [
   {
     id: 22,
     title: "Silk Thread Handmade Necklace And Earrings Jewellery Set In Golden",
-    price: 1442.0,
+    price: "₹ 1440.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -562,7 +265,7 @@ const products = [
   {
     id: 23,
     title: "Red & Gold-Toned Handmade Silk Thread Necklace",
-    price: 449.0,
+    price: "₹ 449.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -575,7 +278,7 @@ const products = [
     id: 24,
     title:
       "Beautiful Multi Color Silk Thread Ganesha Designer Pendant Necklace",
-    price: 850.0,
+    price: "₹ 850.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -587,7 +290,7 @@ const products = [
   {
     id: 25,
     title: "Multicolored Beaded Layered Necklace",
-    price: 4800.0,
+    price: "₹ 4800.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -599,7 +302,7 @@ const products = [
   {
     id: 26,
     title: "Paparazzi ~ Life of the FIESTA Multi Color Necklace",
-    price: 100.0,
+    price: "₹ 100.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -610,7 +313,7 @@ const products = [
   {
     id: 27,
     title: "Leaf-Design Bead Statement Collar Necklace",
-    price: 480.0,
+    price: "₹ 480.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -621,7 +324,7 @@ const products = [
   {
     id: 28,
     title: "Multi coloured beads necklace earring set designer beaded jewelry",
-    price: 1755.0,
+    price: "₹ 1753.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -633,7 +336,7 @@ const products = [
   {
     id: 29,
     title: "BRASS THREAD MATINEE NECKLACE D8C",
-    price: 3500.0,
+    price: "₹ 3550.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -644,7 +347,7 @@ const products = [
   {
     id: 30,
     title: "Paper Blue Matinee Necklace",
-    price: 790.0,
+    price: "₹ 790.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -655,7 +358,7 @@ const products = [
   {
     id: 31,
     title: "BRASS THREAD MATINEE NECKLACE",
-    price: 2550.0,
+    price: "₹ 2550.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -666,7 +369,7 @@ const products = [
   {
     id: 32,
     title: "SIGNORA CHAIN MATINEE NECKLACE",
-    price: 38300.0,
+    price: "₹ 38300.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -679,7 +382,7 @@ const products = [
     id: 33,
     title:
       "Long aquamarine chain gold with matt intermediate parts, extraordinary design, versatile combinable top matinee chain for evening",
-    price: 32258.0,
+    price: "₹ 32258.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -692,7 +395,7 @@ const products = [
     id: 34,
     title:
       "Multicoloured semiprecious gemstone necklace with real gems and matt gold vermeil beads",
-    price: 3293.0,
+    price: "₹ 3293.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -705,7 +408,7 @@ const products = [
     id: 35,
     title:
       "Baroque Pearl necklace, White Pearl Necklace with 24K gold plated clasp Gift for her Matinee Length Necklaces Wedding pearls jewelry",
-    price: 17921.0,
+    price: "₹ 17921.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -718,7 +421,7 @@ const products = [
     id: 36,
     title:
       "Argentium Sterling Silver Byzantine weave and Lampwork Glass Chainmaille Necklace -Handmade - Anniversary",
-    price: 22798.0,
+    price: "₹ 22798.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -731,7 +434,7 @@ const products = [
     id: 37,
     title:
       "Lilac Flower Swarovski Crystal Japanese Beads Pendent Matinee Charm Necklace",
-    price: 16111.0,
+    price: "₹ 16111.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -743,7 +446,7 @@ const products = [
   {
     id: 38,
     title: "a unique pendant on a black dress",
-    price: 1450.0,
+    price: "₹ 1450.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -755,7 +458,7 @@ const products = [
   {
     id: 39,
     title: "Spring Rain Drop Necklace",
-    price: 1740.0,
+    price: "₹ 1740.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -768,7 +471,7 @@ const products = [
     id: 40,
     title:
       "Vintage Korea Graduated Gold-Tone Bead Necklace, Mid Century Matinee Length",
-    price: 2500.0,
+    price: "₹ 2500.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -780,7 +483,7 @@ const products = [
   {
     id: 41,
     title: "Basil Agate Matinee Charm Necklace",
-    price: 11273.0,
+    price: "₹ 11273.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -793,7 +496,7 @@ const products = [
     id: 42,
     title:
       "Women Long Sweater Chain Bohemia Nepal Style Wood Bead Necklace Pendant",
-    price: 1748.0,
+    price: "₹ 1748.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -805,7 +508,7 @@ const products = [
   {
     id: 43,
     title: "Black and White Elegant Matinee Length Necklace and Earring Set",
-    price: 675.0,
+    price: "₹ 675.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -817,7 +520,7 @@ const products = [
   {
     id: 44,
     title: "14 k Gold Pineapple Pendant on 19-Inch 14 k Gold Chain",
-    price: 10070.0,
+    price: "₹ 100070.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -830,7 +533,7 @@ const products = [
     id: 45,
     title:
       "Plastron necklace in golden leather and rooster feathers and pheasant",
-    price: 14500.0,
+    price: "₹ 14500.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -842,7 +545,7 @@ const products = [
   {
     id: 46,
     title: "Choker necklace torque",
-    price: 3059.0,
+    price: "₹ 3059.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -854,7 +557,7 @@ const products = [
   {
     id: 47,
     title: "Torque flat collar Hammered and smooth brass - Boho, boho chic",
-    price: 1534.0,
+    price: "₹ 1534.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -866,7 +569,7 @@ const products = [
   {
     id: 48,
     title: "Silver necklace plastron deer and silver key",
-    price: 1321.0,
+    price: "₹ 1321.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -879,7 +582,7 @@ const products = [
     id: 49,
     title:
       "Necklace plastron pearls Egyptian style golden and vintage blue 1960's",
-    price: 5964.0,
+    price: "₹ 5964.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -891,7 +594,7 @@ const products = [
   {
     id: 50,
     title: "Multicolor necklace in african loincloth fabric for women",
-    price: 3408.0,
+    price: "₹ 3408.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -903,7 +606,7 @@ const products = [
   {
     id: 51,
     title: "Ethnic Wood Alloy Leaf Pendant Necklaces",
-    price: 1717.0,
+    price: "₹ 1717.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -915,7 +618,7 @@ const products = [
   {
     id: 52,
     title: "Blue Sandstone Moon Phase Necklace - Charm Necklace ",
-    price: 1931.0,
+    price: "₹ 1931.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -926,7 +629,7 @@ const products = [
   {
     id: 53,
     title: "vintage zodiac charm necklaces",
-    price: 14976.0,
+    price: "₹ 14976.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -938,7 +641,7 @@ const products = [
   {
     id: 54,
     title: "Bee Necklace, HoneyBee Charm Necklace Silver",
-    price: 3948.0,
+    price: "₹ 3948.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -950,7 +653,7 @@ const products = [
   {
     id: 55,
     title: "Moonstone Astronaut Necklace, Spacemen Charm Necklace",
-    price: 1354.0,
+    price: "₹ 1354.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -961,7 +664,7 @@ const products = [
   {
     id: 56,
     title: "Family Charm Necklace",
-    price: 2805.0,
+    price: "₹ 2804.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -974,7 +677,7 @@ const products = [
     id: 57,
     title:
       "Tassel Necklace. Leather Tassel Necklace. Turquoise Orange Aqua Tassel Necklace. Long Tassel Necklace. Boho Tassel Jewelry.",
-    price: 3707.0,
+    price: "₹ 3707.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -987,7 +690,7 @@ const products = [
     id: 58,
     title:
       "Nefertiti’s Boo Thang Beaded Necklace - 36 inches with a 6 inch tassel",
-    price: 18180.0,
+    price: "₹ 18180.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1000,7 +703,7 @@ const products = [
     id: 59,
     title:
       "Pink Bohemian Tassel Necklace, Hippie Necklace, Gold and Pink Pendant, Fabric Tassel Necklace, Pink Lover Gifts, Pink Jewelry",
-    price: 2010.0,
+    price: "₹ 2010.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1013,7 +716,7 @@ const products = [
     id: 60,
     title:
       "Tassel Necklace, Sea Green Silk Tassel and Gold Feather Pendant Necklace, Feather Charm, Gold Necklace, Boho Necklace, Funky Jewellery",
-    price: 3007.0,
+    price: "₹ 3007.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1025,7 +728,7 @@ const products = [
   {
     id: 61,
     title: "Torque Brass Necklace -Labradorite Leaf",
-    price: 5709.0,
+    price: "₹ 5709.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1038,7 +741,7 @@ const products = [
     id: 62,
     title:
       "Gold-Plated Necklace Set with Goddess Lakshmi & Ganesha Design Motif",
-    price: 6580.0,
+    price: "₹ 6580.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1050,7 +753,7 @@ const products = [
   {
     id: 63,
     title: "Antique Necklace 137743",
-    price: 5450.0,
+    price: "₹ 5450.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1062,7 +765,7 @@ const products = [
   {
     id: 64,
     title: "Antique Bridal Necklace Set for Women",
-    price: 1628.0,
+    price: "₹ 1621.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1075,7 +778,7 @@ const products = [
     id: 65,
     title:
       "22K Jadtar Necklace Set (55.3 gms) - Antique Jewellery for Women by Jewelegance (JGS-2001-00293)",
-    price: 308594.0,
+    price: "₹ 305984.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1087,7 +790,7 @@ const products = [
   {
     id: 66,
     title: "Shrinika Antique Choker",
-    price: 320625.0,
+    price: "₹ 320625.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1100,7 +803,7 @@ const products = [
     id: 67,
     title:
       "Antique Gold Necklace/Indian choker/South Indian Necklace/ Ganesha Necklace/ Bridal Necklace/Temple Jewelry/Temple Necklace/Amrapali/Wedding",
-    price: 10912.0,
+    price: "₹ 10921.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1112,7 +815,7 @@ const products = [
   {
     id: 68,
     title: "Varunika Choker",
-    price: 370873.0,
+    price: "₹ 307892.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1125,7 +828,7 @@ const products = [
     id: 69,
     title:
       "Victorian Choker/Green uncut Kundan Choker /Meenakari Choker /Indian Rajasthani Choker /Indian Necklace/Pakistani jewelry/Sabyasachi jewelry",
-    price: 7198.0,
+    price: "₹ 7198.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1138,7 +841,7 @@ const products = [
     id: 70,
     title:
       "Meenakari Kundan Necklace, Kundan Choker, Aqua Pink choker ,Rajasthani jewelry , Polki choker, Indian Jewelry, Indian Necklace ,Sabyasachi",
-    price: 5596.0,
+    price: "₹ 5596.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1150,7 +853,7 @@ const products = [
   {
     id: 71,
     title: "Navya Necklace Set",
-    price: 596867.0,
+    price: "₹ 596867.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1162,7 +865,7 @@ const products = [
   {
     id: 72,
     title: "Ragi Diamond Necklace Set",
-    price: 536828.0,
+    price: "₹ 536828.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1174,7 +877,7 @@ const products = [
   {
     id: 73,
     title: "Extremely beautiful and versatile, this Diamond necklace",
-    price: 345625.0,
+    price: "₹ 345625.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1186,7 +889,7 @@ const products = [
   {
     id: 74,
     title: "ALLURING ROYAL BRIDAL CHOKER",
-    price: 507161.0,
+    price: "₹ 507621.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1198,7 +901,7 @@ const products = [
   {
     id: 75,
     title: "MAJESTIC ETHNIC ROYAL GOLD HAAR",
-    price: 2410783.0,
+    price: "₹ 2410783.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1210,7 +913,7 @@ const products = [
   {
     id: 76,
     title: "Antique Necklace 143056",
-    price: 6950.0,
+    price: "₹ 6950.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1221,7 +924,7 @@ const products = [
   {
     id: 77,
     title: "AAA+ Zircon Jewelry sets ",
-    price: 6549.0,
+    price: "₹ 6595.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1232,7 +935,7 @@ const products = [
   {
     id: 78,
     title: "Peacock diamond haram",
-    price: 583929.0,
+    price: "₹ 583929.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1244,7 +947,7 @@ const products = [
   {
     id: 79,
     title: "Wedding Brass American Diamond Necklace ",
-    price: 755343.0,
+    price: "₹ 755343.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1256,7 +959,7 @@ const products = [
   {
     id: 80,
     title: "American Diamond Ruby Necklace",
-    price: 12999.0,
+    price: "₹ 12999.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1268,7 +971,7 @@ const products = [
   {
     id: 81,
     title: "AD Peacock Ruby White Necklace",
-    price: 976.0,
+    price: "₹ 976.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1280,7 +983,7 @@ const products = [
   {
     id: 82,
     title: "Peacock Pearl Choker",
-    price: 5368.0,
+    price: "₹ 5368.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1292,7 +995,7 @@ const products = [
   {
     id: 83,
     title: "Ruby Matt Necklace",
-    price: 1772.0,
+    price: "₹ 1772.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1304,7 +1007,7 @@ const products = [
   {
     id: 84,
     title: "Round Pearl Oxidised Choker",
-    price: 2134.0,
+    price: "₹ 2134.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1316,7 +1019,7 @@ const products = [
   {
     id: 85,
     title: "Ruby Stone Short Necklace",
-    price: 543.0,
+    price: "₹ 543.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1328,7 +1031,7 @@ const products = [
   {
     id: 86,
     title: "Lakshmi Green Bead Pearl Bridal Necklace",
-    price: 3980.0,
+    price: "₹ 3980.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1340,7 +1043,7 @@ const products = [
   {
     id: 87,
     title: "Simple Emerald Necklace",
-    price: 1000.0,
+    price: "₹ 1000.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1352,7 +1055,7 @@ const products = [
   {
     id: 88,
     title: "Emerald Gold Short Necklace",
-    price: 1298.0,
+    price: "₹ 1298.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1364,7 +1067,7 @@ const products = [
   {
     id: 89,
     title: "Antique Bridal Peacock Ruby necklace",
-    price: 5330.0,
+    price: "₹ 5330.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1376,7 +1079,7 @@ const products = [
   {
     id: 90,
     title: "Bridal Green Pearl Dasavatharam Necklace Set With Jhumka",
-    price: 3980.0,
+    price: "₹ 3980.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1388,7 +1091,7 @@ const products = [
   {
     id: 91,
     title: "Ruby Emerald Grand Choker",
-    price: 3880.0,
+    price: "₹ 3880.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1400,7 +1103,7 @@ const products = [
   {
     id: 92,
     title: "Layered Ruby Necklace",
-    price: 2798.0,
+    price: "₹ 2798.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1412,7 +1115,7 @@ const products = [
   {
     id: 93,
     title: "American Diamond Peacock Necklace",
-    price: 1880.0,
+    price: "₹ 1880.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1424,7 +1127,7 @@ const products = [
   {
     id: 94,
     title: "Ruby Green Pearl Gold Plated Choker Set",
-    price: 1180.0,
+    price: "₹ 1180.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1436,7 +1139,7 @@ const products = [
   {
     id: 95,
     title: "Bridal American Diamond Necklace Emerald",
-    price: 3585.0,
+    price: "₹ 3585.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1448,7 +1151,7 @@ const products = [
   {
     id: 96,
     title: "Ruby Kids AD Choker",
-    price: 1735.0,
+    price: "₹ 1735.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1460,7 +1163,7 @@ const products = [
   {
     id: 97,
     title: "Emerald Leaf AD Short Necklace",
-    price: 2866.0,
+    price: "₹ 2699.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1472,7 +1175,7 @@ const products = [
   {
     id: 98,
     title: "Pearl Gold Ball Chain",
-    price: 1578.0,
+    price: "₹ 1578.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1484,7 +1187,7 @@ const products = [
   {
     id: 99,
     title: "14k Yellow Gold Emerald and Diamond Necklace",
-    price: 192812.0,
+    price: "₹ 192812.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1496,7 +1199,7 @@ const products = [
   {
     id: 100,
     title: "Simulated Emerald Green Necklace",
-    price: 26775.0,
+    price: "₹ 26775.00",
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1506,22 +1209,28 @@ const products = [
       "This Outstanding Emerald Green Necklace carries a Splendorous High Quality 1.8ct Cushion Cut Simulated Emerald from Russia. The Emerald Simulant is set in a 92,5% Pure Silver pendant and surrounded by 30 Simulated Diamonds. The emerald necklace comes with a matching 45cm silver chain.",
   },
 ];
-window.onload = () => {
-  const product = document.querySelector("#products_container");
 
+let newdata = products.filter(function (el) {
+  return el.price >= 1250 && e1.Price <= 29800;
+});
+console.log(newdata);
+
+const filter = document.querySelector("#chocker");
+const filtered = document.querySelector(".filter");
+const product = document.querySelector("#products_container");
+const filteredProduct = document.querySelector("#filtered_products_container");
+
+window.onload = () => {
   for (let pro of products) {
     const a = document.createElement("div");
     const card = document.createElement("div");
     const image = document.createElement("img");
+    const row = document.createElement("div");
+    const buttonFlex = document.createElement("div");
     const like = document.createElement("button");
-    const cart = document.createElement("button");
     const buy = document.createElement("button");
     const title = document.createElement("h2");
     const price = document.createElement("h3");
-    const description = document.createElement("p");
-    const category = document.createElement("h2");
-    const rate = document.createElement("h4");
-    const count = document.createElement("h4");
 
     a.onclick = () => {
       window.location.href = `http://127.0.0.1:5500/Public/HTML/productdetails.html?id=${pro.id}`;
@@ -1531,19 +1240,12 @@ window.onload = () => {
     title.classList.add("title");
     image.src = pro.image;
     image.classList.add("img");
-    like.innerHTML = pro.like;
-    cart.innerHTML = pro.cart;
+    like.innerHTML = pro.cart;
     buy.innerHTML = pro.buy;
     price.innerHTML = pro.price;
     price.classList.add("price");
-    description.innerHTML = pro.description;
-    description.classList.add("description");
-    // category.innerHTML = pro.category;
-    // category.classList.add("category");
-    // rate.innerHTML = pro.rating.rate;
-    // rate.classList.add("rate");
-    // count.innerHTML = pro.rating.count;
-    // count.classList.add("count");
+    row.classList.add("row");
+    buttonFlex.classList.add("button-flex");
 
     like.addEventListener("click", function (e) {
       e.stopPropagation();
@@ -1560,13 +1262,13 @@ window.onload = () => {
       if (isOldId) {
         const filteredData = oldCart.filter((p) => p !== pro.id);
         localStorage.setItem("like", JSON.stringify(filteredData));
-        like.innerHTML = "like";
+        like.innerHTML = "cart";
         return;
       }
 
       oldCart.push(pro.id);
       localStorage.setItem("like", JSON.stringify(oldCart));
-      like.innerHTML = "dislike";
+      like.innerHTML = "remove";
     });
 
     buy.addEventListener("click", function (e) {
@@ -1576,15 +1278,94 @@ window.onload = () => {
 
     a.appendChild(card);
     product.appendChild(a);
-    card.appendChild(title);
     card.appendChild(image);
-    card.appendChild(price);
-    card.appendChild(category);
-    card.appendChild(rate);
-    card.appendChild(count);
-    card.appendChild(like);
-    card.appendChild(like);
-    card.appendChild(buy);
-    card.appendChild(description);
+    card.appendChild(title);
+    card.appendChild(row);
+    row.appendChild(price);
+    row.appendChild(buttonFlex);
+    buttonFlex.appendChild(like);
+    buttonFlex.appendChild(buy);
   }
 };
+
+function filterProducts(values) {
+  console.log(values);
+  function filterByValue(products, term) {
+    var ans = products.filter(function (v, i) {
+      if (v.title.toLowerCase().indexOf(term) >= 0) {
+        return true;
+      } else false;
+    });
+    return ans;
+  }
+  const filteredValues = filterByValue(products, values);
+  console.log(filteredValues);
+
+  product.remove();
+
+  for (let pro of filteredValues) {
+    const a = document.createElement("div");
+    const card = document.createElement("div");
+    const image = document.createElement("img");
+    const row = document.createElement("div");
+    const buttonFlex = document.createElement("div");
+    const like = document.createElement("button");
+    const buy = document.createElement("button");
+    const title = document.createElement("h2");
+    const price = document.createElement("h3");
+
+    a.onclick = () => {
+      window.location.href = `http://127.0.0.1:5500/Public/HTML/productdetails.html?id=${pro.id}`;
+    };
+    card.classList.add("card");
+    title.innerHTML = pro.title;
+    title.classList.add("title");
+    image.src = pro.image;
+    image.classList.add("img");
+    like.innerHTML = pro.cart;
+    buy.innerHTML = pro.buy;
+    price.innerHTML = pro.price;
+    price.classList.add("price");
+    row.classList.add("row");
+    buttonFlex.classList.add("button-flex");
+
+    like.addEventListener("click", function (e) {
+      e.stopPropagation();
+
+      const oldCart = JSON.parse(localStorage.getItem("like"));
+
+      if (!oldCart) {
+        localStorage.setItem("like", JSON.stringify([pro.id]));
+        return;
+      }
+
+      const isOldId = oldCart.find((p) => p === pro.id);
+
+      if (isOldId) {
+        const filteredData = oldCart.filter((p) => p !== pro.id);
+        localStorage.setItem("like", JSON.stringify(filteredData));
+        like.innerHTML = "cart";
+        return;
+      }
+
+      oldCart.push(pro.id);
+      localStorage.setItem("like", JSON.stringify(oldCart));
+      like.innerHTML = "remove";
+    });
+
+    buy.addEventListener("click", function (e) {
+      e.stopPropagation();
+      window.location.href = "http://127.0.0.1:5500/Public/HTML/checkout.html";
+    });
+
+    a.appendChild(card);
+    filteredProduct.appendChild(a);
+    card.appendChild(image);
+    card.appendChild(title);
+    card.appendChild(row);
+    row.appendChild(price);
+    row.appendChild(buttonFlex);
+    buttonFlex.appendChild(like);
+    buttonFlex.appendChild(buy);
+  }
+}

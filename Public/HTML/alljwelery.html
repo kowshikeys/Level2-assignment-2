@@ -1,17 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../../Styles/home.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="../../Styles/home.css" />
+    <link rel="stylesheet" href="../../Styles/products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="menu-bar" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo-left">
+          <img src="../Assets/images/logo/logo (2).png" alt="" />
+        </div>
+        <div class="logo-right">
+          <div id="searchWindow" class="search">
+            <input id="search" type="search" placeholder="search" />
+            <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+          </div>
 
-    <div id="products_container" class="product">
-    </div>
+          <div class="cart">
+            <a href="cart.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p>cart</p>
+            </a>
+          </div>
+          <div class="button">
+            <button id="button">logout</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="navbar">
+      <div class="close-nav-menu" onclick="closeMenu()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <ul>
+        <li><a href="../HTML/alljwelery.html">All jewellery</a></li>
+        <li>
+          <a href="#">gold</a>
+          <div class="drop">
+            <div class="drop-down">
+              <a href="#">ring</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">chain</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">bangles</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">earings</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">thali</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">short necklace</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">long necklace</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">bridal</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Silver</a>
+          <div class="drop">
+            <div class="drop-down">
+              <a href="#">pooja</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">kolusu</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">lamp</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">ring</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">chain</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">earings</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">stones</a>
+          <div class="drop">
+            <div class="drop-down">
+              <a href="#">dimond</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">ruby</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">Sapphire</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">Emerald</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">Amethyst</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Platinum</a>
+          <div class="drop">
+            <div class="drop-down">
+              <a href="#">ring</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">chain</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">Occasion</a>
+          <div class="drop">
+            <div class="drop-down">
+              <a href="#">casual</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">cocktail</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">festival</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">wedding</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">work</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#">category</a>
+          <div class="drop">
+            <div class="drop-down">
+              <a href="#">women</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">men</a>
+            </div>
+            <div class="drop-down">
+              <a href="#">kids</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="filpro-containers">
+      <div class="fillter-container">
+        <div class="ul">
+          <ul>
+            <li><h1>filter</h1></li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('all')"
+              />all
+            </li>
+          </ul>
+          <ul>
+            <li><h1>Jweller Type</h1></li>
+            <li onclick="filterProducts('chocker')">
+              <input type="checkbox" class="button-value" />
+              chocker
+            </li>
+            <li onclick="filterProducts('collor')">
+              <input type="checkbox" class="button-value" />
+              collor
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('bib')"
+              />bib
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('torque')"
+              />torque
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('pendent')"
+              />pendent
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('locket')"
+              />locket
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('matinee')"
+              />matinee
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('lariat')"
+              />lariat
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('charm')"
+              />charm
+            </li>
+          </ul>
+          <ul>
+            <li><h1>pricing</h1></li>
+            <li onclick="filterProducts('all')">
+              <input type="checkbox" class="button-value" />₹100 - ₹500
+            </li>
+            <li onclick="filterProducts('all')">
+              <input type="checkbox" class="button-value" />₹500 - ₹1000
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('all')"
+              />₹1000 - ₹5000
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('all')"
+              />₹5000 - ₹10000
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('all')"
+              />₹10000 - ₹100000
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('all')"
+              />above ₹100000
+            </li>
+          </ul>
+          <ul>
+            <li><h1>metal</h1></li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('gold')"
+              />gold
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('yellow gold')"
+              />yellow gold
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('silver')"
+              />silver
+            </li>
+          </ul>
+          <ul>
+            <li><h1>stone</h1></li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('american diamond')"
+              />american diamond
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('diamond')"
+              />diamond
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('ruby')"
+              />ruby
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('emerald')"
+              />Emerald
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('pearls')"
+              />pearls
+            </li>
+          </ul>
+          <ul>
+            <li><h1>material</h1></li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('beads')"
+              />beads
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('thread')"
+              />thread
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('silk')"
+              />silk
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="button-value"
+                onclick="filterProducts('leather')"
+              />leather
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cards">
+        <img src="../Assets/images/home/diamond_jewellery_designs.jpg" alt="" />
+        <div id="products_container" class="product"></div>
+        <div id="filtered_products_container" class="product"></div>
+        <div class="filter"></div>
+      </div>
+    </section>
+
+    <script src="../../js/home.js"></script>
     <script src="../../JS/products.js"></script>
-</body>
+  </body>
 </html>

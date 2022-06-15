@@ -1,0 +1,100 @@
+.filpro-containers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+}
+
+.filpro-containers .fillter-container .ul {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.filpro-containers .cards img {
+  width: 100%;
+}
+
+.filpro-containers .cards .product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 1000px) {
+  .filpro-containers .cards .product {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .filpro-containers .cards .product {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.5fr)[2];
+        grid-template-columns: repeat(2, 0.5fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .filpro-containers .cards .product {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.filpro-containers .cards .product .card {
+  background-image: url(../Public/Assets/images/home/mbg.jpg);
+  padding: 5px;
+  color: white;
+}
+
+.filpro-containers .cards .product .card .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filpro-containers .cards .product .card h2 {
+  margin: 10px 0;
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.filpro-containers .cards .product .card .img {
+  max-width: 100%;
+  height: auto;
+}
+
+.filpro-containers .cards .product .card .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.filpro-containers .cards .product .card .row .button-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  gap: 10px;
+}
+
+.filpro-containers .cards .product .card .row .button-flex button {
+  padding: 0 20px;
+}
+/*# sourceMappingURL=products.css.map */
