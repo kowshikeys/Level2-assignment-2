@@ -3,13 +3,32 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body {
+  --white: white;
+  --background-color: #F0D9FF;
+  --main-theme: #7952B3;
+  --black: #000000;
+  --light-main-theme: #BFA2DB;
+  --mid-color: #E1E5EA;
+}
+
+body.dark {
+  --white: white;
+  --background-color: #000000;
+  --main-theme: white;
+  --black: #000000;
+  --light-main-theme: #000000;
+  --mid-color: #7F7C82;
 }
 
 .container {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  background-color: white;
+  background-color: var(--background-color);
   overflow: hidden;
 }
 
@@ -19,7 +38,7 @@
   width: 2000px;
   height: 2000px;
   border-radius: 50%;
-  background: linear-gradient(-45deg, #4481eb, #04befe);
+  background: var(--main-theme);
   top: -8%;
   right: 38%;
   -webkit-transform: translateY(-50%);
@@ -88,7 +107,7 @@ form.sign-up-list {
 
 .title {
   font-size: 2rem;
-  color: grey;
+  color: var(--black);
   margin-bottom: 10px;
 }
 
@@ -96,7 +115,7 @@ form.sign-up-list {
   max-width: 380px;
   width: 100%;
   height: 55px;
-  background-color: black;
+  background-color: var(--black);
   margin: 10px 0;
   border-radius: 55px;
   display: -ms-grid;
@@ -109,7 +128,7 @@ form.sign-up-list {
 .input-list i {
   text-align: center;
   line-height: 55px;
-  color: grey;
+  color: var(--mid-color);
   font-size: 1rem;
 }
 
@@ -120,26 +139,26 @@ form.sign-up-list {
   line-height: 1;
   font-weight: 600;
   font-size: 1rem;
-  color: white;
+  color: var(--white);
 }
 
 .input-list input::-webkit-input-placeholder {
-  color: #aaa;
+  color: var(--mid-color);
   font-weight: 500;
 }
 
 .input-list input:-ms-input-placeholder {
-  color: #aaa;
+  color: var(--mid-color);
   font-weight: 500;
 }
 
 .input-list input::-ms-input-placeholder {
-  color: #aaa;
+  color: var(--mid-color);
   font-weight: 500;
 }
 
 .input-list input::placeholder {
-  color: #aaa;
+  color: var(--mid-color);
   font-weight: 500;
 }
 
@@ -150,7 +169,7 @@ form.sign-up-list {
   outline: none;
   border-radius: 50px;
   cursor: pointer;
-  background-color: #5995fd;
+  background-color: var(--main-theme);
   color: white;
   text-transform: uppercase;
   font-weight: 600;
@@ -160,7 +179,7 @@ form.sign-up-list {
 }
 
 .btn:hover {
-  background-color: #4d84e2;
+  background-color: var(--main-theme);
 }
 
 .socialtext {
@@ -180,7 +199,7 @@ form.sign-up-list {
 .icon {
   height: 46px;
   width: 46px;
-  border: 1px solid #333;
+  border: 1px solid var(--main-theme);
   margin: 0 6px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,7 +211,7 @@ form.sign-up-list {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  color: #333;
+  color: var(--main-theme);
   border-radius: 50%;
   font-size: 1rem;
   -webkit-transition: 0.3s;
@@ -200,8 +219,8 @@ form.sign-up-list {
 }
 
 .icon:hover {
-  color: #4d84e2;
-  border-color: #4d84e2;
+  color: var(--black);
+  border-color: var(--black);
 }
 
 .container-panel {
@@ -240,7 +259,7 @@ form.sign-up-list {
 }
 
 .panel .content {
-  color: white;
+  color: var(--white);
   -webkit-transition: .9s .6s ease-in-out;
   transition: .9s .6s ease-in-out;
 }
@@ -259,7 +278,7 @@ form.sign-up-list {
 .btn.two {
   margin: 0;
   background: none;
-  border: 2px solid white;
+  border: 2px solid var(--white);
   width: 130px;
   height: 41px;
   font-weight: 600;
@@ -276,7 +295,8 @@ form.sign-up-list {
   pointer-events: none;
 }
 
-.panel-right .content, .panel-right .image {
+.panel-right .content,
+.panel-right .image {
   -webkit-transform: translateX(800px);
           transform: translateX(800px);
 }

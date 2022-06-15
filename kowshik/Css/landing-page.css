@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  --white: white;
+  --background-color: #F0D9FF;
+  --main-theme: #1363DF;
+  --black: #000000;
+  --light-main-theme: #BFA2DB;
+  --mid-color: #E1E5EA;
+}
+
+body.dark {
+  --white: white;
+  --background-color: #000000;
+  --main-theme: white;
+  --black: #000000;
+  --light-main-theme:#000000;
+  --mid-color: #7F7C82;
+}
+
+.topbar-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--background-color);
+  padding-left: 10px;
+  position: fixed;
+  width: 100%;
+}
+
+.topbar-container .topbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar-container .topbar-menu .necklace-drop {
+  position: relative;
+}
+
+.topbar-container .topbar-menu .necklace-drop .necklace-list {
+  position: absolute;
+  width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em;
+  background-color: var(--mid-color);
+  top: 20px;
+  left: -10px;
+  gap: 10px;
+  display: none;
+}
+
+.topbar-container .topbar-menu .necklace-drop .necklace-list a {
+  color: #000000;
+  font-size: 16px;
+}
+
+.topbar-container .topbar-menu .necklace-drop:hover .necklace-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topbar-container .topbar-menu .edition-drop {
+  position: relative;
+}
+
+.topbar-container .topbar-menu .edition-drop .edition-list {
+  position: absolute;
+  width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em;
+  background-color: var(--mid-color);
+  top: 20px;
+  left: -10px;
+  gap: 10px;
+  display: none;
+}
+
+.topbar-container .topbar-menu .edition-drop .edition-list a {
+  color: #000000;
+  font-size: 16px;
+}
+
+.topbar-container .topbar-menu .edition-drop:hover .edition-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topbar-container .topbar-menu p {
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--main-theme);
+}
+
+.topbar-container .topbar-menu p i {
+  font-size: 8px;
+}
+
+.topbar-container .topbar-menu a {
+  color: var(--main-theme);
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.topbar-container .topbar-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--white);
+}
+
+.topbar-container .topbar-logo img {
+  width: 150px;
+  height: 90px;
+  margin: 0;
+}
+
+.topbar-container .topbar-logo i {
+  font-size: larger;
+  cursor: pointer;
+}
+
+.topbar-container .topbar-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--white);
+}
+
+.topbar-container .topbar-in a {
+  color: var(--main-theme);
+}
+
+.topbar-container .topbar-in a i {
+  cursor: pointer;
+}
+
+.switching-menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  position: fixed;
+  top: 100px;
+  right: 10px;
+}
+
+.switching-menus .toggle {
+  width: 50px;
+  height: 50px;
+  background-color: var(--background-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 12px;
+  color: var(--main-theme);
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.first-background {
+  background-color: var(--mid-color);
+}
+
+.first-background img {
+  width: 100%;
+}
+/*# sourceMappingURL=landing-page.css.map */

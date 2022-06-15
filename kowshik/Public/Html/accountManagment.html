@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spa</title>
     <!-- link to accountManagment css  -->
-    <link rel="stylesheet" href="../Css/accountManagment.css">
+    <link rel="stylesheet" href="../../Css/accountManagment.css">
     <!-- link to Font Awesome  -->
     <script src="https://kit.fontawesome.com/9dc5a48b67.js" crossorigin="anonymous"></script>
+    <!-- link to google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kdam+Thmor+Pro&family=Mirza:wght@400;500;600;700&family=Mulish:wght@200;300;400;500;600;700&family=Nunito+Sans:wght@200;300&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,500;1,600&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -20,13 +24,13 @@
                     <h2 class="title">Sign in</h2>
                     <div class="input-list">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Username">
+                        <input id="mailin" type="text" placeholder="Username">
                     </div>
                     <div class="input-list">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="Password">
+                        <input id="passwordin" type="password" placeholder="Password">
                     </div>
-                    <input type="submit" value="Login" class="btn">
+                    <button onclick="loginadd()"  class="btn">Login</button>
                     <p class="socialtext">Or Sign in with social platforms</p>
                     <div class="social-media">
                         <a href="#" class="icon">
@@ -47,17 +51,17 @@
                     <h2 class="title">Sign up</h2>
                     <div class="input-list">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Username">
+                        <input id="nameup" type="text" placeholder="Username">
                     </div>
                     <div class="input-list">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Email">
+                        <input id="emailup" type="email" placeholder="Email">
                     </div>
                     <div class="input-list">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="Password">
+                        <input id="passwordup" type="password" placeholder="Password">
                     </div>
-                    <input type="submit" value="Login" class="btn">
+                    <button onclick="signupadd()" class="btn">Sign up</button>
                     <p class="socialtext">Or Sign in with social platforms</p>
                     <div class="social-media">
                         <a href="#" class="icon">
@@ -84,7 +88,7 @@
                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quisquam ipsam ex voluptate aspernatur animi obcaecati modi est, temporibus, veritatis vero tempore omnis! Laboriosam veritatis eaque consequuntur quaerat, doloremque dolores.</p>
                  <button class="btn two" id="sign-up-btn">Sign up</button>
              </div>
-             <img src="./Assets/signin-background.svg" class="image" alt="">
+             <img src="../Assets/signin-background.svg" class="image" alt="">
          </div>
          <div class="panel panel-right">
             <div class="content">
@@ -92,7 +96,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quisquam ipsam ex voluptate aspernatur animi obcaecati modi est, temporibus, veritatis vero tempore omnis! Laboriosam veritatis eaque consequuntur quaerat, doloremque dolores.</p>
                 <button class="btn two" id="sign-in-btn">Sign in</button>
             </div>
-            <img src="./Assets/undraw_join_re_w1lh.svg" class="image" alt="">
+            <img src="../Assets/signup-background.svg" class="image" alt="">
         </div>
         </div>
 
@@ -109,6 +113,6 @@
    
     <!-- link to accountManagment js -->
 
-    <script src="../javascript/accountManagment.js"></script>
+    <script src="../../javascript/accountManagment.js"></script>
 </body>
 </html>

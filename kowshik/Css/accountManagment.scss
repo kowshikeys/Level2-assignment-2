@@ -1,36 +1,52 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-body{
+body {
+    --white: white;
+    --background-color: #F0D9FF;
+    --main-theme: #7952B3;
+    --black: #000000;
+    --light-main-theme: #BFA2DB;
+    --mid-color: #E1E5EA;
 
 }
 
-.container{
+body.dark {
+    --white: white;
+    --background-color: #000000;
+    --main-theme: white;
+    --black: #000000;
+    --light-main-theme: #000000;
+    --mid-color: #7F7C82;
+}
+
+.container {
     width: 100%;
     min-height: 100vh;
     position: relative;
-    background-color: white;
+    background-color: var(--background-color);
     overflow: hidden;
 }
 
-.container:before{
- content: '';
- position: absolute;
- width: 2000px;
- height: 2000px;
- border-radius: 50%;
- background: linear-gradient(-45deg, #4481eb,#04befe);
- top:-8%;
- right: 38%;
- transform: translateY(-50%);
- z-index: 6;
- transition: 1.8s ease-in-out;
+.container:before {
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: var(--main-theme);
+    top: -8%;
+    right: 38%;
+    transform: translateY(-50%);
+    z-index: 6;
+    transition: 1.8s ease-in-out;
 }
 
-.container-form{
+.container-form {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -39,7 +55,7 @@ body{
 
 }
 
-.accountManagment{
+.accountManagment {
     position: absolute;
     top: 50%;
     left: 75%;
@@ -52,7 +68,7 @@ body{
 
 }
 
-form{
+form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,66 +78,67 @@ form{
     transition: 0.2s 0.7s ease-in-out;
 }
 
-form.sign-in-list{
+form.sign-in-list {
     z-index: 2;
 }
-form.sign-up-list{
+
+form.sign-up-list {
     z-index: 1;
     opacity: 0;
 }
 
-.title{
+.title {
     font-size: 2rem;
-    color: grey;
+    color: var(--black);
     margin-bottom: 10px;
 
 }
 
-.input-list{
-    max-width:380px;
+.input-list {
+    max-width: 380px;
     width: 100%;
     height: 55px;
-    background-color:black;
+    background-color: var(--black);
     margin: 10px 0;
     border-radius: 55px;
     display: grid;
     grid-template-columns: 15% 85%;
     padding: 0 .4rem;
-  
 
-    i{
+
+    i {
         text-align: center;
         line-height: 55px;
-        color: grey;
+        color: var(--mid-color);
         font-size: 1rem;
     }
 
 
 
-    input{
+    input {
         background: none;
         outline: none;
         border: none;
         line-height: 1;
         font-weight: 600;
         font-size: 1rem;
-        color: white;
+        color: var(--white);
     }
 }
 
-.input-list input::placeholder{
-    color: #aaa;
+.input-list input::placeholder {
+    color: var(--mid-color);
     font-weight: 500;
 }
 
-.btn{
+.btn {
     width: 150px;
     height: 49px;
     border: none;
     outline: none;
     border-radius: 50px;
     cursor: pointer;
-    background-color: #5995fd;
+    background-color: var(--main-theme);
     color: white;
     text-transform: uppercase;
     font-weight: 600;
@@ -130,38 +147,41 @@ form.sign-up-list{
 
 }
 
-.btn:hover{
-    background-color: #4d84e2;
+.btn:hover {
+    background-color: var(--main-theme);
 }
 
-.socialtext{
+.socialtext {
     padding: .7rem 0;
-    font-size:1rem ;
+    font-size: 1rem;
 }
-.social-media{
+
+.social-media {
     display: flex;
     justify-content: center;
 }
-.icon{
+
+.icon {
     height: 46px;
     width: 46px;
-    border: 1px solid #333;
+    border: 1px solid var(--main-theme);
     margin: 0 6px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #333;
+    color: var(--main-theme);
     border-radius: 50%;
     font-size: 1rem;
     transition: 0.3s;
 }
-.icon:hover{
-    color: #4d84e2;
-    border-color: #4d84e2;
+
+.icon:hover {
+    color: var(--black);
+    border-color: var(--black);
 }
 
-.container-panel{
+.container-panel {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -171,14 +191,14 @@ form.sign-up-list{
     grid-template-columns: repeat(2, 1fr);
 }
 
-.image{
+.image {
     width: 100%;
     transition: 1.1s .4s ease-in-out;
 }
 
-.panel{
+.panel {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
     text-align: center;
@@ -187,76 +207,83 @@ form.sign-up-list{
 
 
 
-    .content{
-        color: white;
+    .content {
+        color: var(--white);
         transition: .9s .6s ease-in-out;
     }
 
 
-    h3{
+    h3 {
         font-weight: 600;
         line-height: 1;
         font-size: 1.5rem;
 
     }
 
-    p{
+    p {
         font-size: 1rem;
         padding: 0.7rem 0;
     }
 }
 
-.btn.two{
+.btn.two {
     margin: 0;
     background: none;
-    border: 2px solid white;
+    border: 2px solid var(--white);
     width: 130px;
     height: 41px;
     font-weight: 600;
     font-size: 0.8rem;
 }
-.panel-left{
+
+.panel-left {
     padding: 3em 17% 2em 12%;
     pointer-events: all;
 }
-.panel-right{
+
+.panel-right {
     padding: 3em 12% 2em 17%;
     pointer-events: none;
 }
 
-.panel-right .content ,.panel-right .image{
+.panel-right .content,
+.panel-right .image {
     transform: translateX(800px);
 }
-.container.sign-up-mode:before{
+
+.container.sign-up-mode:before {
     transform: translate(100%, -50%);
-    right:52%;
+    right: 52%;
 }
 
 .container.sign-up-mode .panel-left .image,
-.container.sign-up-mode .panel-left .content{
+.container.sign-up-mode .panel-left .content {
     transform: translateX(-800px);
 }
 
 .container.sign-up-mode .panel-right .image,
-.container.sign-up-mode .panel-right .content{
+.container.sign-up-mode .panel-right .content {
     transform: translateX(0px);
 }
-.container.sign-up-mode .panel-left{
+
+.container.sign-up-mode .panel-left {
     pointer-events: none;
 }
-.container.sign-up-mode .panel-right{
+
+.container.sign-up-mode .panel-right {
     pointer-events: all;
 }
 
-.container.sign-up-mode .accountManagment{
+.container.sign-up-mode .accountManagment {
     left: 25%;
 }
-.container.sign-up-mode form.sign-in-list{
-    z-index:1;
+
+.container.sign-up-mode form.sign-in-list {
+    z-index: 1;
     opacity: 0;
 }
-.container.sign-up-mode form.sign-up-list{
-    z-index:2;
+
+.container.sign-up-mode form.sign-up-list {
+    z-index: 2;
     opacity: 1;
 }
-
