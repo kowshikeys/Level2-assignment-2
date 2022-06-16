@@ -1,13 +1,7 @@
 .filpro-containers {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  .fillter-container {
-    .ul {
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
-  .cards {
+  .card {
     img {
       width: 100%;
     }

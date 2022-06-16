@@ -1,15 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .product-details {
   margin: 20px;
 }
-
 .product-details .card {
   text-align: center;
-}
-/*# sourceMappingURL=productdetails.css.map */
+}/*# sourceMappingURL=productdetails.css.map */

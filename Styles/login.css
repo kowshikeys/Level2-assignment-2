@@ -3,8 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 input,
@@ -30,10 +29,7 @@ button {
   width: 640px;
   height: 100%;
   padding: 50px 30px 0;
-  -webkit-transition: -webkit-transform 1.2s ease-in-out;
-  transition: -webkit-transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
 }
 
 .sub-cont {
@@ -45,15 +41,11 @@ button {
   height: 100%;
   padding-left: 260px;
   background: #fff;
-  -webkit-transition: -webkit-transform 1.2s ease-in-out;
-  transition: -webkit-transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
 }
 
 .cont.s--signup .sub-cont {
-  -webkit-transform: translate3d(-640px, 0, 0);
-          transform: translate3d(-640px, 0, 0);
+  transform: translate3d(-640px, 0, 0);
 }
 
 button {
@@ -87,10 +79,7 @@ button {
   height: 100%;
   background-image: url(../Public/Assets/images/logo/gold-jewellery.jpg);
   background-size: cover;
-  -webkit-transition: -webkit-transform 1.2s ease-in-out;
-  transition: -webkit-transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
 }
 
 .img::after {
@@ -104,8 +93,7 @@ button {
 }
 
 .cont.s--signup .img::before {
-  -webkit-transform: translate3d(640px, 0, 0);
-          transform: translate3d(640px, 0, 0);
+  transform: translate3d(640px, 0, 0);
 }
 
 .img-text {
@@ -117,10 +105,7 @@ button {
   padding: 0 20px;
   text-align: center;
   color: #fff;
-  -webkit-transition: -webkit-transform 1.2s ease-in-out;
-  transition: -webkit-transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
 }
 
 .img-text h2 {
@@ -133,18 +118,15 @@ button {
 }
 
 .cont.s--signup .img-text.m--up {
-  -webkit-transform: translateX(520px);
-          transform: translateX(520px);
+  transform: translateX(520px);
 }
 
 .img-text.m--in {
-  -webkit-transform: translateX(-520px);
-          transform: translateX(-520px);
+  transform: translateX(-520px);
 }
 
 .cont.s--signup .img-text.m--in {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 .img-btn {
@@ -177,36 +159,24 @@ button {
   position: absolute;
   left: 0;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  -webkit-transition: -webkit-transform 1.2s;
-  transition: -webkit-transform 1.2s;
   transition: transform 1.2s;
-  transition: transform 1.2s, -webkit-transform 1.2s;
 }
 
 .img-btn span.m--in {
-  -webkit-transform: translateY(-72px);
-          transform: translateY(-72px);
+  transform: translateY(-72px);
 }
 
 .cont.s--signup .img-btn span.m--in {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .cont.s--signup .img-btn span.m--up {
-  -webkit-transform: translateY(72px);
-          transform: translateY(72px);
+  transform: translateY(72px);
 }
 
 h2 {
@@ -221,7 +191,6 @@ label {
   margin: 25px auto;
   text-align: center;
 }
-
 label span {
   font-size: 14px;
   font-weight: 600;
@@ -246,7 +215,6 @@ input {
   font-weight: 600;
   cursor: pointer;
 }
-
 .forgot-pass:hover {
   color: red;
 }
@@ -257,27 +225,21 @@ input {
 }
 
 .sign-in {
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
 .cont.s--signup .sign-in {
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 1.2s;
-          transition-duration: 1.2s;
-  -webkit-transform: translate3d(640px, 0, 0);
-          transform: translate3d(640px, 0, 0);
+  transition-timing-function: ease-in-out;
+  transition-duration: 1.2s;
+  transform: translate3d(640px, 0, 0);
 }
 
 .sign-up {
-  -webkit-transform: translate3d(-900px, 0, 0);
-          transform: translate3d(-900px, 0, 0);
+  transform: translate3d(-900px, 0, 0);
 }
 
 .cont.s--signup .sign-up {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .social-media {
@@ -285,19 +247,15 @@ input {
   text-align: center;
   margin-top: 20px;
 }
-
 .social-media ul {
   list-style: none;
 }
-
 .social-media ul li {
   display: inline-block;
   cursor: pointer;
   margin: 25px 20px;
 }
-
 .social-media ul li img {
   width: 40px;
   height: 40px;
-}
-/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=login.css.map */

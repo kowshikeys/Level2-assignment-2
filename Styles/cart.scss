@@ -1,0 +1,53 @@
+.product {
+  // background-color: pink;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  // text-align: center;
+  gap: 20px;
+  @media (max-width: 1000px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 900px) {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+  }
+  @media (max-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    background-image: url(../Public/Assets/images/home/mbg.jpg);
+    padding: 5px;
+    color: white;
+    .flex {
+      display: flex;
+    }
+    h2 {
+      margin: 10px 0;
+      text-transform: capitalize;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      white-space: normal;
+    }
+    .img {
+      max-width: 100%;
+      height: auto;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .button-flex {
+        display: flex;
+        justify-content: right;
+        gap: 10px;
+        button {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}

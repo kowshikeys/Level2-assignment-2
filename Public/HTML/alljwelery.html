@@ -171,211 +171,64 @@
         <div class="ul">
           <ul>
             <li><h1>filter</h1></li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('all')"
-              />all
-            </li>
+            <li onclick="filterProducts('necklace')">all</li>
           </ul>
           <ul>
             <li><h1>Jweller Type</h1></li>
-            <li onclick="filterProducts('chocker')">
-              <input type="checkbox" class="button-value" />
-              chocker
-            </li>
-            <li onclick="filterProducts('collor')">
-              <input type="checkbox" class="button-value" />
-              collor
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('bib')"
-              />bib
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('torque')"
-              />torque
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('pendent')"
-              />pendent
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('locket')"
-              />locket
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('matinee')"
-              />matinee
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('lariat')"
-              />lariat
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('charm')"
-              />charm
-            </li>
+            <li onclick="filterProducts('choker')">choker</li>
+            <li onclick="filterProducts('plastron')">plastron</li>
+            <li onclick="filterProducts('bib')">bib</li>
+            <li onclick="filterProducts('torque')">torque</li>
+            <li onclick="filterProducts('pendent')">pendent</li>
+            <li onclick="filterProducts('locket')">locket</li>
+            <li onclick="filterProducts('matinee')">matinee</li>
+            <li onclick="filterProducts('lariat')">lariat</li>
+            <li onclick="filterProducts('charm')">charm</li>
           </ul>
           <ul>
             <li><h1>pricing</h1></li>
-            <li onclick="filterProducts('all')">
-              <input type="checkbox" class="button-value" />₹100 - ₹500
-            </li>
-            <li onclick="filterProducts('all')">
-              <input type="checkbox" class="button-value" />₹500 - ₹1000
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('all')"
-              />₹1000 - ₹5000
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('all')"
-              />₹5000 - ₹10000
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('all')"
-              />₹10000 - ₹100000
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('all')"
-              />above ₹100000
-            </li>
+            <div class="pricing">
+              <div class="price-input">
+                <input
+                  id="startPrice"
+                  type="number"
+                  placeholder="starting price"
+                />
+                <input id="endPrice" type="number" placeholder="ending price" />
+              </div>
+              <button id="searchPrice">search</button>
+            </div>
           </ul>
           <ul>
             <li><h1>metal</h1></li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('gold')"
-              />gold
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('yellow gold')"
-              />yellow gold
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('silver')"
-              />silver
-            </li>
+            <li onclick="filterProducts('gold')">gold</li>
+            <li onclick="filterProducts('yellow gold')">yellow gold</li>
+            <li onclick="filterProducts('silver')">silver</li>
           </ul>
           <ul>
             <li><h1>stone</h1></li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('american diamond')"
-              />american diamond
+            <li onclick="filterProducts('american diamond')">
+              american diamond
             </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('diamond')"
-              />diamond
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('ruby')"
-              />ruby
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('emerald')"
-              />Emerald
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('pearls')"
-              />pearls
-            </li>
+            <li onclick="filterProducts('diamond')">diamond</li>
+            <li onclick="filterProducts('ruby')">ruby</li>
+            <li onclick="filterProducts('emerald')">Emerald</li>
+            <li onclick="filterProducts('pearls')">pearls</li>
           </ul>
           <ul>
             <li><h1>material</h1></li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('beads')"
-              />beads
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('thread')"
-              />thread
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('silk')"
-              />silk
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                class="button-value"
-                onclick="filterProducts('leather')"
-              />leather
-            </li>
+            <li onclick="filterProducts('beads')">beads</li>
+            <li onclick="filterProducts('thread')">thread</li>
+            <li onclick="filterProducts('silk')">silk</li>
+            <li onclick="filterProducts('leather')">leather</li>
           </ul>
         </div>
       </div>
-      <div class="cards">
+      <div class="card">
         <img src="../Assets/images/home/diamond_jewellery_designs.jpg" alt="" />
         <div id="products_container" class="product"></div>
         <div id="filtered_products_container" class="product"></div>
-        <div class="filter"></div>
+        <div id="filter-pricing" class="product"></div>
       </div>
     </section>
 

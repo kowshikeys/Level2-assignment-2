@@ -1,42 +1,35 @@
-.filpro-containers {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-}
-.filpro-containers .card img {
-  width: 100%;
-}
-.filpro-containers .card .product {
+.product {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 @media (max-width: 1000px) {
-  .filpro-containers .card .product {
+  .product {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 900px) {
-  .filpro-containers .card .product {
+  .product {
     display: grid;
     grid-template-columns: repeat(2, 0.5fr);
   }
 }
 @media (max-width: 600px) {
-  .filpro-containers .card .product {
+  .product {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.filpro-containers .card .product .card {
+.product .card {
   background-image: url(../Public/Assets/images/home/mbg.jpg);
   padding: 5px;
   color: white;
 }
-.filpro-containers .card .product .card .flex {
+.product .card .flex {
   display: flex;
 }
-.filpro-containers .card .product .card h2 {
+.product .card h2 {
   margin: 10px 0;
   text-transform: capitalize;
   overflow: hidden;
@@ -46,19 +39,19 @@
   -webkit-box-orient: vertical;
   white-space: normal;
 }
-.filpro-containers .card .product .card .img {
+.product .card .img {
   max-width: 100%;
   height: auto;
 }
-.filpro-containers .card .product .card .row {
+.product .card .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.filpro-containers .card .product .card .row .button-flex {
+.product .card .row .button-flex {
   display: flex;
   justify-content: right;
   gap: 10px;
 }
-.filpro-containers .card .product .card .row .button-flex button {
+.product .card .row .button-flex button {
   padding: 0 20px;
-}/*# sourceMappingURL=products.css.map */
+}/*# sourceMappingURL=cart.css.map */

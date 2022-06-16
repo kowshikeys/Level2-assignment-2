@@ -2,7 +2,7 @@ const products = [
   {
     id: 1,
     title: "Statement Designer bib pearl kundan necklace set",
-    price: "₹ 5355.00",
+    price: 5355.05,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -15,7 +15,7 @@ const products = [
   {
     id: 2,
     title: "Sansar India Bib Necklace for Girls (Silver) (410A)",
-    price: "₹ 399.00",
+    price: 399.12,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -29,7 +29,7 @@ const products = [
     id: 3,
     title:
       "Fstrend Fashion Openwork Bib Necklace Gold Fish Scale Sequins Chain Statement Necklaces Jewelry for Women and Girls (Black)",
-    price: "₹ 1000.00",
+    price: 1000.23,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -40,7 +40,7 @@ const products = [
   {
     id: 4,
     title: "The Serina Necklace",
-    price: "₹ 6409.00",
+    price: 6409.04,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -54,7 +54,7 @@ const products = [
   {
     id: 5,
     title: "The Ariella Lariat Necklace",
-    price: "₹ 25063.00",
+    price: 25063.13,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -67,7 +67,7 @@ const products = [
   {
     id: 6,
     title: "Gold Butterfly Lariat Necklace",
-    price: "₹ 355.00",
+    price: 355.98,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -79,7 +79,7 @@ const products = [
   {
     id: 7,
     title: "Dual Sway Gemstone Necklace",
-    price: "₹ 81052.00",
+    price: 81052.98,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -93,7 +93,7 @@ const products = [
   {
     id: 8,
     title: "The Meliza Lariat Necklace",
-    price: "₹ 36057.00",
+    price: 36057.64,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -106,8 +106,8 @@ const products = [
   },
   {
     id: 9,
-    title: "GOLD CHAIN & EVIL EYE LARIAT NECKLACE SET",
-    price: "₹ 525.00",
+    title: "gold chain & evil eye lariat necklace set",
+    price: 525.03,
     cart: "cart",
     buy: "buy",
     category: "silk",
@@ -121,7 +121,7 @@ const products = [
   {
     id: 10,
     title: "Blossom Coin Lariat Necklace in Rose Gold",
-    price: "₹ 5447.00",
+    price: 5447.09,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -133,7 +133,7 @@ const products = [
   {
     id: 11,
     title: "The Hiwaya Necklace",
-    price: "₹ 48004.00",
+    price: 48004.98,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -145,7 +145,7 @@ const products = [
   {
     id: 12,
     title: "The Sheen Necklace",
-    price: "₹ 52840.00",
+    price: 52840.64,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -157,7 +157,7 @@ const products = [
   {
     id: 13,
     title: "Lilia Y necklace",
-    price: "₹ 12500.00",
+    price: 12500.95,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -168,7 +168,7 @@ const products = [
   {
     id: 14,
     title: "Large Chakra Locket Necklace",
-    price: "₹ 7343.00",
+    price: 7343.85,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -180,7 +180,7 @@ const products = [
   {
     id: 15,
     title: "Sterling Silver and Peridot Locket Necklace",
-    price: "₹ 6227.00",
+    price: 6227.05,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -192,7 +192,7 @@ const products = [
     id: 16,
     title:
       "Folding Photo Box Necklace 4 Photos Locket Necklace with Chain and Clasp,oval Shape Locket Necklace",
-    price: "₹ 233.00",
+    price: 233.72,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -205,7 +205,7 @@ const products = [
     id: 17,
     title:
       "Heart locket necklace with photo and engraving , Stainless Steel locket necklace, Engraved Locket, gift for her, memorial gift",
-    price: "₹ 2639.00",
+    price: 2639.3,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -217,7 +217,7 @@ const products = [
   {
     id: 18,
     title: "Personalised Silver Locket Necklace With Bee Charm",
-    price: "₹ 7009.00",
+    price: 7009.09,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -241,7 +241,7 @@ const products = [
   {
     id: 21,
     title: "Elegant Simple Black Thread Necklace",
-    price: "₹ 1800.00",
+    price: 1800.02,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -253,7 +253,7 @@ const products = [
   {
     id: 22,
     title: "Silk Thread Handmade Necklace And Earrings Jewellery Set In Golden",
-    price: "₹ 1440.00",
+    price: 1440.93,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -265,7 +265,7 @@ const products = [
   {
     id: 23,
     title: "Red & Gold-Toned Handmade Silk Thread Necklace",
-    price: "₹ 449.00",
+    price: 449.63,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -278,7 +278,7 @@ const products = [
     id: 24,
     title:
       "Beautiful Multi Color Silk Thread Ganesha Designer Pendant Necklace",
-    price: "₹ 850.00",
+    price: 850.94,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -290,7 +290,7 @@ const products = [
   {
     id: 25,
     title: "Multicolored Beaded Layered Necklace",
-    price: "₹ 4800.00",
+    price: 4800.53,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -302,7 +302,7 @@ const products = [
   {
     id: 26,
     title: "Paparazzi ~ Life of the FIESTA Multi Color Necklace",
-    price: "₹ 100.00",
+    price: 100.84,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -313,7 +313,7 @@ const products = [
   {
     id: 27,
     title: "Leaf-Design Bead Statement Collar Necklace",
-    price: "₹ 480.00",
+    price: 480.84,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -324,7 +324,7 @@ const products = [
   {
     id: 28,
     title: "Multi coloured beads necklace earring set designer beaded jewelry",
-    price: "₹ 1753.00",
+    price: 1753.61,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -335,8 +335,8 @@ const products = [
   },
   {
     id: 29,
-    title: "BRASS THREAD MATINEE NECKLACE D8C",
-    price: "₹ 3550.00",
+    title: "brass thread matinee necklace D8C",
+    price: 3550.53,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -347,7 +347,7 @@ const products = [
   {
     id: 30,
     title: "Paper Blue Matinee Necklace",
-    price: "₹ 790.00",
+    price: 790.67,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -357,8 +357,8 @@ const products = [
   },
   {
     id: 31,
-    title: "BRASS THREAD MATINEE NECKLACE",
-    price: "₹ 2550.00",
+    title: "brass thread matinee necklace ",
+    price: 2550.87,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -368,8 +368,8 @@ const products = [
   },
   {
     id: 32,
-    title: "SIGNORA CHAIN MATINEE NECKLACE",
-    price: "₹ 38300.00",
+    title: "signore chain matinee necklace",
+    price: 38300.46,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -382,7 +382,7 @@ const products = [
     id: 33,
     title:
       "Long aquamarine chain gold with matt intermediate parts, extraordinary design, versatile combinable top matinee chain for evening",
-    price: "₹ 32258.00",
+    price: 32258.92,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -395,7 +395,7 @@ const products = [
     id: 34,
     title:
       "Multicoloured semiprecious gemstone necklace with real gems and matt gold vermeil beads",
-    price: "₹ 3293.00",
+    price: 3293.36,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -408,7 +408,7 @@ const products = [
     id: 35,
     title:
       "Baroque Pearl necklace, White Pearl Necklace with 24K gold plated clasp Gift for her Matinee Length Necklaces Wedding pearls jewelry",
-    price: "₹ 17921.00",
+    price: 17921.42,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -421,7 +421,7 @@ const products = [
     id: 36,
     title:
       "Argentium Sterling Silver Byzantine weave and Lampwork Glass Chainmaille Necklace -Handmade - Anniversary",
-    price: "₹ 22798.00",
+    price: 22798.37,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -434,7 +434,7 @@ const products = [
     id: 37,
     title:
       "Lilac Flower Swarovski Crystal Japanese Beads Pendent Matinee Charm Necklace",
-    price: "₹ 16111.00",
+    price: 16111.49,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -446,7 +446,7 @@ const products = [
   {
     id: 38,
     title: "a unique pendant on a black dress",
-    price: "₹ 1450.00",
+    price: 1450.38,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -458,7 +458,7 @@ const products = [
   {
     id: 39,
     title: "Spring Rain Drop Necklace",
-    price: "₹ 1740.00",
+    price: 1740.48,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -471,7 +471,7 @@ const products = [
     id: 40,
     title:
       "Vintage Korea Graduated Gold-Tone Bead Necklace, Mid Century Matinee Length",
-    price: "₹ 2500.00",
+    price: 2500.29,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -483,7 +483,7 @@ const products = [
   {
     id: 41,
     title: "Basil Agate Matinee Charm Necklace",
-    price: "₹ 11273.00",
+    price: 11273.18,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -496,7 +496,7 @@ const products = [
     id: 42,
     title:
       "Women Long Sweater Chain Bohemia Nepal Style Wood Bead Necklace Pendant",
-    price: "₹ 1748.00",
+    price: 1748.48,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -508,7 +508,7 @@ const products = [
   {
     id: 43,
     title: "Black and White Elegant Matinee Length Necklace and Earring Set",
-    price: "₹ 675.00",
+    price: 675.94,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -520,7 +520,7 @@ const products = [
   {
     id: 44,
     title: "14 k Gold Pineapple Pendant on 19-Inch 14 k Gold Chain",
-    price: "₹ 100070.00",
+    price: 100070.87,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -533,7 +533,7 @@ const products = [
     id: 45,
     title:
       "Plastron necklace in golden leather and rooster feathers and pheasant",
-    price: "₹ 14500.00",
+    price: 14500.91,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -544,8 +544,8 @@ const products = [
   },
   {
     id: 46,
-    title: "Choker necklace torque",
-    price: "₹ 3059.00",
+    title: "choker necklace torque",
+    price: 3059.19,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -557,7 +557,7 @@ const products = [
   {
     id: 47,
     title: "Torque flat collar Hammered and smooth brass - Boho, boho chic",
-    price: "₹ 1534.00",
+    price: 1534.74,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -569,7 +569,7 @@ const products = [
   {
     id: 48,
     title: "Silver necklace plastron deer and silver key",
-    price: "₹ 1321.00",
+    price: 1321.48,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -582,7 +582,7 @@ const products = [
     id: 49,
     title:
       "Necklace plastron pearls Egyptian style golden and vintage blue 1960's",
-    price: "₹ 5964.00",
+    price: 5964.49,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -594,7 +594,7 @@ const products = [
   {
     id: 50,
     title: "Multicolor necklace in african loincloth fabric for women",
-    price: "₹ 3408.00",
+    price: 3408.52,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -606,7 +606,7 @@ const products = [
   {
     id: 51,
     title: "Ethnic Wood Alloy Leaf Pendant Necklaces",
-    price: "₹ 1717.00",
+    price: 1717.49,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -618,7 +618,7 @@ const products = [
   {
     id: 52,
     title: "Blue Sandstone Moon Phase Necklace - Charm Necklace ",
-    price: "₹ 1931.00",
+    price: 1931.99,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -629,7 +629,7 @@ const products = [
   {
     id: 53,
     title: "vintage zodiac charm necklaces",
-    price: "₹ 14976.00",
+    price: 14976.49,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -641,7 +641,7 @@ const products = [
   {
     id: 54,
     title: "Bee Necklace, HoneyBee Charm Necklace Silver",
-    price: "₹ 3948.00",
+    price: 3948.4,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -653,7 +653,7 @@ const products = [
   {
     id: 55,
     title: "Moonstone Astronaut Necklace, Spacemen Charm Necklace",
-    price: "₹ 1354.00",
+    price: 1354.92,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -664,7 +664,7 @@ const products = [
   {
     id: 56,
     title: "Family Charm Necklace",
-    price: "₹ 2804.00",
+    price: 2804.95,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -677,7 +677,7 @@ const products = [
     id: 57,
     title:
       "Tassel Necklace. Leather Tassel Necklace. Turquoise Orange Aqua Tassel Necklace. Long Tassel Necklace. Boho Tassel Jewelry.",
-    price: "₹ 3707.00",
+    price: 3707.65,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -690,7 +690,7 @@ const products = [
     id: 58,
     title:
       "Nefertiti’s Boo Thang Beaded Necklace - 36 inches with a 6 inch tassel",
-    price: "₹ 18180.00",
+    price: 18180.78,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -703,7 +703,7 @@ const products = [
     id: 59,
     title:
       "Pink Bohemian Tassel Necklace, Hippie Necklace, Gold and Pink Pendant, Fabric Tassel Necklace, Pink Lover Gifts, Pink Jewelry",
-    price: "₹ 2010.00",
+    price: 2010.57,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -716,7 +716,7 @@ const products = [
     id: 60,
     title:
       "Tassel Necklace, Sea Green Silk Tassel and Gold Feather Pendant Necklace, Feather Charm, Gold Necklace, Boho Necklace, Funky Jewellery",
-    price: "₹ 3007.00",
+    price: 3007.74,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -728,7 +728,7 @@ const products = [
   {
     id: 61,
     title: "Torque Brass Necklace -Labradorite Leaf",
-    price: "₹ 5709.00",
+    price: 5709.52,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -741,7 +741,7 @@ const products = [
     id: 62,
     title:
       "Gold-Plated Necklace Set with Goddess Lakshmi & Ganesha Design Motif",
-    price: "₹ 6580.00",
+    price: 6580.55,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -753,7 +753,7 @@ const products = [
   {
     id: 63,
     title: "Antique Necklace 137743",
-    price: "₹ 5450.00",
+    price: 5450.4,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -765,7 +765,7 @@ const products = [
   {
     id: 64,
     title: "Antique Bridal Necklace Set for Women",
-    price: "₹ 1621.00",
+    price: 1621.49,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -778,7 +778,7 @@ const products = [
     id: 65,
     title:
       "22K Jadtar Necklace Set (55.3 gms) - Antique Jewellery for Women by Jewelegance (JGS-2001-00293)",
-    price: "₹ 305984.00",
+    price: 305984.7,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -790,7 +790,7 @@ const products = [
   {
     id: 66,
     title: "Shrinika Antique Choker",
-    price: "₹ 320625.00",
+    price: 320625.96,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -803,7 +803,7 @@ const products = [
     id: 67,
     title:
       "Antique Gold Necklace/Indian choker/South Indian Necklace/ Ganesha Necklace/ Bridal Necklace/Temple Jewelry/Temple Necklace/Amrapali/Wedding",
-    price: "₹ 10921.00",
+    price: 10921.78,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -815,7 +815,7 @@ const products = [
   {
     id: 68,
     title: "Varunika Choker",
-    price: "₹ 307892.00",
+    price: 307892.864,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -828,7 +828,7 @@ const products = [
     id: 69,
     title:
       "Victorian Choker/Green uncut Kundan Choker /Meenakari Choker /Indian Rajasthani Choker /Indian Necklace/Pakistani jewelry/Sabyasachi jewelry",
-    price: "₹ 7198.00",
+    price: 7198.39,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -841,7 +841,7 @@ const products = [
     id: 70,
     title:
       "Meenakari Kundan Necklace, Kundan Choker, Aqua Pink choker ,Rajasthani jewelry , Polki choker, Indian Jewelry, Indian Necklace ,Sabyasachi",
-    price: "₹ 5596.00",
+    price: 5596.53,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -853,7 +853,7 @@ const products = [
   {
     id: 71,
     title: "Navya Necklace Set",
-    price: "₹ 596867.00",
+    price: 596867.57,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -865,7 +865,7 @@ const products = [
   {
     id: 72,
     title: "Ragi Diamond Necklace Set",
-    price: "₹ 536828.00",
+    price: 536828.543,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -877,7 +877,7 @@ const products = [
   {
     id: 73,
     title: "Extremely beautiful and versatile, this Diamond necklace",
-    price: "₹ 345625.00",
+    price: 345625.35,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -889,7 +889,7 @@ const products = [
   {
     id: 74,
     title: "ALLURING ROYAL BRIDAL CHOKER",
-    price: "₹ 507621.00",
+    price: 507621.47,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -901,7 +901,7 @@ const products = [
   {
     id: 75,
     title: "MAJESTIC ETHNIC ROYAL GOLD HAAR",
-    price: "₹ 2410783.00",
+    price: 2410783.965,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -913,7 +913,7 @@ const products = [
   {
     id: 76,
     title: "Antique Necklace 143056",
-    price: "₹ 6950.00",
+    price: 6950.46,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -924,7 +924,7 @@ const products = [
   {
     id: 77,
     title: "AAA+ Zircon Jewelry sets ",
-    price: "₹ 6595.00",
+    price: 6595.57,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -935,7 +935,7 @@ const products = [
   {
     id: 78,
     title: "Peacock diamond haram",
-    price: "₹ 583929.00",
+    price: 583929.75,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -947,7 +947,7 @@ const products = [
   {
     id: 79,
     title: "Wedding Brass American Diamond Necklace ",
-    price: "₹ 755343.00",
+    price: 755343.83,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -959,7 +959,7 @@ const products = [
   {
     id: 80,
     title: "American Diamond Ruby Necklace",
-    price: "₹ 12999.00",
+    price: 12999.74,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -971,7 +971,7 @@ const products = [
   {
     id: 81,
     title: "AD Peacock Ruby White Necklace",
-    price: "₹ 976.00",
+    price: 976.37,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -983,7 +983,7 @@ const products = [
   {
     id: 82,
     title: "Peacock Pearl Choker",
-    price: "₹ 5368.00",
+    price: 5368.68,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -995,7 +995,7 @@ const products = [
   {
     id: 83,
     title: "Ruby Matt Necklace",
-    price: "₹ 1772.00",
+    price: 1772.0,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1007,7 +1007,7 @@ const products = [
   {
     id: 84,
     title: "Round Pearl Oxidised Choker",
-    price: "₹ 2134.00",
+    price: 2134.28,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1019,7 +1019,7 @@ const products = [
   {
     id: 85,
     title: "Ruby Stone Short Necklace",
-    price: "₹ 543.00",
+    price: 543.38,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1031,7 +1031,7 @@ const products = [
   {
     id: 86,
     title: "Lakshmi Green Bead Pearl Bridal Necklace",
-    price: "₹ 3980.00",
+    price: 3980.39,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1043,7 +1043,7 @@ const products = [
   {
     id: 87,
     title: "Simple Emerald Necklace",
-    price: "₹ 1000.00",
+    price: 1000.92,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1055,7 +1055,7 @@ const products = [
   {
     id: 88,
     title: "Emerald Gold Short Necklace",
-    price: "₹ 1298.00",
+    price: 1298.83,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1067,7 +1067,7 @@ const products = [
   {
     id: 89,
     title: "Antique Bridal Peacock Ruby necklace",
-    price: "₹ 5330.00",
+    price: 5330.4,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1079,7 +1079,7 @@ const products = [
   {
     id: 90,
     title: "Bridal Green Pearl Dasavatharam Necklace Set With Jhumka",
-    price: "₹ 3980.00",
+    price: 3980.3,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1091,7 +1091,7 @@ const products = [
   {
     id: 91,
     title: "Ruby Emerald Grand Choker",
-    price: "₹ 3880.00",
+    price: 3880.32,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1103,7 +1103,7 @@ const products = [
   {
     id: 92,
     title: "Layered Ruby Necklace",
-    price: "₹ 2798.00",
+    price: 2798.97,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1115,7 +1115,7 @@ const products = [
   {
     id: 93,
     title: "American Diamond Peacock Necklace",
-    price: "₹ 1880.00",
+    price: 1880.98,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1127,7 +1127,7 @@ const products = [
   {
     id: 94,
     title: "Ruby Green Pearl Gold Plated Choker Set",
-    price: "₹ 1180.00",
+    price: 1180.3,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1139,7 +1139,7 @@ const products = [
   {
     id: 95,
     title: "Bridal American Diamond Necklace Emerald",
-    price: "₹ 3585.00",
+    price: 3585.49,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1151,7 +1151,7 @@ const products = [
   {
     id: 96,
     title: "Ruby Kids AD Choker",
-    price: "₹ 1735.00",
+    price: 1735.81,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1163,7 +1163,7 @@ const products = [
   {
     id: 97,
     title: "Emerald Leaf AD Short Necklace",
-    price: "₹ 2699.00",
+    price: 2699.02,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1175,7 +1175,7 @@ const products = [
   {
     id: 98,
     title: "Pearl Gold Ball Chain",
-    price: "₹ 1578.00",
+    price: 1578.302,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1187,7 +1187,7 @@ const products = [
   {
     id: 99,
     title: "14k Yellow Gold Emerald and Diamond Necklace",
-    price: "₹ 192812.00",
+    price: 192812.836,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1199,7 +1199,7 @@ const products = [
   {
     id: 100,
     title: "Simulated Emerald Green Necklace",
-    price: "₹ 26775.00",
+    price: 26775.01,
     cart: "cart",
     buy: "buy",
     like: "like",
@@ -1210,16 +1210,16 @@ const products = [
   },
 ];
 
-let newdata = products.filter(function (el) {
-  return el.price >= 1250 && e1.Price <= 29800;
-});
-console.log(newdata);
-
 const filter = document.querySelector("#chocker");
-const filtered = document.querySelector(".filter");
+const filterPricing = document.querySelector("#filter-pricing");
 const product = document.querySelector("#products_container");
 const filteredProduct = document.querySelector("#filtered_products_container");
+const searchPrice = document.querySelector("#searchPrice");
+const startPrice = document.querySelector("#startPrice");
+const endPrice = document.querySelector("#endPrice");
+const cardElement = document.querySelectorAll(".card-parent");
 
+//display products
 window.onload = () => {
   for (let pro of products) {
     const a = document.createElement("div");
@@ -1235,6 +1235,8 @@ window.onload = () => {
     a.onclick = () => {
       window.location.href = `http://127.0.0.1:5500/Public/HTML/productdetails.html?id=${pro.id}`;
     };
+    a.classList.add("card-parent");
+
     card.classList.add("card");
     title.innerHTML = pro.title;
     title.classList.add("title");
@@ -1288,11 +1290,12 @@ window.onload = () => {
   }
 };
 
+// filter products
 function filterProducts(values) {
   console.log(values);
   function filterByValue(products, term) {
     var ans = products.filter(function (v, i) {
-      if (v.title.toLowerCase().indexOf(term) >= 0) {
+      if (v.title.toLowerCase().includes(term)) {
         return true;
       } else false;
     });
@@ -1301,9 +1304,86 @@ function filterProducts(values) {
   const filteredValues = filterByValue(products, values);
   console.log(filteredValues);
 
+  // filterPricing.remove();
+  product.remove();
+  for (let pro of filteredValues) {
+    const a = document.createElement("div");
+    const card = document.createElement("div");
+    const image = document.createElement("img");
+    const row = document.createElement("div");
+    const buttonFlex = document.createElement("div");
+    const like = document.createElement("button");
+    const buy = document.createElement("button");
+    const title = document.createElement("h2");
+    const price = document.createElement("h3");
+
+    a.onclick = () => {
+      window.location.href = `http://127.0.0.1:5500/Public/HTML/productdetails.html?id=${pro.id}`;
+    };
+    a.classList.add("card-parent");
+    card.classList.add("card");
+    title.innerHTML = pro.title;
+    title.classList.add("title");
+    image.src = pro.image;
+    image.classList.add("img");
+    like.innerHTML = pro.cart;
+    buy.innerHTML = pro.buy;
+    price.innerHTML = pro.price;
+    price.classList.add("price");
+    row.classList.add("row");
+    buttonFlex.classList.add("button-flex");
+
+    like.addEventListener("click", function (e) {
+      e.stopPropagation();
+
+      const oldCart = JSON.parse(localStorage.getItem("like"));
+
+      if (!oldCart) {
+        localStorage.setItem("like", JSON.stringify([pro.id]));
+        return;
+      }
+
+      const isOldId = oldCart.find((p) => p === pro.id);
+
+      if (isOldId) {
+        const filteredData = oldCart.filter((p) => p !== pro.id);
+        localStorage.setItem("like", JSON.stringify(filteredData));
+        like.innerHTML = "cart";
+        return;
+      }
+
+      oldCart.push(pro.id);
+      localStorage.setItem("like", JSON.stringify(oldCart));
+      like.innerHTML = "remove";
+    });
+
+    buy.addEventListener("click", function (e) {
+      e.stopPropagation();
+      window.location.href = "http://127.0.0.1:5500/Public/HTML/checkout.html";
+    });
+
+    a.appendChild(card);
+    filteredProduct.appendChild(a);
+    card.appendChild(image);
+    card.appendChild(title);
+    card.appendChild(row);
+    row.appendChild(price);
+    row.appendChild(buttonFlex);
+    buttonFlex.appendChild(like);
+    buttonFlex.appendChild(buy);
+  }
+}
+
+//pricing filter
+
+searchPrice.addEventListener("click", function () {
+  let filteredMenu = products.filter(function (menu) {
+    return menu.price >= startPrice.value && menu.price <= endPrice.value;
+  });
+  console.log(filteredMenu);
   product.remove();
 
-  for (let pro of filteredValues) {
+  for (let pro of filteredMenu) {
     const a = document.createElement("div");
     const card = document.createElement("div");
     const image = document.createElement("img");
@@ -1359,7 +1439,7 @@ function filterProducts(values) {
     });
 
     a.appendChild(card);
-    filteredProduct.appendChild(a);
+    filterPricing.appendChild(a);
     card.appendChild(image);
     card.appendChild(title);
     card.appendChild(row);
@@ -1368,4 +1448,4 @@ function filterProducts(values) {
     buttonFlex.appendChild(like);
     buttonFlex.appendChild(buy);
   }
-}
+});
