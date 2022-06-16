@@ -1,7 +1,7 @@
 const products = [
   {
     id: 1,
-    title: "Padmaavat Collections: Special Jewellery Design for Padmavati",
+    title: "Padmaavat Collections: Special Gold Jewellery Design for Padmavati",
     price: 109.95,
     description:
       "Antique Floral Necklace with Kundan Stones crafted in 22 Karat Yellow Gold",
@@ -32,7 +32,7 @@ const products = [
   },
   {
     id: 3,
-    title: "South India Jewellery",
+    title: "South India Gold Jewellery",
     price: 55.99,
     description:
       "Matt Finish Gold Antique Mango Mala Designs, Matt Finish Indian Necklace Designs",
@@ -48,7 +48,7 @@ const products = [
   },
   {
     id: 4,
-    title: "Peacock Necklace",
+    title: "Peacock Gold Jewellery",
     price: 15.99,
     description:
       "We offers an exclusive collection of finest quality 63632 CZ Peacock Necklace with matte gold plating Fashion Jewellery manufacturer in india.",
@@ -253,7 +253,7 @@ const products = [
   },
   {
     id: 17,
-    title: "Jiayijiaduo Glamour Women's Wedding Jewelry set Silver color",
+    title: "Jiayijiaduo Glamour Women's Wedding Jewelry set Silver Necklace",
     price: 39.99,
     description:
       "Quality accessories with free worldwide shipping. Jewelry gifts and the best choice to match your daily style. Find products of Jewelry set.",
@@ -491,7 +491,7 @@ const products = [
   },
   {
     id: 34,
-    title: "Silver Plated Floral Fantasy Pearl Bridal Jewellery",
+    title: "Silver Plated Floral Fantasy Pearl Diamond Necklace",
     price: 12.99,
     description:
       "Floral Fantasy Pearl Bridal Jewelry Set This beautiful Bridal jewelry set features creamy freshwater pearls, marquise cut rhinestones and brilliant round clear and ab rhinestones in a delightful silver plated floral pattern. ",
@@ -600,7 +600,7 @@ const products = [
   },
   {
     id: 41,
-    title: "Green Silk Thread Jewellery ",
+    title: "Green Silk Thread Necklace",
     price: 12.99,
     description:
       "This set contains: 1 Necklace 1 pair of earring 1 Bangle set A fine thread of silk woven into a lustrous form of jewellery is silk thread",
@@ -616,7 +616,7 @@ const products = [
   },
   {
     id: 42,
-    title: "Blue and Black Silk Thread",
+    title: "Blue and Black Silk Thread Necklace",
     price: 12.99,
     description:
       "Buy Krishna Collection Trendy Blue & Black silk Thread Jewellery.",
@@ -648,7 +648,8 @@ const products = [
   },
   {
     id: 44,
-    title: "Anique yellow - green silk thread peacock designer Necklace",
+    title:
+      "Anique yellow - green silk thread necklace peacock designer Necklace",
     price: 12.99,
     description:
       "Product includes A Necklace and pair of Earrings, A Necklace comes with a dori.",
@@ -664,7 +665,7 @@ const products = [
   },
   {
     id: 45,
-    title: "Beautiful handmade silk thread green lue peacocl necklace",
+    title: "Beautiful handmade silk thread necklace green lue peacocl necklace",
     price: 12.99,
     description:
       "DREAMJWELL Comes in Multicolor color with 1 nacklace:1 pair of earrings.",
@@ -680,7 +681,7 @@ const products = [
   },
   {
     id: 46,
-    title: "Beautiful Blue Silk Thread Peacock Necklace",
+    title: "Beautiful Blue Silk Thread necklace Peacock Necklace",
     price: 12.99,
     description:
       "The Product includes A Pair of Earrings - Length: 5cm, Width: 2.5 cm A Necklace-Lenght:34 cm Earrings Types.",
@@ -696,7 +697,7 @@ const products = [
   },
   {
     id: 47,
-    title: "Unique Designer handmade black white peacock silk thread jewellery",
+    title: "Unique Designer handmade black white peacock silk thread necklace",
     price: 12.99,
     description:
       "Dreamjwell of DREAMJWELL Comes in multicolor color with 1 Nacklace: 1 pair od earings.",
@@ -712,7 +713,7 @@ const products = [
   },
   {
     id: 48,
-    title: "Beautiful Green Silk Thread",
+    title: "Beautiful Green Silk Thread Necklace",
     price: 12.99,
     description:
       "The Product includes A Necklace - Lenght: 15cm A pair of Earrings - Length: 3.5cm Earrings type.",
@@ -1130,22 +1131,214 @@ const products = [
   },
   {
     id: 74,
-    title:
-      "What Is Druzy Jewelry? Here's What You Need to Know | Emmaline Bride ",
+    title: "Pink Gold Tone Kundan Inspired Beads Necklace",
     price: 12.99,
     description:
-      "what is druzy jewelry? We'll share some of our favorite (handmade!) druzy jewelry pieces tell you where to get your hands on and tell you why this.",
+      "Buy Pink Golden Gold Tone Kundan Inspired Beads Necklace Silver Copper Alloy Beaded Fashion Jewelry Necklace / Pendants And Glittering Necklace.",
     category: "Jewellery",
     cart: "cart",
     buy: "buy",
     image:
-      "https://i.pinimg.com/originals/fb/50/8b/fb508bf4994a5804365de3a2d53efa1f.jpg",
+      "https://static.jaypore.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/s/pspjwf30015635-1_1.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 75,
+    title: "Multi Coloured Beads Necklace",
+    price: 12.99,
+    description:
+      "Buy Multi Coloured beads necklace earring set designer beaded jewelry online in india at Rs.1950, available only at Azilaa.com ",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "http://www.azilaa.com/pics/Modern-Multi-agate-gemstone-handmade-silver-necklace-set-41347_1_full.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 76,
+    title: "Green Emerald Beaded Necklace",
+    price: 12.99,
+    description:
+      "Buy Green Emerald Beaded Necklace Beads Fashion Jewelry Necklace ? Pendants Shine All Season Sparkly Kundan inspired Pearl studded to complete.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://static.jaypore.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/m/y/mynjwf30014923-1_3.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 77,
+    title: "Beads Necklace",
+    price: 12.99,
+    description:
+      "This Beautiful Luxury look beads in blue color gives the Perfect bold and dashing looks, its perfect for any traditional occasion, and makes a bold",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "http://cdn.shopify.com/s/files/1/0269/0554/2755/products/8.1_8ba64ec2-de9f-49b2-86d8-76b3333a65d3_grande.jpg?v=1647412039",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 78,
+    title: "Beads Necklace Designs",
+    price: 12.99,
+    description:
+      "Designer handcrafted Semi - Precious long muli - Layered Pearls and red jade beads necklace from the house of the Gehna shop.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://gehnashop.com/wp-content/uploads/2021/05/IMG-20210512-WA0000-e1620985421810.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 79,
+    title: "Real Kemp Agate Beads Pendant Necklace ~ South India Jewels",
+    price: 12.99,
+    description:
+      "Check out this beautiful real kemp agate beads pendant necklace that you can shop from shop.southindiajewels.com.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://i.pinimg.com/736x/c8/be/b5/c8beb5ee6c249463297e88cfd66dea9d.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 80,
+    title:
+      "Soft Pink Flower indo western Pendant Necklace set at Rs. 1550 | Azilaa",
+    price: 12.99,
+    description:
+      "Gorgeous soft pink modern flower indo western pendant gemstone necklace set. For fashionista in you! Enjoy and have fun !! Great as gifts!!",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://www.azilaa.com/pics/PINK-agate-necklace-earrings-set-antique-gold-tone-42616_1_3.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 81,
+    title: "Agate Bead Nakshi Motif Lakshmi Choker Set ~ South India Jewels",
+    price: 12.99,
+    description:
+      "Check out this stunning maroon agate bead nakashi motif lakshmi choker necklace set by the brand Aarvee.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://i.pinimg.com/736x/77/91/1d/77911d0320813ac238f635770a3d2450.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 82,
+    title: "Black Beads Necklace",
+    price: 12.99,
+    description:
+      "150 Black Beads Ideas | Black beaded jewelry, Gold jewelry Indian",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://i.pinimg.com/originals/0d/6d/82/0d6d82e1a2686b61422a9f85abb34e39.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 83,
+    title: "Indian Jewellery",
+    price: 12.99,
+    description: "Shop Indian Jewelry Sets Online For Women | Tarinika.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://cdn.shopify.com/s/files/1/2026/1561/products/INX0092BC_808af321-8eb1-44bf-8b8b-bcd908afadf7_1600x.jpg?v=1641063290",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 84,
+    title: "Beads and Gold plated Necklace",
+    price: 12.99,
+    description:
+      "Buy SURATDIAMOND 3 Line Real Ruby Beads and Gold Plated Necklace and Earring set.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image: "https://m.media-amazon.com/images/I/612x3Lo-vlL._UY395_.jpg",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 85,
+    title: "Pearl Necklace",
+    price: 12.99,
+    description:
+      "Pearl Necklace - Pearl Necklace Sets Designs Online at Best Prices in india",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://rukminim1.flixcart.com/image/332/398/knc2p3k0/necklace-chain/z/2/h/hc-804-thushi-golden-white-pearl-beads-necklace-necklace-heer-original-imag2fzhdsztfzsg.jpeg?q=50",
+    rating: {
+      rate: 3.6,
+      count: 145,
+    },
+  },
+  {
+    id: 86,
+    title: "Glimmering Pearl Necklace",
+    price: 12.99,
+    description:
+      "If you are looking for Pearl Necklace Designs for each of your wedding event, this might be helpful! Take a look at some stunning designs for pearl inspiration.",
+    category: "Jewellery",
+    cart: "cart",
+    buy: "buy",
+    image:
+      "https://cdn0.weddingwire.in/articles/images/7/2/1/2/img_52127/t30_pearl-necklace-designs-jagdamba-jewellers-cover.jpg",
     rating: {
       rate: 3.6,
       count: 145,
     },
   },
 ];
+
+const filterproduct = document.querySelector(".filterProduct");
 
 window.onload = () => {
   const product = document.querySelector(".products");
@@ -1222,3 +1415,7 @@ window.onload = () => {
     });
   }
 };
+
+// function filterproduct(values) {
+//   console.log(values);
+// }
