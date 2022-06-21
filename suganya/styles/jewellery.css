@@ -2,21 +2,25 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .products {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (4, 1fr);
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   gap: 2em;
   padding: 30px;
 }
 
 .products img {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
+}
+
+.products button {
+  padding: 3px;
 }
 
 .products h4 {
@@ -36,7 +40,6 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   line-clamp: 1;
-  width: 250px;
 }
 
 .products h2 {
@@ -45,7 +48,7 @@
 }
 
 .products p {
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 8px;
   overflow: hidden;
   display: -webkit-box;
@@ -58,28 +61,75 @@
 .products .card {
   width: 100%;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 30px;
+  text-align: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.products .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.products .card .title {
+  margin-top: 8px;
+  font-size: 22px;
+}
+
+.products .card .price {
+  margin-bottom: 10px;
+  color: #143e42;
+}
+
+.products .card .cart {
+  padding: 6px 15px 6px;
+  background: #143e42;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+  cursor: pointer;
+}
+
+.products .card .cart:hover {
+  background: #286267;
+}
+
+.products .card .buy {
+  padding: 6px 15px 6px;
+  background: #143e42;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.products .card .buy:hover {
+  background: #286267;
 }
 
 @media (max-width: 900px) {
   .products {
-    -ms-grid-columns: (3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 700px) {
   .products {
-    -ms-grid-columns: (2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 500px) {
   .products {
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=jewellery.css.map */

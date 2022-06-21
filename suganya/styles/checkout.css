@@ -10,31 +10,31 @@
 
 body {
   font-size: 16px;
-}
-
-.wrapper {
-  width: 100%;
-  padding: 10px;
+  min-height: 100vh;
+  background: url(/suganya/public/Assets/images/backgroung_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .wrapper .container {
-  max-width: 500px;
-  height: auto;
-  margin: 50px auto;
-  background: #9d2860;
+  max-width: 600px;
+  height: 550px;
+  margin: 120px auto;
+  background: #143e42;
   padding: 20px 40px 30px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  border-top: 7px solid #5f6c7d;
+  border-top: 10px solid #27afaf;
 }
 
 .wrapper .container .title {
-  color: #5f6c7d;
+  color: #f9f2ed;
   font-size: 2em;
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-top: 28px;
 }
 
 .wrapper .container .input_form .items {
@@ -44,17 +44,17 @@ body {
 .wrapper .container .input_form .items .label {
   display: block;
   font-size: 1em;
-  color: gold;
+  color: #f9f2ed;
   text-transform: capitalize;
   margin-bottom: 8px;
 }
 
 .wrapper .container .input_form .items .input {
   background: transparent;
-  border: 2px solid #bdbdbd;
+  border: 2px solid #5f6c7d;
   width: 95%;
   padding: 10px;
-  color: aqua;
+  color: #07fbfb;
   border-radius: 3px;
 }
 
@@ -76,18 +76,25 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 20px;
 }
 
 .wrapper .container .btn {
-  border: 1px solid whitesmoke;
-  color: yellow;
+  border: 1px solid #5f6c7d;
+  background: #27afaf;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
   text-align: center;
   padding: 8px;
+  width: 95%;
   cursor: pointer;
 }
 
 @media (max-width: 460px) {
+  .wrapper .container {
+    height: 650px;
+  }
   .input_form .items {
     margin-bottom: 15px;
   }

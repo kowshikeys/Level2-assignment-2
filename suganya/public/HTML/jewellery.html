@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="/suganya/styles/jewellery.css" />
     <link rel="stylesheet" href="/suganya/styles/home.css" />
+    
   </head>
 
   <body>
@@ -21,17 +22,24 @@
       </div>
 
       <div class="right-side">
-        <p>All Jewellery</p>
+        <p><a href="../HTML/jewellery.html"> All Jewellery</a></p>
 
         <div class="all">
-          <p>Necklaces</p>
+          <p> Necklaces</a></p>
 
           <div class="all_para">
-            <li onclick="filter('diamond')">Diamond Necklace</li>
-            <li onclick="filter('silver')">Silver Necklace</li>
-            <li onclick="filter('gold')">Gold Chain</li>
-            <li onclick="filter('silk')">Silk Thread Necklace</li>
-            <li onclick="filter('beads')">Beads Necklace</li>
+            <li onclick="filterProducts('diamond')">Diamond Necklace</li>
+            <li onclick="filterProducts('silver')">Silver Necklace</li>
+            <li onclick="filterProducts('gold')">Gold Chain</li>
+            <li onclick="filterProducts('silk')">Silk Thread Necklace</li>
+            <li onclick="filterProducts('beads')">Beads Necklace</li>
+            <li onclick="filterProducts('bridal')">Bridal Jewellery</li>
+            <li onclick="filterProducts('plating')">Gold Plating</li>
+            <li onclick="filterProducts('chain')">Layered chain Necklace</li>
+            <li onclick="filterProducts('leather')">Leather Necklace</li>
+            <li onclick="filterProducts('emerald')">Emerald Necklace</li>
+            
+            
           </div>
         </div>
 
@@ -40,13 +48,40 @@
         <p>Collections</p>
         <p>Offers</p>
 
-        <div>
-          <button id="logOut" class="btn">Logout</button>
+        <div id="search" class="search">
+          <input id="search" type="search" placeholder="search" />
+          <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
         </div>
+
+        
+
+        
       </div>
+
+    
     </nav>
 
-    <div class="products"></div>
+    <ul>
+      <li><h1>pricing</h1></li>
+      <div class="pricing">
+        <div class="price-input">
+          <input
+            id="startPrice"
+            type="number"
+            placeholder="starting price"
+          />
+          <input id="endPrice" type="number" placeholder="ending price" />
+        </div>
+        <button id="searchPrice">search</button>
+      </div>
+    </ul>
+
+    <div class="cards">
+      <div id="filter" class="products"></div>
+      <div id="products" class="products"></div>
+
+      <div id="filtered_products_container" class="products"></div>
+    </div>
 
     <script src="/suganya/js/products.js"></script>
   </body>

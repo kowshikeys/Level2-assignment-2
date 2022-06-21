@@ -6,35 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Product Details</title>
+    <link rel="stylesheet" href="/suganya/styles/productdetails.css">
     <link rel="stylesheet" href="../../styles/home.css" />
   </head>
   <body>
-    <div class="navbar_brand">
-      <div class="logo">
-        <img src="/suganya/public/Assets/images/logo-2.png" />
-      </div>
+   
+      
       <div class="open_menu" onclick="openMenu()">
         <i class="fa-solid fa-bars"></i>
       </div>
-      <div class="navbar">
-        <div class="close_menu" onclick="closeMenu()">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
 
-        <ul>
-          <span onclick="filter('necklace')">Necklace</span>
-          <li onclick="filter('gold jewellery')">Gold Jewellery</li>
-          <li onclick="filter('silver necklace')">Silver Necklace</li>
-          <li onclick="filter('diamond necklace')">Diamond Necklace</li>
-          <li onclick="filter('silk thread necklace')">Silk Thread Necklace</li>
-          <li onclick="filter('gold chain')">Gold Chain</li>
-          <li onclick="filter('beads necklace')">Beads Necklace</li>
-          <li onclick="filter('pearl necklace')">Pearl Necklace</li>
-        </ul>
-      </div>
+      <nav>
+        <div class="left-side">
+          <p>My store</p>
+        </div>
+  
+        <div class="right-side">
+          <p><a href="../HTML/jewellery.html"> All Jewellery</a></p>
+  
+          <div class="all">
+            <p> Necklaces</a></p>
+  
+            <div class="all_para">
+              <li onclick="filterProducts('diamond')">Diamond Necklace</li>
+              <li onclick="filterProducts('silver')">Silver Necklace</li>
+              <li onclick="filterProducts('gold')">Gold Chain</li>
+              <li onclick="filterProducts('silk')">Silk Thread Necklace</li>
+              <li onclick="filterProducts('beads')">Beads Necklace</li>
+              <li onclick="filterProducts('bridal')">Bridal Jewellery</li>
+              <li onclick="filterProducts('plating')">Gold Plating</li>
+              <li onclick="filterProducts('Layered')">Layered chain Necklace</li>
+              <li onclick="filterProducts('leather')">Leather Necklace</li>
+              <li onclick="filterProducts('emerald')">Emerald Necklace</li>
+
+            </div>
+          </div>
+  
+          <p>Pendants</p>
+          <p>Earrings</p>
+          <p>Collections</p>
+          <p>Offers</p>
+
+          <div id="search" class="search">
+            <input id="search" type="search" placeholder="search" />
+            <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+          </div>
+  
+          
+        </div>
+        
+      </nav>
+
+
+      
     </div>
     <div class="header"></div>
     <div class="productid"></div>
   </body>
   <script src="/suganya/js/productdetails.js"></script>
+ 
 </html>

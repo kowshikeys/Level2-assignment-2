@@ -18,17 +18,24 @@
       </div>
 
       <div class="right-side">
-        <p>All Jewellery</p>
+        <p>
+          <a href="/suganya/public/HTML/productdetails.html"> All Jewellery</a>
+        </p>
 
         <div class="all">
           <p>Necklaces</p>
 
           <div class="all_para">
-            <li onclick="filter('diamond')">Diamond Necklace</li>
-            <li onclick="filter('silver')">Silver Necklace</li>
-            <li onclick="filter('gold')">Gold Chain</li>
-            <li onclick="filter('silk')">Silk Thread Necklace</li>
-            <li onclick="filter('beads')">Beads Necklace</li>
+            <li onclick="filterProducts('diamond')">Diamond Necklace</li>
+            <li onclick="filterProducts('silver')">Silver Necklace</li>
+            <li onclick="filterProducts('gold')">Gold Chain</li>
+            <li onclick="filterProducts('silk')">Silk Thread Necklace</li>
+            <li onclick="filterProducts('beads')">Beads Necklace</li>
+            <li onclick="filterProducts('bridal')">Bridal Jewellery</li>
+            <li onclick="filterProducts('plating')">Gold Plating</li>
+            <li onclick="filterProducts('Layered')">Layered chain Necklace</li>
+            <li onclick="filterProducts('leather')">Leather Necklace</li>
+            <li onclick="filterProducts('emerald')">Emerald Necklace</li>
           </div>
         </div>
 
@@ -37,11 +44,92 @@
         <p>Collections</p>
         <p>Offers</p>
 
+        <div id="search" class="search">
+          <input id="search" type="search" placeholder="search" />
+          <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
         <div>
           <button id="logOut" class="btn">Logout</button>
         </div>
       </div>
     </nav>
+
+    <div class="front_image">
+      <img src="/suganya/public/Assets/images/jewellery_header_img.jpg" />
+    </div>
+
+    <div class="card_container">
+      <div class="card">
+        <img src="../Assets/images/silk.jpg" />
+        <div class="letter">Silk</div>
+      </div>
+      <div class="card">
+        <img src="../Assets/images/leather.webp" />
+        <div class="letter">Leather</div>
+      </div>
+      <div class="card">
+        <img src="../Assets/images/emerald1.webp" />
+        <div class="letter">Gold</div>
+      </div>
+      <div class="card">
+        <img src="../Assets/images/silver.webp" />
+        <div class="letter">Silver</div>
+      </div>
+      <div class="card">
+        <img src="/suganya/public/Assets/images/emerald_img.jpeg" />
+        <div class="letter">Emerald</div>
+      </div>
+      <div class="card">
+        <img src="/suganya/public/Assets/images/Bride-essentials.jpg" />
+        <div class="letter">Emerald</div>
+      </div>
+    </div>
+
+    <!-- <div class="video">
+      <video width="100%" height="500" loop autoplay>
+        <source
+          src="../Assets/images/Wood and Gold Jewellery Presentation.mp4"
+        />
+      </video>
+    </div> -->
+
+    <footer>
+      <div class="footer-details">
+        <div class="footer_content">
+          <ul>
+            <li><h2>customer care</h2></li>
+            <li>FAQ</li>
+            <li>privacy policy</li>
+            <li>shipping & delivery</li>
+            <li>cancellations & exchange</li>
+          </ul>
+          <ul>
+            <li><h2>company</h2></li>
+            <li>about us</li>
+            <li>our story</li>
+            <li>contact</li>
+          </ul>
+          <ul>
+            <li><h2>follow us</h2></li>
+            <li><i class="fa-brands fa-instagram"></i>instagram</li>
+            <li><i class="fa-brands fa-twitter"></i>twitter</li>
+            <li><i class="fa-brands fa-linkedin-in"></i>linkedin</li>
+            <li><i class="fa-brands fa-pinterest-p"></i>pinterest</li>
+            <li><i class="fa-brands fa-facebook-f"></i>facebook</li>
+          </ul>
+          <ul>
+            <li><h2>get in touch</h2></li>
+            <li>accessories</li>
+            <li>Email: my@store.in</li>
+            <li>+91 9993850344</li>
+          </ul>
+        </div>
+        <div class="footer_end">
+          <p>© 2022 myStore | All rights reserved</p>
+        </div>
+      </div>
+    </footer>
 
     <div class="filter"></div>
     <div class="filterProduct"></div>
