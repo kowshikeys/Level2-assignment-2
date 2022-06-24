@@ -25,3 +25,14 @@ let mode = document.querySelector(".toggle");
            
 
  })
+
+
+//  logout
+
+const btn = document.querySelector("#logOut");
+
+btn.addEventListener("click", function () {
+  sessionStorage.clear();
+  window.location.href =
+    "http://127.0.0.1:5500/kowshik/Public/Html/accountManagment.html?";
+});

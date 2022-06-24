@@ -68,7 +68,7 @@ body.dark {
 
 }
 
-form {
+section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,11 +78,11 @@ form {
     transition: 0.2s 0.7s ease-in-out;
 }
 
-form.sign-in-list {
+section.sign-in-list {
     z-index: 2;
 }
 
-form.sign-up-list {
+section.sign-up-list {
     z-index: 1;
     opacity: 0;
 }
@@ -278,12 +278,12 @@ form.sign-up-list {
     left: 25%;
 }
 
-.container.sign-up-mode form.sign-in-list {
+.container.sign-up-mode section.sign-in-list {
     z-index: 1;
     opacity: 0;
 }
 
-.container.sign-up-mode form.sign-up-list {
+.container.sign-up-mode section.sign-up-list {
     z-index: 2;
     opacity: 1;
 }

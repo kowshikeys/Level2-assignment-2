@@ -5,82 +5,280 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> LUXURY GOLD </title>
-    <!-- link to css  -->
-    <link rel="stylesheet" href="../../Css/landing-page.css">
-    <!-- link to font awesome  -->
+    <title>Document</title>
     <script src="https://kit.fontawesome.com/9dc5a48b67.js" crossorigin="anonymous"></script>
-    <!-- link to google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kdam+Thmor+Pro&family=Mirza:wght@400;500;600;700&family=Mulish:wght@200;300;400;500;600;700&family=Nunito+Sans:wght@200;300&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,500;1,600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kdam+Thmor+Pro&family=Mirza:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,600&family=Mulish:wght@200;300;400;500;600;700&family=Nunito+Sans:wght@200;300&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,500;1,600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../../Css/landing-page.css">
 </head>
 
 <body>
-    <!-- navbar start's here  -->
-    <div class="topbar-container">
-        <div class="topbar-menu">
-            <div class="necklace-drop">
-                <p>Necklace <i class=" fa-solid fa-angle-down"></i></p>
-                <div class="necklace-list">
-                    <a href="">Gold Necklace</a>
-                    <a href="">Silver Necklace</a>
-                    <a href="">Platinum Necklace</a>
-                    <a href="">Antique Necklace</a>
+    <section>
+        <div class="topbar">
+            <div class="top-left-location">
+                <span class="hamburger" onclick="openMenu()">&#9776;</span>
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"><span>Fing Our Store</span></i>
+                </div>
+              
+                
+
+            </div>
+            <div class="logo">
+                <img src="../Assets/attachment_71188533-removebg-preview.png" alt="">
+            </div>
+            <div class="top-right-list">
+                 <!-- <div class="search"> 
+                    <i class="fa-solid fa-magnifying-glass"><span> </span></i>
+                    <div class="search-bar">
+                        <input type="text" class="bar" placeholder=".....search">
+                        <button class="done"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div> -->
+                <!-- </div> -->
+                
+              
+                <div class="account">
+               <a href="../Html/accountManagment.html"><i class="fa-solid fa-circle-user"><span></span></i></a> 
+
+                </div>
+                <div class="dark-mode">
+                    <i class="fa-solid fa-moon"><span></span></i>
+
+                </div> 
+                <div class="wishlist">
+                    <i class="fa-solid fa-palette"><span></span></i>
+
+                </div>
+
+                <div class="logout">
+                    <a href="../Html/accountManagment.html"><i class="fa-solid fa-arrow-right-from-bracket"><span>Log out</span></i></a>
+                </div>
+               
+            </div>
+        </div>
+        <div class="sec-topbar">
+            <div class="sec-topbar-left">
+                <div class="new-product">
+                    <p>NEW</p>
+                    
+
+                        <div class="whats-new">
+                            <div class="types">
+                                <h3>What's New</h3>
+                                <li onclick="filter('diamond')">Diamond Necklace</li>
+                                <li onclick="filter('silver')">Silver Necklace</li>
+                                <li onclick="filter('gold')">Gold Chain</li>
+                                <li onclick="filter('silk')">Silk Thread Necklace</li>
+                                <li onclick="filter('beads')">Beads Necklace</li>
+                            </div>
+                            
+                            <div class="relative-img">
+                                <img src="../Assets/IMG_9293.webp" alt="">
+                            </div>
+                            <div class="relative-img">
+                                <img src="../Assets/51b1d9_a2e41b1bb24a4e1aa19f9e7c39c77874_mv2.webp" alt="">
+                            </div>
+                            
+ 
+                        </div>
+
+                       
+                   
+
+
+
+
+
+                </div>
+                <div class="all-product">
+                    <p>JEWELRY</p>
+                    <div class="product-list">
+                        <div class="div">
+                            <li onclick="filter('diamond')">Diamond Necklace</li>
+                            <li onclick="filter('silver')">Silver Necklace</li>
+                            <li onclick="filter('gold')">Gold Chain</li>
+                            <li onclick="filter('silk')">Silk Thread Necklace</li>
+                            <li onclick="filter('beads')">Beads Necklace</li>
+                        </div>
+                        
+
+                        <div class="relative-img">
+                            <img src="../Assets/gold-bridal-jewellery-set_1396-361.webp" alt="">
+                        </div>
+                        <div class="relative-img">
+                            <img src="../Assets/gold-bride-jewellery-set_1396-382.jpeg" alt="">
+                        </div>
+    
+                    </div>
+
+                   
+                </div>
+                <div class="antique-product">
+                    <p>ANTIQUE</p>
+                    <div class="antiq-list">
+                        <div class="div">
+                            <li onclick="filter('diamond')"> Necklace</li>
+                            <li onclick="filter('silver')">Silver Necklace</li>
+                            <li onclick="filter('gold')">Gold Chain</li>
+                            <li onclick="filter('silk')">Silk Thread Necklace</li>
+                            <li onclick="filter('beads')">Beads Necklace</li>
+                        </div>
+                      
+
+
+                        <div class="relative-img">
+                            <img src="../Assets/bride-gold-jewellery-set_1396-366.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="wedding">
+                    <p>WEDDING</p>
+                    <div class="wedding-product">
+                        <div class="div">
+                            <h3>New collections</h3>
+                            <li onclick="filter('diamond')"> Model</li>
+
+                           
+                        </div>
+                        <div class="relative-img">
+                            <img src="../Assets/hiya-jewellery-KOEX6sdij9w-unsplash.jpg" alt="">
+                        </div>
+                        <div class="relative-img">
+                            <img src="../Assets/vaibhav-nagare-62sDgpfljOI-unsplash.jpg" alt="">
+                        </div>
+                        <div class="relative-img">
+                            <img src="../Assets/vaibhav-nagare-G3Hrl6WzQYQ-unsplash.jpg" alt="">
+                        </div>
+
+                        
+                        
+                    </div>
+                </div>
+                <div class="about">
+                    <p>ABOUT</p>
+                    <div class="about-us">
+                        <div class="relative-img">
+                            <img src="../Assets/Accessories_desktop.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="sec-topbar-right">
+                <div class="review">
+                    <p>REVIEW</p>
+                </div>
+                <div class="our-purpose">
+                    <p>OUR PURPOSE</p>
                 </div>
             </div>
-            <div class="edition-drop">
-                <p href="#">Limited Edition <i class=" fa-solid fa-angle-down"></i></p>
-                <div class="edition-list">
-                    <a href="">Gold Necklace</a>
-                    <a href="">Silver Necklace</a>
-                    <a href="">Platinum Necklace</a>
-                    <a href="">Antique Necklace</a>
-                </div>
-            </div>
-            <div class="luxury-list">
-                <p href="#">Luxury <i class=" fa-solid fa-angle-down"></i></p>
-            </div>
-            <a href="#">About us</a>
-        </div>
-        <div class="topbar-logo">
-            <!-- <i class="fa-solid fa-gem"></i> -->
-            <img src="../Assets/logo.png" alt="">
-        </div>
-        <div class="topbar-in">
-            <a href="#">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
 
-            <a href="../Html/accountManagment.html">
-                <i class="fa-solid fa-user"></i>
-            </a>
+        </div>
+    </section>
 
-            <a href="#">
-                <i class="fa-solid fa-heart"></i>
-            </a>
-            <a href="#">
-                <i class="fa-solid fa-bag-shopping"></i>
-            </a>
+
+    <div class="mission">
+        <h3>OUR MISSION</h3>
+        <p>To empower women to make their own choices, run their own businesses, and live life on their own terms.
+        </p>
+    </div>
+
+
+    <div class="background">
+        <img src="../Assets/0422_AprilDrop2_NavDropdown2xNew.png" alt="">
+    </div>
+
+    <div class="collection-list">
+        <div class="list-img">
+            <img src="../Assets/Loren_Hope_made_in_usa_1200x-1_1200x.webp" alt="">
+        </div>
+        <div class="list-details">
+            <h6>Designed to Shine</h6>
+            <h3>Crafted by hand. The old fashioned way.</h3>
+            <p>From start to finish. We design each and every piece that leaves our De'gold studio. Incorporating
+                elements like vintage stones from the 1930's, re-purposing dead stock materials, we're on a mission to
+                revive jewelry making in Chennai(once the leading industry in the state) in a sustainable and mindful
+                way. Regarded by our collectors as "wearable art", it is our mission to create beautiful, heirloom
+                quality costume jewelry that is cherished, and then passed down through generations.</p>
+        </div>
+    </div>
+    <div class="design">
+
+        <div class="design-details">
+            <h6>Designed to Shine</h6>
+            <h3>We’re here to help women rise</h3>
+            <p>As moms, concerned citizens, and hard-working warriors for all women. Those facts are impossible to
+                separate from the S&D business. And they also make us more than a business.
+
+                We’re what change looks like and we’re on a mission. We’re grateful for your support and are here to
+                make you proud.
+            </p>
+        </div>
+        <div class="design-img">
+            <img src="../Assets/JessicaBlythe_desktop.png" alt="">
         </div>
     </div>
 
-    <div class="switching-menus">
-        <div class="toggle">
-            <i class="fa-solid fa-moon"></i>
-        </div>
 
+
+    <div class="wish-container">
+        <div class="wish-logo">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+        </div>
+        <div class="wish-text">
+            <h2>We give with every purchase</h2>
+            <p>
+                Every time you shop,We round up to fund product donations to organizations that lift woman &
+                children.Let's keep the momentum going.
+            </p>
+        </div>
     </div>
 
-   <div class="first-background">
-       <img src="../Assets/vaibhav-nagare-vv2vIFeNEMg-unsplash.jpg" alt="">
-   </div>
 
 
+    <div class="footer-container">
+        <div class="section-1">
+            <h6>About us</h6>
+            <p>
+                De'gold is a luxury designer jewelry house based in Chennai. We create seasonal collections of heirloom
+                quality pieces that are crafted in small batches.
+            </p>
+            <div class="social-media">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+        <div class="section-2">
+            <p>Our Story</p>
+            <p>Blog</p>
+            <p>Sustainability</p>
+            <p>Privacy Policy</p>
+            <p>Contact Us</p>
+        </div>
+        <div class="section-3">
+            <p>Start a Return</p>
+            <p>Shipping & Repairs</p>
+            <p>Jewelry Care</p>
+            <p>Gift Cards</p>
+            <p>Wholesale</p>
 
-    <script src="../../javascript/landing-page.js"></script>
+        </div>
+        <div class="section-4">
+            <h6>Sign up for our Newsletter</h6>
+            <p>Get 10% off when you join our list.</p>
+            <div class="subscribe">
+                <input type="email" class="id" placeholder="Enter your email address">
+            </div>
+            <button>SUBSCRIBE</button>
+        </div>
+    </div>
+
 </body>
 
 </html>

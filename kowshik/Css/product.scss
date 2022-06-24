@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+    
+    .card-parent{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+
+
+
+        .card{
+            display: block;
+            place-items: center;
+            justify-content: center;
+            align-items: center;
+
+
+            button{
+                margin-left: 20px;
+                width: 70px;
+                height: 20px;
+                border: none;
+                outline: none;
+                border-radius: 6px;
+                cursor: pointer;
+
+            }
+          
+            img{
+                width: 250px;
+                height: 200px;
+            }
+
+            h3{
+                overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              white-space: normal;
+            }
+        }
+    }
+   
+
+
+
+  } 
+
+  button{
+      background-color: red;
+  }
