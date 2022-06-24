@@ -51,6 +51,7 @@ a {
 
 .topbar .top-left-location .hamburger {
   display: none;
+  font-size: 25px;
 }
 
 .topbar .logo {
@@ -717,6 +718,10 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .topbar .logo img {
+    width: 60px;
+    height: 50px;
   }
   .sec-topbar {
     width: 100%;

@@ -49,6 +49,7 @@ a{
 
         .hamburger{
             display: none;
+          font-size: 25px;
         }
     }
 
@@ -725,6 +726,16 @@ img{
             }
             .hamburger{
                 display: flex;
+                
+            }
+
+            
+        }
+
+        .logo{
+            img{
+                width: 60px;
+                height: 50px;
             }
         }
     }
