@@ -1,9 +1,6 @@
-document.querySelector(".img-btn").addEventListener("click", function () {
-  document.querySelector(".cont").classList.toggle("s--signup");
-});
-
+//sign in through session storage
 const signIn = () => {
-  const emailSignIn = document.getElementById("email").value;
+  const emailSignIn = document.getElementById("username").value;
   const passwordSignIn = document.getElementById("password").value;
 
   const storageSignIn = {
@@ -27,16 +24,16 @@ const signIn = () => {
   window.location.href = "http://127.0.0.1:5500/Public/HTML/home.html";
 };
 
+//sign up through local storage
+
 const signUp = () => {
   const emailSignUp = document.getElementById("Email").value;
   const passwordSignUp = document.getElementById("Password").value;
-  const nameSignUp = document.getElementById("name").value;
-  const numberSignUp = document.getElementById("number").value;
+  const nameSignUp = document.getElementById("Username").value;
 
   const storageSignUp = {
     name: nameSignUp,
     email: emailSignUp,
-    Number: numberSignUp,
     password: passwordSignUp,
   };
 
@@ -48,10 +45,7 @@ const signUp = () => {
     alert("please fill your email");
     return;
   }
-  if (numberSignUp === "") {
-    alert("please enter your number");
-    return;
-  }
+
   if (passwordSignUp === "") {
     alert("please fill a valid password");
     return;
@@ -60,3 +54,15 @@ const signUp = () => {
   sessionStorage.setItem("user", JSON.stringify(storageSignUp));
   window.location.href = "http://127.0.0.1:5500/Public/HTML/home.html";
 };
+
+//signin signup slide changer
+const signInBtn = document.querySelector("#sign-in-btn");
+const signUpBtn = document.querySelector("#sign-up-btn");
+const container = document.querySelector(".container");
+
+signUpBtn.addEventListener("click", function () {
+  container.classList.add("sign-up-mode");
+});
+signInBtn.addEventListener("click", function () {
+  container.classList.remove("sign-up-mode");
+});

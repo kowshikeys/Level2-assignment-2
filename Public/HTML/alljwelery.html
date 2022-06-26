@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../../Styles/home.css" />
+    <link rel="stylesheet" href="../../Styles/home.css">
     <link rel="stylesheet" href="../../Styles/products.css" />
     <link
       rel="stylesheet"
@@ -19,220 +19,182 @@
           <i class="fa-solid fa-bars"></i>
         </div>
         <div class="logo-left">
-          <img src="../Assets/images/logo/logo (2).png" alt="" />
+          <a href="../HTML/home.html"
+            ><img src="../Assets/images/logo/logo.png" alt=""
+          /></a>
+        </div>
+        <div class="logo-middle">
+          <div class="navbar">
+            <div class="close-nav-menu" onclick="closeMenu()">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul>
+              <li><a href="../HTML/alljwelery.html">All jewellery</a></li>
+              <li>
+                <a href="#collection">Collections</a>
+              </li>
+              <li>
+                <a href="#metals">Materials & Metals</a>
+              </li>
+              <li>
+                <a href="#stones">Stones</a>
+              </li>
+              <li>
+                <a href="#review">Review</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="logo-right">
-          <div id="searchWindow" class="search">
-            <input id="search" type="search" placeholder="search" />
-            <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+          <div class="mode-changer">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </div>
+          <div id="searchWindow" class="icon-search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="search-form">
+            <form action="">
+              <input type="text" placeholder="search here...." id="" />
+            </form>
+          </div>
+        
+          <div class="color-switcher">
+            <div class="switcher-btn">
+              <i id="colors" class="fa-solid fa-palette"></i>
+            </div>
+            <div class="theme-button-container">
+              <span
+                id="palettes"
+                class="theme-buttons"
+                data-color="#fff"
+                style="background: #fff"
+              ></span>
+              <span
+                id="palettes"
+                class="theme-buttons"
+                data-color="#ccffff"
+                style="background: #ccffff"
+              ></span>
+              <span
+                id="palettes"
+                class="theme-buttons"
+                data-color="#ffcccc"
+                style="background: #ffcccc"
+              ></span>
+              <span
+                id="palettes"
+                class="theme-buttons"
+                data-color="#e6ffb3"
+                style="background: #e6ffb3"
+              ></span>
+              <span
+                id="palettes"
+                class="theme-buttons"
+                data-color="#ccffcc"
+                style="background: #ccffcc"
+              ></span>
+              <span
+                id="palettes"
+                class="theme-buttons"
+                data-color="#d6d6c2"
+                style="background: #d6d6c2"
+              ></span>
+              <span
+                id="palettes"
+                class="theme-buttons"
+                data-color="#ffe6cc"
+                style="background: #ffe6cc"
+              ></span>
+            </div>
           </div>
 
           <div class="cart">
-            <a href="cart.html">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <p>cart</p>
-            </a>
+            <div class="cart-icon">
+              <i onclick="openCart()" class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="cart-navbar">
+              <div class="close-cart-menu" onclick="closeCart()">
+                <h1>Cart Items</h1>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <div class="cart-product"></div>
+            </div>
           </div>
-          <div class="button">
-            <button id="button">logout</button>
+
+          <div id="button" class="button">
+            <i class="fa-solid fa-user"></i>
           </div>
         </div>
       </div>
     </header>
+    <section class="image">
+      <img src="../Assets/images/home//banner/diamond-banner.jpg" alt="" />
 
-    <section class="navbar">
-      <div class="close-nav-menu" onclick="closeMenu()">
-        <i class="fa-solid fa-xmark"></i>
-      </div>
-      <ul>
-        <li><a href="../HTML/alljwelery.html">All jewellery</a></li>
-        <li>
-          <a href="#">gold</a>
-          <div class="drop">
-            <div class="drop-down">
-              <a href="#">ring</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">chain</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">bangles</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">earings</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">thali</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">short necklace</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">long necklace</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">bridal</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#">Silver</a>
-          <div class="drop">
-            <div class="drop-down">
-              <a href="#">pooja</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">kolusu</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">lamp</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">ring</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">chain</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">earings</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#">stones</a>
-          <div class="drop">
-            <div class="drop-down">
-              <a href="#">dimond</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">ruby</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">Sapphire</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">Emerald</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">Amethyst</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#">Platinum</a>
-          <div class="drop">
-            <div class="drop-down">
-              <a href="#">ring</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">chain</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#">Occasion</a>
-          <div class="drop">
-            <div class="drop-down">
-              <a href="#">casual</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">cocktail</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">festival</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">wedding</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">work</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#">category</a>
-          <div class="drop">
-            <div class="drop-down">
-              <a href="#">women</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">men</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">kids</a>
-            </div>
-          </div>
-        </li>
-      </ul>
     </section>
 
     <section class="filpro-containers">
-      <div class="fillter-container">
-        <div class="ul">
+      <div class="filter-container">
+        <div id="displayFilter" class="filter">
           <ul>
             <li><h1>filter</h1></li>
-            <li onclick="filterProducts('necklace')">all</li>
+            <li><a href="../HTML/alljwelery.html"><p>all</p></li></a>
           </ul>
           <ul>
-            <li><h1>Jweller Type</h1></li>
-            <li onclick="filterProducts('choker')">choker</li>
-            <li onclick="filterProducts('plastron')">plastron</li>
-            <li onclick="filterProducts('bib')">bib</li>
-            <li onclick="filterProducts('torque')">torque</li>
-            <li onclick="filterProducts('pendent')">pendent</li>
-            <li onclick="filterProducts('locket')">locket</li>
-            <li onclick="filterProducts('matinee')">matinee</li>
-            <li onclick="filterProducts('lariat')">lariat</li>
-            <li onclick="filterProducts('charm')">charm</li>
+            <li  onclick="jwelleryType()"><h1 id="jwell">Jweller Type</h1></li>
+            <li id="jwelleryType" onclick="filterProducts('choker')"><p>choker</p></li>
+            <li id="jwelleryType"  onclick="filterProducts('plastron')"><p>plastron</p></li>
+            <li id="jwelleryType"  onclick="filterProducts('bib')"><p>bib</p></li>
+            <li id="jwelleryType"  onclick="filterProducts('torque')"><p>torque</p></li>
+            <li id="jwelleryType"  onclick="filterProducts('pendent')"><p>pendent</p></li>
+            <li id="jwelleryType"  onclick="filterProducts('locket')"><p>locket</p></li>
+            <li id="jwelleryType"  onclick="filterProducts('matinee')"><p>matinee</p></li>
+            <li id="jwelleryType"  onclick="filterProducts('lariat')"><p>lariat</p></li>
+            <li id="jwelleryType"  onclick="filterProducts('charm')"><p>charm</p></li>
           </ul>
           <ul>
-            <li><h1>pricing</h1></li>
+            <li id="pricing" onclick="pricing()"><h1>pricing</h1></li>
             <div class="pricing">
               <div class="price-input">
-                <input
-                  id="startPrice"
-                  type="number"
-                  placeholder="starting price"
-                />
-                <input id="endPrice" type="number" placeholder="ending price" />
+                <input id="startPrice" type="number" placeholder="starting price">
+                <input id="endPrice" type="number" placeholder="ending price">
               </div>
-              <button id="searchPrice">search</button>
+              <button id="searchPrice" class="button">search</button>
             </div>
           </ul>
           <ul>
-            <li><h1>metal</h1></li>
-            <li onclick="filterProducts('gold')">gold</li>
-            <li onclick="filterProducts('yellow gold')">yellow gold</li>
-            <li onclick="filterProducts('silver')">silver</li>
+            <li onclick="metal()"><h1>metal</h1></li>
+            <li onclick="filterProducts('gold')"><p>gold</p></li>
+            <li onclick="filterProducts('yellow gold')"><p>yellow gold</p></li>
+            <li onclick="filterProducts('silver')"><p>silver</p></li>
           </ul>
           <ul>
-            <li><h1>stone</h1></li>
+            <li onclick="stone()"><h1>stone</h1></li>
             <li onclick="filterProducts('american diamond')">
-              american diamond
+              <p>american diamond</p>
             </li>
-            <li onclick="filterProducts('diamond')">diamond</li>
-            <li onclick="filterProducts('ruby')">ruby</li>
-            <li onclick="filterProducts('emerald')">Emerald</li>
-            <li onclick="filterProducts('pearls')">pearls</li>
+            <li onclick="filterProducts('diamond')"><p>diamond</p></li>
+            <li onclick="filterProducts('ruby')"><p>ruby</p></li>
+            <li onclick="filterProducts('emerald')"><p>Emerald</p></li>
+            <li onclick="filterProducts('pearls')"><p>pearls</p></li>
           </ul>
           <ul>
-            <li><h1>material</h1></li>
-            <li onclick="filterProducts('beads')">beads</li>
-            <li onclick="filterProducts('thread')">thread</li>
-            <li onclick="filterProducts('silk')">silk</li>
-            <li onclick="filterProducts('leather')">leather</li>
+            <li onclick="material()"><h1>material</h1></li>
+            <li onclick="filterProducts('stone')"><p>stone</p></li>
+            <li onclick="filterProducts('beads')"><p>beads</p></li>
+            <li onclick="filterProducts('thread')"><p>thread</p></li>
+            <li onclick="filterProducts('silk')"><p>silk</p></li>
+            <li onclick="filterProducts('leather')"><p>leather</p></li>
           </ul>
         </div>
       </div>
-      <div class="card">
-        <img src="../Assets/images/home/diamond_jewellery_designs.jpg" alt="" />
+      <div class="cards">
         <div id="products_container" class="product"></div>
         <div id="filtered_products_container" class="product"></div>
         <div id="filter-pricing" class="product"></div>
       </div>
     </section>
 
-    <script src="../../js/home.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../../JS/products.js"></script>
   </body>
 </html>

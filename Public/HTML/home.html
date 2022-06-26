@@ -20,166 +20,137 @@
           <i class="fa-solid fa-bars"></i>
         </div>
         <div class="logo-left">
-          <img src="../Assets/images/logo/logo (2).png" alt="" />
+          <a href="../HTML/home.html"
+            ><img src="../Assets/images/logo/logo.png" alt=""
+          /></a>
+        </div>
+        <div class="logo-middle">
+          <div class="navbar">
+            <div class="close-nav-menu" onclick="closeMenu()">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul>
+              <li><a href="../HTML/alljwelery.html">All jewellery</a></li>
+              <li>
+                <a href="#collection">Collections</a>
+              </li>
+              <li>
+                <a href="#metals">Materials & Metals</a>
+              </li>
+              <li>
+                <a href="#stones">Stones</a>
+              </li>
+              <li>
+                <a href="#review">Review</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="logo-right">
-          <div id="searchWindow" class="search">
-            <input id="search" type="search" placeholder="search" />
-            <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+          <div class="mode-changer">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </div>
+          <div id="searchWindow" class="icon-search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="search-form">
+            <form id="search-input">
+              <input type="text" placeholder="search here...." id="searchBar" />
+            </form>
+            <div class="search-bx2">
+              <!-- <a href="#">
+                <img src="../Assets/images/home/chocker.jpg" alt="" />
+                <div class="content2">
+                  <h6>A perfect</h6>
+                  <p>2018</p>
+                </div>
+              </a> -->
+            </div>
+          </div>
+
+          <div class="color-switcher">
+            <div class="switcher-btn">
+              <i id="color" class="fa-solid fa-palette"></i>
+            </div>
+            <div class="theme-button-container">
+              <span
+                id="palette"
+                class="theme-buttons"
+                data-color="#fff"
+                style="background: #fff"
+              ></span>
+              <span
+                id="palette"
+                class="theme-buttons"
+                data-color="#ccffff"
+                style="background: #ccffff"
+              ></span>
+              <span
+                id="palette"
+                class="theme-buttons"
+                data-color="#ffcccc"
+                style="background: #ffcccc"
+              ></span>
+              <span
+                id="palette"
+                class="theme-buttons"
+                data-color="#e6ffb3"
+                style="background: #e6ffb3"
+              ></span>
+              <span
+                id="palette"
+                class="theme-buttons"
+                data-color="#ccffcc"
+                style="background: #ccffcc"
+              ></span>
+              <span
+                id="palette"
+                class="theme-buttons"
+                data-color="#d6d6c2"
+                style="background: #d6d6c2"
+              ></span>
+              <span
+                id="palette"
+                class="theme-buttons"
+                data-color="#ffe6cc"
+                style="background: #ffe6cc"
+              ></span>
+            </div>
           </div>
 
           <div class="cart">
-            <a href="cart.html">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <p>cart</p>
-            </a>
+            <div class="cart-icon">
+              <i onclick="openCart()" class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="cart-navbar">
+              <div class="close-cart-menu" onclick="closeCart()">
+                <h1>Cart Items</h1>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <div class="cart-product"></div>
+            </div>
           </div>
-          <div class="button">
-            <button id="button">logout</button>
+
+          <div id="button" class="button">
+            <i class="fa-solid fa-user"></i>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="navbar">
-      <div class="close-nav-menu" onclick="closeMenu()">
-        <i class="fa-solid fa-xmark"></i>
-      </div>
-      <ul>
-        <li><a href="../HTML/alljwelery.html">All jewellery</a></li>
-        <li>
-          <a href="#">gold</a>
-          <div class="drop">
-            <div class="drop-down">
-              <a href="#">ring</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">chain</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">bangles</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">earings</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">thali</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">short necklace</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">long necklace</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">bridal</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#">Silver</a>
-          <div class="drop">
-            <div class="drop-down">
-              <a href="#">pooja</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">kolusu</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">lamp</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">ring</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">chain</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">earings</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#">stones</a>
-          <div class="drop">
-            <div class="drop-down">
-              <a href="#">dimond</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">ruby</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">Sapphire</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">Emerald</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">Amethyst</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#">Platinum</a>
-          <div class="drop">
-            <div class="drop-down">
-              <a href="#">ring</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">chain</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#">Occasion</a>
-          <div class="drop">
-            <div class="drop-down">
-              <a href="#">casual</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">cocktail</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">festival</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">wedding</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">work</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#">category</a>
-          <div class="drop">
-            <div class="drop-down">
-              <a href="#">women</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">men</a>
-            </div>
-            <div class="drop-down">
-              <a href="#">kids</a>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-
     <section class="front-story">
       <div class="window-image">
-        <img src="../Assets/images/home/front-page.jpg" alt="" />
+        <img src="../Assets/images/home/banner/Home-Banner.jpg" alt="" />
       </div>
     </section>
 
     <section id="video" class="video">
-      <h1>collection</h1>
+      <h1>Collection</h1>
       <div class="flex">
         <div class="flex-first">
           <video
             class="jwell"
-            src="../Assets/images/videos/Glint and Glow Jewellery presentation.mp4"
+            src="../Assets/images/videos/jwellVideo.mp4"
             autoplay
             muted
             loop
@@ -187,75 +158,171 @@
           ></video>
         </div>
         <div class="flex-last">
-          <img src="../Assets/images/home/tab3.jpg" alt="" />
+          <img src="../Assets/images/home/banner/jwell-banner.jpg" alt="" />
         </div>
       </div>
     </section>
 
-    <section class="wide-collection">
-      <h1>wide-collection</h1>
+    <section id="collection" class="wide-collection">
+      <h1>Wide-Collection</h1>
       <div class="collection">
         <div class="grid-first">
-          <div class="first-card">
-            <div class="info">
-              <h1>bib</h1>
+          <a href="../HTML/alljwelery.html">
+            <div class="first-card">
+              <div class="info">
+                <h2>bib</h2>
+              </div>
             </div>
-          </div>
-          <div class="second-card">
-            <div class="info">
-              <h1>pendent</h1>
+          </a>
+          <a href="../HTML/alljwelery.html">
+            <div class="second-card">
+              <div class="info">
+                <h2>pendent</h2>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="grid-middle">
-          <div class="third-card">
-            <div class="info">
-              <h1>locket</h1>
+          <a href="../HTML/alljwelery.html">
+            <div class="third-card">
+              <div class="info">
+                <h2>locket</h2>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="grid-last">
-          <div class="fourth-card">
-            <div class="info">
-              <h1>lariat</h1>
+          <a href="../HTML/alljwelery.html">
+            <div class="fourth-card">
+              <div class="info">
+                <h2>lariat</h2>
+              </div>
             </div>
-          </div>
-          <div class="fivth-card">
-            <div class="info">
-              <h1>chocker</h1>
+          </a>
+          <a href="../HTML/alljwelery.html">
+            <div class="fivth-card">
+              <div class="info">
+                <h2>chocker</h2>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
 
     <section class="second-story">
       <div class="turn">
-        <img src="../Assets/images/home/main-banner-004.jpg" alt="" />
+        <img src="../Assets/images/home/banner/main-banner.jpg" alt="" />
       </div>
     </section>
 
-    <section class="h1">
-      <h1>stones & pearls</h1>
+    <section id="stones" class="h1">
+      <h1>Stones & Pearls</h1>
     </section>
 
     <section class="stones">
-      <div class="stone">
-        <img src="../Assets/images/home/diamond.jpg" alt="" />
-        <div class="info">diamond</div>
-      </div>
-      <div class="stone">
-        <img src="../Assets/images/home/pearl.jpg" alt="" />
-        <div class="info">pearl</div>
-      </div>
-      <div class="stone">
-        <img src="../Assets/images/home/emerald.jpg" alt="" />
-        <div class="info">emerald</div>
-      </div>
-      <div class="stone">
-        <img src="../Assets/images/home/ruby.jpg" alt="" />
-        <div class="info">ruby</div>
-      </div>
+      <a href="../HTML/alljwelery.html">
+        <div class="stone">
+          <img src="../Assets/images/home/stones/diamond.png" alt="" />
+          <div class="info">Diamond</div>
+        </div>
+      </a>
+      <a href="../HTML/alljwelery.html">
+        <div class="stone">
+          <img src="../Assets/images/home/stones/pearl.jpg" alt="" />
+          <div class="info">Pearl</div>
+        </div>
+      </a>
+      <a href="../HTML/alljwelery.html">
+        <div class="stone">
+          <img src="../Assets/images/home/stones/emerald.jpg" alt="" />
+          <div class="info">Emerald</div>
+        </div>
+      </a>
+      <a href="../HTML/alljwelery.html">
+        <div class="stone">
+          <img src="../Assets/images/home/stones/ruby.jpg" alt="" />
+          <div class="info">Ruby</div>
+        </div>
+      </a>
+    </section>
+
+    <section id="metals" class="metals">
+      <h1>Metals & Materials</h1>
+    </section>
+
+    <section class="metal-material">
+      <a href="../HTML/alljwelery.html">
+        <div class="metals-materials">
+          <img
+            src="../Assets/images/home/metals-materials/gold.webp"
+            alt="sample110"
+          />
+          <figcaption>
+            <h3>Gold</h3>
+          </figcaption>
+        </div>
+      </a>
+      <a href="../HTML/alljwelery.html">
+        <div class="metals-materials">
+          <img
+            src="../Assets/images/home/metals-materials/thread.jpg"
+            alt="sample86"
+            class="image"
+          />
+          <figcaption>
+            <h3>Thread</h3>
+          </figcaption>
+        </div>
+      </a>
+
+      <a href="../HTML/alljwelery.html">
+        <div class="metals-materials">
+          <img
+            src="../Assets/images/home/metals-materials/silver.png"
+            alt="sample59"
+          />
+          <figcaption>
+            <h3>Silver</h3>
+          </figcaption>
+        </div>
+      </a>
+
+      <a href="../HTML/alljwelery.html">
+        <div class="metals-materials">
+          <img
+            src="../Assets/images/home/metals-materials/leather.png"
+            alt="sample59"
+          />
+          <figcaption>
+            <h3>Leather</h3>
+          </figcaption>
+        </div>
+      </a>
+
+      <a href="../HTML/alljwelery.html">
+        <div class="metals-materials">
+          <img
+            src="../Assets/images/home/metals-materials/beats.png"
+            alt="sample59"
+          />
+          <figcaption>
+            <h3>Beats</h3>
+          </figcaption>
+        </div>
+      </a>
+
+      <a href="../HTML/alljwelery.html">
+        <div class="metals-materials">
+          <img
+            src="../Assets/images/home/metals-materials/stone.webp"
+            alt="sample59"
+          />
+          <figcaption>
+            <h3>stone</h3>
+          </figcaption>
+        </div>
+      </a>
     </section>
 
     <section class="trust-safe">
@@ -268,21 +335,21 @@
         </div>
         <div class="inner">
           <img src="../Assets/images/home/trust/trust2.png" alt="" />
-          <p>insured <span>worldwide shipping</span></p>
+          <p>Insured <span>Worldwide Shipping</span></p>
         </div>
         <div class="inner">
           <img src="../Assets/images/home/trust/trust3.png" alt="" />
-          <p>75 years <span>trust</span></p>
+          <p>75 Years <span>Trust</span></p>
         </div>
         <div class="inner">
           <img src="../Assets/images/home/trust/trust4.png" alt="" />
-          <p>transperent & <span>lowest pricing</span></p>
+          <p>Transperent & <span>Lowest Pricing</span></p>
         </div>
       </div>
     </section>
 
     <section class="review" id="review">
-      <h1>customer's review</h1>
+      <h1>Customer's Review</h1>
       <div class="box-container">
         <div class="box">
           <img src="../Assets/images/home/review/quotes.png" class="quote" />
@@ -292,7 +359,7 @@
             the visit.
           </p>
           <img src="../Assets/images/home/review/photo2.jpg" class="user" />
-          <h3>lucy</h3>
+          <h3>Lucy</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -310,7 +377,7 @@
             beautiful architecture then this is a must to visit.
           </p>
           <img src="../Assets/images/home/review/photo3.jpg" class="user" />
-          <h3>john</h3>
+          <h3>John</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -328,7 +395,7 @@
             atmosphere is good.
           </p>
           <img src="../Assets/images/home/review/photo4.jpg" class="user" />
-          <h3>jannet</h3>
+          <h3>Jannet</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -337,38 +404,6 @@
             <i class="fa-regular fa-star"></i>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <h1 class="heading"><span>contact</span> us</h1>
-      <div class="row">
-        <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62213.529891843806!2d80.21124113903899!3d12.949722223133065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d509be9d1ff%3A0x5fdb27a1f89dea80!2sStarbucks%20Coffee!5e0!3m2!1sen!2sin!4v1649311371158!5m2!1sen!2sin"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <form action="">
-          <h3>get in touch</h3>
-          <div class="inputBox">
-            <span class="fas fa-user"></span>
-            <input type="text" placeholder="name" />
-          </div>
-          <div class="inputBox">
-            <span class="fas fa-envelope"></span>
-            <input type="email" placeholder="email" />
-          </div>
-          <div class="inputBox">
-            <span class="fas fa-phone"></span>
-            <input type="number" placeholder="number" />
-          </div>
-          <input type="submit" value="contact now" class="btn" />
-        </form>
       </div>
     </section>
 
@@ -409,6 +444,8 @@
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../../JS/home.js"></script>
+    <script src="../../js/cart.js"></script>
   </body>
 </html>

@@ -161,7 +161,8 @@ const products = [
     cart: "cart",
     buy: "buy",
     like: "like",
-    image: "javascript:void(0)",
+    image:
+      "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_2.0,f_auto,w_700/5636420_png/lilia-y-necklace--butterfly--pink--rose-gold-tone-plated-swarovski-5636420.png",
     description:
       "Add a touch of glamorous femininity to your everyday look with this Y-shaped necklace. Designed with rose gold-tone plating, it features delicate butterfly motifs adorned with shimmering pink pavé. Style yours with everything from a simple white T-shirt to elegant eveningwear for dramatic effect.",
   },
@@ -289,15 +290,15 @@ const products = [
   },
   {
     id: 25,
-    title: "Multicolored Beaded Layered Necklace",
+    title: "Heavy and Grand Diamond Choker",
     price: 4800.53,
     cart: "cart",
     buy: "buy",
     like: "like",
     image:
-      "https://static.jaypore.com/tr:w-60,h-79,e-sharpen/media/catalog/product/9/9/990008786-1_1.jpg",
+      "https://1.bp.blogspot.com/-UN40DfCxlgo/WCUTc683VkI/AAAAAAAAIQk/5fH5QhS6itYPd6tmM8bSFlmz_5a5q6JNwCLcB/s640/heavy-and-grand-diamond-choker.JPG",
     description:
-      "This product has been crafted by hand and may have slight irregularities or imperfections in color or embellishment. These irregularities are the result of the human involvement in the process and add to the finished products charm while ensuring you have a one-of-a-kind piece.",
+      "Tibarumal Gems & Jewels tremendous bridal necklace, Two tone necklace with pear shaped diamonds and floral clasp embellished in the center. 18 carat gold basic metal intricate necklace, teamed up with designer large diamond earrings.",
   },
   {
     id: 26,
@@ -1186,15 +1187,15 @@ const products = [
   },
   {
     id: 99,
-    title: "14k Yellow Gold Emerald and Diamond Necklace",
+    title: "The Caria Pendant",
     price: 192812.836,
     cart: "cart",
     buy: "buy",
     like: "like",
     image:
-      "data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%202048%201365%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E",
+      "https://kinclimg5.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIAB0455P11_YAA18DIG6SYBSSYEM_ABCD00-PICS-00004-1024-37239.png",
     description:
-      "14k solid yellow gold rope chain features a prong set round natural emerald and a tiny round natural diamond, exquisite minimalist everyday fine piece of jewelry. This emerald and diamond necklace is a great combination of gemstone and diamond.",
+      "Diamond , Blue Sapphire And Emerald Pendant In 18Kt Yellow Gold (10.87 gram) with Diamonds (0.4480 Ct)",
   },
   {
     id: 100,
@@ -1210,83 +1211,89 @@ const products = [
   },
 ];
 
-const filter = document.querySelector("#chocker");
 const filterPricing = document.querySelector("#filter-pricing");
 const product = document.querySelector("#products_container");
 const filteredProduct = document.querySelector("#filtered_products_container");
 const searchPrice = document.querySelector("#searchPrice");
 const startPrice = document.querySelector("#startPrice");
 const endPrice = document.querySelector("#endPrice");
-const cardElement = document.querySelectorAll(".card-parent");
+
+//common elements that need to be displayed in html
+
+const createdElements = (parentElement, pro) => {
+  const a = document.createElement("div");
+  const filtercard = document.createElement("div");
+  const image = document.createElement("img");
+  const row = document.createElement("div");
+  const buttonFlex = document.createElement("div");
+  const like = document.createElement("button");
+  const buy = document.createElement("button");
+  const title = document.createElement("h2");
+  const price = document.createElement("h3");
+
+  a.onclick = () => {
+    window.location.href = `http://127.0.0.1:5500/Public/HTML/productdetails.html?id=${pro.id}`;
+  };
+  filtercard.classList.add("filtercard");
+  title.innerHTML = pro.title;
+  title.classList.add("title");
+  image.src = pro.image;
+  image.classList.add("img");
+  like.innerHTML = pro.cart;
+  buy.innerHTML = pro.buy;
+  price.innerHTML = "&#8377;" + pro.price;
+  price.classList.add("price");
+  row.classList.add("row");
+  buttonFlex.classList.add("button-flex");
+
+  // like button function
+
+  like.addEventListener("click", function (e) {
+    e.stopPropagation();
+
+    const oldCart = JSON.parse(localStorage.getItem("like"));
+
+    if (!oldCart) {
+      localStorage.setItem("like", JSON.stringify([pro.id]));
+      return;
+    }
+
+    const isOldId = oldCart.find((p) => p === pro.id);
+
+    if (isOldId) {
+      const filteredData = oldCart.filter((p) => p !== pro.id);
+      localStorage.setItem("like", JSON.stringify(filteredData));
+      like.innerHTML = "cart";
+      return;
+    }
+
+    oldCart.push(pro.id);
+    localStorage.setItem("like", JSON.stringify(oldCart));
+    like.innerHTML = "remove";
+  });
+
+  // buy function button
+
+  buy.addEventListener("click", function (e) {
+    e.stopPropagation();
+    window.location.href = "http://127.0.0.1:5500/Public/HTML/checkout.html";
+  });
+
+  a.appendChild(filtercard);
+  parentElement.appendChild(a);
+  filtercard.appendChild(image);
+  filtercard.appendChild(title);
+  filtercard.appendChild(row);
+  row.appendChild(price);
+  row.appendChild(buttonFlex);
+  buttonFlex.appendChild(like);
+  buttonFlex.appendChild(buy);
+};
 
 //display products
 window.onload = () => {
   for (let pro of products) {
-    const a = document.createElement("div");
-    const card = document.createElement("div");
-    const image = document.createElement("img");
-    const row = document.createElement("div");
-    const buttonFlex = document.createElement("div");
-    const like = document.createElement("button");
-    const buy = document.createElement("button");
-    const title = document.createElement("h2");
-    const price = document.createElement("h3");
-
-    a.onclick = () => {
-      window.location.href = `http://127.0.0.1:5500/Public/HTML/productdetails.html?id=${pro.id}`;
-    };
-    a.classList.add("card-parent");
-
-    card.classList.add("card");
-    title.innerHTML = pro.title;
-    title.classList.add("title");
-    image.src = pro.image;
-    image.classList.add("img");
-    like.innerHTML = pro.cart;
-    buy.innerHTML = pro.buy;
-    price.innerHTML = pro.price;
-    price.classList.add("price");
-    row.classList.add("row");
-    buttonFlex.classList.add("button-flex");
-
-    like.addEventListener("click", function (e) {
-      e.stopPropagation();
-
-      const oldCart = JSON.parse(localStorage.getItem("like"));
-
-      if (!oldCart) {
-        localStorage.setItem("like", JSON.stringify([pro.id]));
-        return;
-      }
-
-      const isOldId = oldCart.find((p) => p === pro.id);
-
-      if (isOldId) {
-        const filteredData = oldCart.filter((p) => p !== pro.id);
-        localStorage.setItem("like", JSON.stringify(filteredData));
-        like.innerHTML = "cart";
-        return;
-      }
-
-      oldCart.push(pro.id);
-      localStorage.setItem("like", JSON.stringify(oldCart));
-      like.innerHTML = "remove";
-    });
-
-    buy.addEventListener("click", function (e) {
-      e.stopPropagation();
-      window.location.href = "http://127.0.0.1:5500/Public/HTML/checkout.html";
-    });
-
-    a.appendChild(card);
-    product.appendChild(a);
-    card.appendChild(image);
-    card.appendChild(title);
-    card.appendChild(row);
-    row.appendChild(price);
-    row.appendChild(buttonFlex);
-    buttonFlex.appendChild(like);
-    buttonFlex.appendChild(buy);
+    createdElements(product, pro);
   }
 };
 
@@ -1303,74 +1310,9 @@ function filterProducts(values) {
   }
   const filteredValues = filterByValue(products, values);
   console.log(filteredValues);
-
-  // filterPricing.remove();
   product.remove();
   for (let pro of filteredValues) {
-    const a = document.createElement("div");
-    const card = document.createElement("div");
-    const image = document.createElement("img");
-    const row = document.createElement("div");
-    const buttonFlex = document.createElement("div");
-    const like = document.createElement("button");
-    const buy = document.createElement("button");
-    const title = document.createElement("h2");
-    const price = document.createElement("h3");
-
-    a.onclick = () => {
-      window.location.href = `http://127.0.0.1:5500/Public/HTML/productdetails.html?id=${pro.id}`;
-    };
-    a.classList.add("card-parent");
-    card.classList.add("card");
-    title.innerHTML = pro.title;
-    title.classList.add("title");
-    image.src = pro.image;
-    image.classList.add("img");
-    like.innerHTML = pro.cart;
-    buy.innerHTML = pro.buy;
-    price.innerHTML = pro.price;
-    price.classList.add("price");
-    row.classList.add("row");
-    buttonFlex.classList.add("button-flex");
-
-    like.addEventListener("click", function (e) {
-      e.stopPropagation();
-
-      const oldCart = JSON.parse(localStorage.getItem("like"));
-
-      if (!oldCart) {
-        localStorage.setItem("like", JSON.stringify([pro.id]));
-        return;
-      }
-
-      const isOldId = oldCart.find((p) => p === pro.id);
-
-      if (isOldId) {
-        const filteredData = oldCart.filter((p) => p !== pro.id);
-        localStorage.setItem("like", JSON.stringify(filteredData));
-        like.innerHTML = "cart";
-        return;
-      }
-
-      oldCart.push(pro.id);
-      localStorage.setItem("like", JSON.stringify(oldCart));
-      like.innerHTML = "remove";
-    });
-
-    buy.addEventListener("click", function (e) {
-      e.stopPropagation();
-      window.location.href = "http://127.0.0.1:5500/Public/HTML/checkout.html";
-    });
-
-    a.appendChild(card);
-    filteredProduct.appendChild(a);
-    card.appendChild(image);
-    card.appendChild(title);
-    card.appendChild(row);
-    row.appendChild(price);
-    row.appendChild(buttonFlex);
-    buttonFlex.appendChild(like);
-    buttonFlex.appendChild(buy);
+    createdElements(filteredProduct, pro);
   }
 }
 
@@ -1384,68 +1326,102 @@ searchPrice.addEventListener("click", function () {
   product.remove();
 
   for (let pro of filteredMenu) {
-    const a = document.createElement("div");
-    const card = document.createElement("div");
-    const image = document.createElement("img");
-    const row = document.createElement("div");
-    const buttonFlex = document.createElement("div");
-    const like = document.createElement("button");
-    const buy = document.createElement("button");
-    const title = document.createElement("h2");
-    const price = document.createElement("h3");
-
-    a.onclick = () => {
-      window.location.href = `http://127.0.0.1:5500/Public/HTML/productdetails.html?id=${pro.id}`;
-    };
-    card.classList.add("card");
-    title.innerHTML = pro.title;
-    title.classList.add("title");
-    image.src = pro.image;
-    image.classList.add("img");
-    like.innerHTML = pro.cart;
-    buy.innerHTML = pro.buy;
-    price.innerHTML = pro.price;
-    price.classList.add("price");
-    row.classList.add("row");
-    buttonFlex.classList.add("button-flex");
-
-    like.addEventListener("click", function (e) {
-      e.stopPropagation();
-
-      const oldCart = JSON.parse(localStorage.getItem("like"));
-
-      if (!oldCart) {
-        localStorage.setItem("like", JSON.stringify([pro.id]));
-        return;
-      }
-
-      const isOldId = oldCart.find((p) => p === pro.id);
-
-      if (isOldId) {
-        const filteredData = oldCart.filter((p) => p !== pro.id);
-        localStorage.setItem("like", JSON.stringify(filteredData));
-        like.innerHTML = "cart";
-        return;
-      }
-
-      oldCart.push(pro.id);
-      localStorage.setItem("like", JSON.stringify(oldCart));
-      like.innerHTML = "remove";
-    });
-
-    buy.addEventListener("click", function (e) {
-      e.stopPropagation();
-      window.location.href = "http://127.0.0.1:5500/Public/HTML/checkout.html";
-    });
-
-    a.appendChild(card);
-    filterPricing.appendChild(a);
-    card.appendChild(image);
-    card.appendChild(title);
-    card.appendChild(row);
-    row.appendChild(price);
-    row.appendChild(buttonFlex);
-    buttonFlex.appendChild(like);
-    buttonFlex.appendChild(buy);
+    createdElements(filterPricing, pro);
   }
 });
+
+//cart function
+
+const cart = document.querySelector(".cart-product");
+
+const getProduct = JSON.parse(localStorage.getItem("like"));
+const singleProducts = products.filter((pro) => {
+  const d = getProduct.find((f) => f === pro.id);
+  return d ? true : false;
+});
+console.log(singleProducts);
+
+for (let pro of singleProducts) {
+  createdElements(cart, pro);
+}
+
+//dark-mode
+
+const darkMode = document.querySelector(".mode-changer");
+
+darkMode.addEventListener("click", function () {
+  let dark = document.body;
+  dark.classList.toggle("dark-mode");
+});
+
+//toggle color theme
+const palette = document.querySelector(".theme-button-container");
+const color = document.querySelector("#colors");
+const colorPalette = document.querySelectorAll("#palettes");
+
+color.addEventListener("click", function () {
+  if (palette.style.display === "flex") {
+    palette.style.display = "none";
+    colorPalette.forEach(function (item) {
+      item.style.display = "none";
+    });
+  } else {
+    palette.style.display = "flex";
+    colorPalette.forEach(function (item) {
+      item.style.display = "flex";
+    });
+  }
+});
+// theme changer
+
+let themeButtons = document.querySelectorAll(".theme-buttons");
+
+themeButtons.forEach((color) => {
+  color.addEventListener("click", () => {
+    let dataColor = color.getAttribute("data-color");
+    document
+      .querySelector(":root")
+      .style.setProperty("--background", dataColor);
+  });
+});
+
+const button = document.querySelector("#button");
+
+button.addEventListener("click", function () {
+  sessionStorage.clear();
+  window.location.href = "http://127.0.0.1:5500/Public/HTML/login.html";
+});
+
+// navbar
+
+const btn = document.querySelector(".close-nav-menu");
+const bar = document.querySelector(".logo-middle");
+
+function openMenu() {
+  bar.style.display = "block";
+}
+
+function closeMenu() {
+  bar.style.display = "none";
+}
+
+//search button
+$(".icon-search").on("click", function () {
+  $(".search-form").fadeToggle();
+
+  $(".fa-search").toggleClass("fa-times").css("transform", "rotate(0deg)");
+  $(".fa-times").css("transform", "rotate(180deg)");
+});
+
+//cart open bar and close bar
+
+const cartBtn = document.querySelector(".close-cart-menu");
+const cartBar = document.querySelector(".cart-navbar");
+
+function openCart() {
+  cartBar.style.display = "block";
+}
+
+function closeCart() {
+  cartBar.style.display = "none";
+}

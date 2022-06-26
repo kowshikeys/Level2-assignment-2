@@ -1,3 +1,5 @@
+// checkout function to fill the input box and proccess successfully
+
 const cancel = document.getElementById("cancel");
 const proceed = document.querySelector("#proceed");
 
@@ -28,6 +30,5 @@ proceed.addEventListener("click", function () {
 });
 
 cancel.addEventListener("click", function () {
-  window.location.href =
-    "http://127.0.0.1:5500/subaa/Public/HTML/alljwelery.html";
+  window.location.href = "http://127.0.0.1:5500/Public/HTML/alljwelery.html";
 });
