@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/suganya/styles/home.css" />
+    <!-- font Awesome icon link -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -12,87 +13,550 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <div class="left-side">
-        <p>My store</p>
+    <div class="jewellery_icon">
+      <a href="https://www.whatsapp.com/" class="headphone_round">
+        <img src="../Assets/images/logo_jewellery.png" alt="" />
+      </a>
+    </div>
+    <!-- navbar header one -->
+    <div class="header_one">
+      <div class="header_left">
+        <div>
+          <span onclick="openMenu()" class="open_bar"
+            ><i class="fa fa-bars"></i
+          ></span>
+        </div>
+        <div class="dark-mode" id="darkmode">
+          <i class="fa-solid fa-moon"></i>
+        </div>
+
+        <div class="clr_palette">
+          <p onclick="drop()"><i class="fa-solid fa-palette"></i></p>
+        </div>
+        <div id="drop_down" class="theme_changer">
+          <button id="color_red"></button>
+          <button id="color_green"></button>
+          <button id="color_yellow"></button>
+        </div>
       </div>
+      <div class="header_center">
+        <h1>My Store</h1>
+      </div>
+      <div class="header_right">
+        <a href="http://192.168.0.108:5501/suganya/public/HTML/login.html"
+          ><i class="fa-solid fa-user"></i
+        ></a>
 
-      <div class="right-side">
-        <p>
-          <a href="/suganya/public/HTML/productdetails.html"> All Jewellery</a>
-        </p>
+        <a href="http://192.168.0.108:5501/suganya/public/HTML/cart.html"
+          ><i class="fa-solid fa-bag-shopping"></i
+        ></a>
+      </div>
+    </div>
+    <!-- navbar header two -->
+    <div class="navbar_two">
+      <div class="header_two">
+        <span onclick="closeMenu()" class="close_bar">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+        <div class="jewellery">
+          <p>
+            <a
+              href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+              >All Jewellery</a
+            >
+          </p>
+        </div>
+        <div class="gold">
+          <p>Gold Jewellery<i class="fa-solid fa-angle-down"></i></p>
 
-        <div class="all">
-          <p>Necklaces</p>
+          <div class="gold_jewellery">
+            <div class="golds">
+              <h3>Gold Jewellery</h3>
+            </div>
+            <div class="drop_down_img">
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+              >
+                <img
+                  src="/suganya/public/Assets/images/gold_nec_designs.webp"
+                  alt=""
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img
+                  src="/suganya/public/Assets/images/gold_jewellery_designs.png"
+                  alt=""
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+              >
+                <img
+                  src="/suganya/public/Assets/images/gold_necklace.jpg"
+                  alt=""
+              /></a>
 
-          <div class="all_para">
-            <li onclick="filterProducts('diamond')">Diamond Necklace</li>
-            <li onclick="filterProducts('silver')">Silver Necklace</li>
-            <li onclick="filterProducts('gold')">Gold Chain</li>
-            <li onclick="filterProducts('silk')">Silk Thread Necklace</li>
-            <li onclick="filterProducts('beads')">Beads Necklace</li>
-            <li onclick="filterProducts('bridal')">Bridal Jewellery</li>
-            <li onclick="filterProducts('plating')">Gold Plating</li>
-            <li onclick="filterProducts('Layered')">Layered chain Necklace</li>
-            <li onclick="filterProducts('leather')">Leather Necklace</li>
-            <li onclick="filterProducts('emerald')">Emerald Necklace</li>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img
+                  src="/suganya/public/Assets/images/gold_necklace_1.jpg"
+                  alt=""
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img src="/suganya/public/Assets/images/gold_chain_2.webp"
+              /></a>
+
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img
+                  src="/suganya/public/Assets/images/gold_chain_1.webp"
+                  alt=""
+              /></a>
+            </div>
           </div>
         </div>
+        <div class="gold">
+          <p>Necklace Type<i class="fa-solid fa-angle-down"></i></p>
 
-        <p>Pendants</p>
-        <p>Earrings</p>
-        <p>Collections</p>
-        <p>Offers</p>
+          <div class="gold_jewellery">
+            <div class="golds">
+              <h3>Necklace Chain</h3>
+            </div>
+            <div class="drop_down_img">
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+              >
+                <img
+                  src="/suganya/public/Assets/images/layered_chain_necklace.jpg"
+                  alt=""
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img
+                  src="/suganya/public/Assets/images/collar_necklace.jpg"
+                  alt=""
+              /></a>
 
-        <div id="search" class="search">
-          <input id="search" type="search" placeholder="search" />
-          <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+              >
+                <img
+                  src="/suganya/public/Assets/images/matinee_nec_image.webp"
+                  alt=""
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img src="/suganya/public/Assets/images/chain_img.jpg"
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img src="/suganya/public/Assets/images/layered_necklace.webp"
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+              >
+                <img src="/suganya/public/Assets/images/butterfly_image.webp"
+              /></a>
+            </div>
+          </div>
         </div>
+        <div class="gold">
+          <p>Metals <i class="fa-solid fa-angle-down"></i></p>
 
-        <div>
-          <button id="logOut" class="btn">Logout</button>
+          <div class="gold_jewellery">
+            <div class="golds">
+              <h3>Metals Jewellery</h3>
+            </div>
+            <div class="drop_down_img">
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img
+                  src="/suganya/public/Assets/images/platinum_design.webp"
+                  alt=""
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img
+                  src="/suganya/public/Assets/images/gold_silver_necklace.jpg"
+                  alt=""
+              /></a>
+
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img src="/suganya/public/Assets/images/silver_necklace.jpg"
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img src="/suganya/public/Assets/images/bridal_necklace.jpeg"
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+              >
+                <img src="/suganya/public/Assets/images/gold_silver_img.jpg"
+              /></a>
+
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img src="/suganya/public/Assets/images/traditional_img.jpg"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="gold">
+          <p>Materials <i class="fa-solid fa-angle-down"></i></p>
+
+          <div class="gold_jewellery">
+            <div class="golds">
+              <h3>Materials Jewellery</h3>
+            </div>
+            <div class="drop_down_img">
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img
+                  src="/suganya/public/Assets/images/beaded_design.jpg"
+                  alt=""
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img
+                  src="/suganya/public/Assets/images/leather_chain.webp"
+                  alt=""
+              /></a>
+
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img src="/suganya/public/Assets/images/gold_silk_thread.jpg"
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img
+                  src="/suganya/public/Assets/images/silk_thread_chain.webp"
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img src="/suganya/public/Assets/images/beads_img.webp"
+              /></a>
+
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img src="/suganya/public/Assets/images/leather_img.jpg"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="gold">
+          <p>Stones <i class="fa-solid fa-angle-down"></i></p>
+
+          <div class="gold_jewellery">
+            <div class="golds">
+              <h3>Stones Jewellery</h3>
+            </div>
+            <div class="drop_down_img">
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img
+                  src="/suganya/public/Assets/images/diamond_necklace.jpg"
+                  alt=""
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+              >
+                <img
+                  src="/suganya/public/Assets/images/ruby_jewellery.jpg"
+                  alt=""
+              /></a>
+
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img src="/suganya/public/Assets/images/ruby_necklace.jpg"
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img
+                  src="/suganya/public/Assets/images/platinum_diamond_img.jpeg"
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+              >
+                <img src="/suganya/public/Assets/images/pearl_diamond.jpg"
+              /></a>
+
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img src="/suganya/public/Assets/images/bridal_jewellery.jpg"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="gold">
+          <p>General <i class="fa-solid fa-angle-down"></i></p>
+
+          <div class="gold_jewellery">
+            <div class="golds">
+              <h3>General</h3>
+            </div>
+            <div class="drop_down_img">
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img
+                  src="/suganya/public/Assets/images/peacock_design.jpg"
+                  alt=""
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img
+                  src="/suganya/public/Assets/images/bridal_choker_necklace.jpg"
+                  alt=""
+              /></a>
+
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img src="/suganya/public/Assets/images/peacock-necklace.jpg"
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img src="/suganya/public/Assets/images/peacock_chain.webp"
+              /></a>
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img src="/suganya/public/Assets/images/bridal_choker.jpg"
+              /></a>
+
+              <a
+                href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+                ><img src="/suganya/public/Assets/images/gold_bridal.jpg"
+              /></a>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
+
+    <!-- search -->
+
+    <div id="searchWindow" class="search">
+      <input id="search" type="search" placeholder="search" />
+      <div class="sear_icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
 
     <div class="front_image">
       <img src="/suganya/public/Assets/images/jewellery_header_img.jpg" />
     </div>
 
-    <div class="card_container">
-      <div class="card">
-        <img src="../Assets/images/silk.jpg" />
-        <div class="letter">Silk</div>
+    <div class="heading">
+      <h3>Shop by Category</h3>
+    </div>
+
+    <div class="jewellery_icons">
+      <div class="image_icon">
+        <div>
+          <img src="/suganya/public/Assets/images/1.png" />
+          <div class="para"><p>Gold Necklace</p></div>
+        </div>
       </div>
-      <div class="card">
-        <img src="../Assets/images/leather.webp" />
-        <div class="letter">Leather</div>
+      <div class="image_icon">
+        <div>
+          <img src="/suganya/public/Assets/images/2.1.png " />
+          <div class="para"><p>Diamond Necklace</p></div>
+        </div>
       </div>
-      <div class="card">
-        <img src="../Assets/images/emerald1.webp" />
-        <div class="letter">Gold</div>
+      <div class="image_icon">
+        <div><img src="/suganya/public/Assets/images/3.png " /></div>
+        <div class="para"><p>Emerald Necklace</p></div>
       </div>
-      <div class="card">
-        <img src="../Assets/images/silver.webp" />
-        <div class="letter">Silver</div>
+      <div class="image_icon">
+        <div>
+          <img src="/suganya/public/Assets/images/peacock_img.png" />
+          <div class="para"><p>Peacock Necklace</p></div>
+        </div>
       </div>
-      <div class="card">
-        <img src="/suganya/public/Assets/images/emerald_img.jpeg" />
-        <div class="letter">Emerald</div>
+      <div class="image_icon">
+        <div>
+          <img src="/suganya/public/Assets/images/silk_thread.png" />
+          <div class="para"><p>Silk Thread Necklace</p></div>
+        </div>
       </div>
-      <div class="card">
-        <img src="/suganya/public/Assets/images/Bride-essentials.jpg" />
-        <div class="letter">Emerald</div>
+      <div class="image_icon">
+        <div>
+          <img src="/suganya/public/Assets/images/ruby.png" />
+          <div class="para"><p>Ruby Necklace</p></div>
+        </div>
       </div>
     </div>
 
-    <!-- <div class="video">
-      <video width="100%" height="500" loop autoplay>
-        <source
-          src="../Assets/images/Wood and Gold Jewellery Presentation.mp4"
-        />
-      </video>
-    </div> -->
+    <!-- video -->
+
+    <video
+      class="video"
+      src="../Assets/images/video/Jewellery _Shoot _ Cinematic Video By Layer Cine Wedding.mp4"
+      autoplay
+      muted
+      loop
+    ></video>
+
+    <!-- cards -->
+
+    <div class="card_container">
+      <div class="card">
+        <img src="../Assets/images/gold_diamond_img.jpg" />
+        <div class="letter">Silk</div>
+      </div>
+      <div class="card">
+        <img src="../Assets/images/silver_diamond_img.jpg" />
+        <div class="letter">Leather</div>
+      </div>
+      <div class="card">
+        <img src="../Assets/images/chain_diamond.jpg" />
+        <div class="letter">Gold</div>
+      </div>
+      <div class="card">
+        <img src="../Assets/images/gold_chain_image.jpg" />
+        <div class="letter">Silver</div>
+      </div>
+      <div class="card">
+        <img src="/suganya/public/Assets/images/chain_gold_img.jpg" />
+        <div class="letter">Emerald</div>
+      </div>
+      <div class="card">
+        <img src="/suganya/public/Assets/images/chain_ruby_image.jpg" />
+        <div class="letter">Diamond</div>
+      </div>
+      <div class="card">
+        <img src="/suganya/public/Assets/images/chain_silver_img.jpg" />
+        <div class="letter">Bride</div>
+      </div>
+      <div class="card">
+        <img src="/suganya/public/Assets/images/traditional_img.jpg" />
+        <div class="letter">Bridal Jewellery</div>
+      </div>
+    </div>
+
+    <div class="design">
+      <div class="design_img">
+        <img src="../Assets/images/jewellery_design_image.webp" alt="" />
+      </div>
+      <div class="design_para">
+        <h3>Not Just Like A Basic Necklace</h3>
+        <p>
+          There are over dozens of different types of necklaces, but if there is
+          a wedding around, then probably you need to know about them for sure
+          to rock on the wedding day. There are various hottest wedding necklace
+          designs these days – Guttapusalu, Rani Haram, Satlada, bib necklace
+          and more. Don’t get confused, if you are finding these terms
+          different. You will come to know about them completely when you go
+          through this blog. Let’s get started!. This south Indian design is
+          very popular and looks stunning at weddings. It is similar to the Rani
+          Haram long necklace style with gold and bunches of pearls at the ends
+          of the fringes. And this gold jewellery can be studded with diamonds,
+          emeralds, rubies, gemstones and more.
+        </p>
+      </div>
+    </div>
+
+    <div class="hands_container">
+      <div class="hands_logo">
+        <i class="fa-regular fa-gem"></i>
+      </div>
+      <div class="hands_text">
+        <h2>WHAT OTHERS SAY</h2>
+        <p>
+          "Astley Clarke is a brilliant store for precious pieces that you can
+          wear every day"
+        </p>
+      </div>
+    </div>
+
+    <!-- customer review -->
+
+    <div class="review">
+      <h1>Customer's Review</h1>
+      <div class="review_container">
+        <div class="box">
+          <h2>ANU XAVIER - INDORE</h2>
+          <img class="user" src="../Assets/images/review_photo_1.jpg" alt="" />
+
+          <p>
+            They Have The Best Collection Of Jwellery And At Reasonable Prices.
+            You Can Also Customise Your Jwellery As Per Your Need. They Also
+            Were Very Much Polite And Have A Good Service Too. Even They
+            Delivered The Jwellery To Me, When I Requested Them If They Could
+            Deliver If Possible. Thank You So Much. Had A Very Good Experience!!
+          </p>
+
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <div class="box">
+          <h2>ANAND JALAN - CHENNAI</h2>
+          <img class="user" src="../Assets/images/review_photo_3.jpg" alt="" />
+          <p>
+            Had A Very Good Experience Shopping From Your Site. The Chain Was
+            Awesome And The Price Was At Par With The Current Market Rates.
+            Thank You Giriraj Jewellers.
+          </p>
+
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+        <div class="box">
+          <h2>UDAYASREE - LOUISIANA</h2>
+          <img class="user" src="../Assets/images/review_photo_2.webp" alt="" />
+
+          <p>
+            I Was Scared At First To Buy Jewellery Online. But Giriraj Jewellers
+            Made It Hassle-Free. I Loved The Chain. Simple And Elegant For Daily
+            Use. It Was Customized As Per My Requirements. Invoice Was
+            Transparent. Quick Home Delivery.
+          </p>
+
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <video
+        class="jewellery_video"
+        src="../Assets/images/video/Wood and Gold Jewellery Presentation.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div class="jewellery_para">
+        <h2>Necklaces</h2>
+        <p>
+          The Earliest Necklaces Were Made of Natural Shells or Stones. These
+          were Replaced by fashioned beads, which have been found in prehistoric
+          grave sites. The ancient Egyptians routinely made beads of glass and
+          glazed pottery and would fashion these items into necklaces. All eyes
+          on them. Their charm, their grace. Their love for their culture. Their
+          unparalleled vision. Their effervescent spirit that brings light to
+          every room. Their brilliance that shines through with utmost radiance.
+          Every aspect of their personality, special. Our real brides are simply
+          mesmerising. And when we got the chance to bring their dream vision,
+          dream wedding ensemble to life, we celebrated it in all its glory.
+        </p>
+      </div>
+    </div>
+
+    <!-- footer -->
 
     <footer>
       <div class="footer-details">

@@ -1,3 +1,5 @@
+//sign in through session storage
+
 const signStore = () => {
   const signName = document.getElementById("signname").value;
   const signEmail = document.getElementById("signemail").value;

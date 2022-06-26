@@ -1,25 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&family=El+Messiri&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-body {
   font-family: sans-serif;
 }
 
-nav {
-  background: #143e42;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 30% 70%;
-      grid-template-columns: 30% 70%;
-  min-height: 60px;
+.jewellery_icon .headphone_round {
+  position: fixed;
+  right: 25px;
+  bottom: 45px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 15px #bbb7b7;
+          box-shadow: 0 0 15px #bbb7b7;
+  font-size: 22px;
+  width: 65px;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  color: white;
+  z-index: 1000;
 }
 
-nav .left-side {
-  color: white;
+.jewellery_icon .headphone_round img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+.header_one {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 15px;
+  border-bottom: 1px solid #aacccf;
+  background-color: #143e42;
+  color: #fff;
+}
+
+@media (max-width: 1370px) {
+  .header_one {
+    width: 100%;
+  }
+}
+
+.header_one .open_bar {
+  display: none;
+}
+
+@media (max-width: 1070px) {
+  .header_one .open_bar {
+    display: block;
+  }
+}
+
+.header_one .header_left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,84 +77,485 @@ nav .left-side {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 30px;
+  gap: 20px;
 }
 
-nav .right-side {
+@media (max-width: 600px) {
+  .header_one .header_left {
+    gap: 10px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header_one .header_left {
+    font-size: 13px;
+    gap: 2px;
+  }
+}
+
+.header_one .header_left .close_bar {
+  display: none;
+}
+
+.header_one .header_left .dark-mode {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header_one .header_left #color_red {
+  background: #c135c2;
+  cursor: pointer;
+}
+
+.header_one .header_left #color_green {
+  background: #29a193;
+  cursor: pointer;
+}
+
+.header_one .header_left #color_yellow {
+  background: #2bff88;
+  cursor: pointer;
+}
+
+.header_one .header_left .clr_palette {
+  cursor: pointer;
+}
+
+.header_one .header_left .clr_palette i {
+  color: #fff;
+}
+
+.header_one .header_left .theme_changer {
+  display: none;
+}
+
+.header_one .header_left .theme_changer button {
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.header_one .header_center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-nav .right-side a {
+.header_one .header_center h1 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "El Messiri", sans-serif;
+}
+
+@media (max-width: 600px) {
+  .header_one .header_center h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 335px) {
+  .header_one .header_center h1 {
+    font-size: 16px;
+  }
+}
+
+.header_one .header_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 600px) {
+  .header_one .header_right {
+    gap: 15px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header_one .header_right {
+    font-size: 14px;
+    gap: 10px;
+  }
+}
+
+.header_one .header_right i {
+  color: #fff;
+}
+
+.navbar_two {
+  background: #598e93;
+  color: white;
+}
+
+.navbar_two .header_two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  padding: 20px;
+}
+
+@media (max-width: 1070px) {
+  .navbar_two .header_two {
+    display: none;
+    background: #163234;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+}
+
+.navbar_two .header_two .close_bar {
+  display: none;
+  border: 1px solid #fff;
+  width: 17px;
+  height: 23px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1070px) {
+  .navbar_two .header_two .close_bar {
+    display: block;
+  }
+}
+
+.navbar_two .header_two .jewellery p a {
   color: white;
   text-decoration: none;
 }
 
-nav .right-side .all {
+@media (max-width: 1070px) {
+  .navbar_two .header_two .jewellery p a {
+    font-size: 22px;
+    margin-left: -7px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar_two .header_two .jewellery p a {
+    font-size: 16px;
+  }
+}
+
+.navbar_two .header_two .gold {
+  cursor: pointer;
+  padding: 5px;
+}
+
+@media (max-width: 1070px) {
+  .navbar_two .header_two .gold {
+    padding: 0;
+  }
+}
+
+.navbar_two .header_two .gold p {
   position: relative;
 }
 
-nav .right-side .all .all_para {
-  width: 100px;
-  top: 30px;
-  position: absolute;
-  background-color: #681165;
-  display: none;
+@media (max-width: 1070px) {
+  .navbar_two .header_two .gold p {
+    margin-top: 20px;
+    margin-left: -8px;
+    font-size: 22px;
+  }
 }
 
-nav .right-side .all .all_para li {
-  color: white;
-  border-bottom: 1px solid red;
-  padding: 10px;
-  list-style: none;
+@media (max-width: 400px) {
+  .navbar_two .header_two .gold p {
+    font-size: 16px;
+  }
 }
 
-nav .right-side .all:hover .all_para {
-  display: block;
-}
-
-nav .right-side p {
-  color: white;
-  cursor: pointer;
-  padding: 4px;
-}
-
-.btn {
-  border-radius: 5px;
-  cursor: pointer;
+.navbar_two .header_two .gold p i {
   font-size: 15px;
-  font-weight: bold;
+  margin-left: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar_two .header_two .gold p i:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.navbar_two .header_two .gold .gold_jewellery {
+  position: absolute;
+  left: 0;
+  top: 130px;
+  padding: 1em;
+  width: 100%;
+  background: #cae7ea;
+  color: black;
+  display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  list-style: none;
+  line-height: 40px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.navbar_two .header_two .gold .gold_jewellery .golds {
+  border-right: 1px solid white;
+  margin-right: 100px;
+}
+
+.navbar_two .header_two .gold .gold_jewellery .golds img {
+  width: 200px;
+  height: 200px;
+}
+
+.navbar_two .header_two .gold .gold_jewellery h3 {
+  width: 85%;
+  margin: auto;
+}
+
+.navbar_two .header_two .gold .gold_jewellery .drop_down_img {
+  margin-left: 55px;
+  margin-top: 30px;
+}
+
+@media (max-width: 330px) {
+  .navbar_two .header_two .gold .gold_jewellery .drop_down_img {
+    margin-left: 15px;
+  }
+}
+
+.navbar_two .header_two .gold .gold_jewellery .drop_down_img img {
+  width: 200px;
+  height: 200px;
+  margin-left: 1em;
+}
+
+.navbar_two .header_two .gold p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 1px;
+  background: white;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.navbar_two .header_two .gold p:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.navbar_two .header_two .gold:hover .gold_jewellery {
+  display: -ms-grid;
+  display: grid;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+}
+
+.search input {
+  padding: 10px;
+  width: 50%;
+  outline: none;
   border: none;
-  padding: 10px 20px;
-  background-color: orange;
+  background: #d5eff1;
+}
+
+.search .sear_icon i {
+  background: #143e42;
   color: white;
-  -webkit-transition: ease-out 0.5s;
-  transition: ease-out 0.5s;
-}
-
-.btn:hover {
-  background-color: red;
-}
-
-.front_image {
-  margin-top: 80px;
+  margin-top: 2px;
+  margin-left: 4px;
+  border: 1px solid black;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
 }
 
 .front_image img {
   width: 100%;
 }
 
+@media (max-width: 1070px) {
+  .front_image {
+    margin-top: 40px;
+  }
+}
+
+.heading {
+  font-size: 28px;
+  padding: 40px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .heading {
+    padding: 15px;
+  }
+}
+
+.heading h3 {
+  font-size: 40px;
+  font-family: "El Messiri", sans-serif;
+}
+
+@media (max-width: 600px) {
+  .heading h3 {
+    font-size: 30px;
+  }
+}
+
+.jewellery_icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  padding: 50px;
+  justify-items: center;
+}
+
+@media (max-width: 950px) {
+  .jewellery_icons {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+  }
+}
+
+@media (max-width: 635px) {
+  .jewellery_icons {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 340px) {
+  .jewellery_icons {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.jewellery_icons .image_icon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 950px) {
+  .jewellery_icons .image_icon {
+    margin-bottom: 30px;
+  }
+}
+
+.jewellery_icons .image_icon img {
+  border: 1px solid black;
+  width: 100px;
+  border-radius: 30px;
+  background: #163234;
+  height: 100px;
+}
+
+.jewellery_icons .image_icon .para p {
+  font-size: 18px;
+  margin-top: 5px;
+  font-family: "Cairo", sans-serif;
+}
+
+.video {
+  margin-top: 50px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .video {
+    margin-top: 20px;
+  }
+}
+
 .card_container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  cursor: pointer;
+}
+
+@media (max-width: 1170px) {
+  .card_container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .card_container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .card_container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .card_container .card {
@@ -145,6 +594,247 @@ nav .right-side p {
   border-radius: 15px;
 }
 
+.design {
+  padding: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 500px) {
+  .design {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .design {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.design .design_img img {
+  width: 80%;
+}
+
+.design .design_para {
+  margin-top: 110px;
+}
+
+@media (max-width: 1400px) {
+  .design .design_para {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .design .design_para {
+    margin-top: 10px;
+  }
+}
+
+.design .design_para h3 {
+  font-size: 30px;
+  font-family: "El Messiri", sans-serif;
+}
+
+.design .design_para p {
+  font-size: 18px;
+  line-height: 35px;
+  margin-top: 30px;
+  font-weight: 400;
+  font-family: "Cairo", sans-serif;
+}
+
+.hands_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #d4e9ec;
+  width: 100%;
+  height: 40vh;
+}
+
+@media (max-width: 400px) {
+  .hands_container {
+    height: 50vh;
+  }
+}
+
+.hands_container .hands_logo {
+  border-radius: 50px;
+  margin-bottom: 20px;
+  padding: 8px;
+}
+
+.hands_container .hands_logo i {
+  font-size: 45px;
+  color: #143e42;
+  margin-top: 5px;
+}
+
+.hands_container .hands_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.hands_container .hands_text h2 {
+  color: #163234;
+  letter-spacing: 2px;
+  font-family: "El Messiri", sans-serif;
+}
+
+.hands_container .hands_text p {
+  font-family: "Cairo", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 50px;
+}
+
+@media (max-width: 1100px) {
+  .content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.content .jewellery_video {
+  width: 80%;
+}
+
+@media (max-width: 900px) {
+  .content .jewellery_video {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.content .jewellery_para {
+  margin-top: 5px;
+  font-size: 21px;
+}
+
+.content .jewellery_para h2 {
+  margin-bottom: 15px;
+  font-family: "El Messiri", sans-serif;
+}
+
+.content .jewellery_para p {
+  line-height: 28px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Cairo", sans-serif;
+}
+
+.review {
+  margin-top: 80px;
+}
+
+.review h1 {
+  font-size: 38px;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .review h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .review h1 {
+    margin-bottom: 40px;
+  }
+}
+
+.review .review_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .review .review_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.review .review_container .box {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+@media (max-width: 900px) {
+  .review .review_container .box {
+    padding: 5px;
+  }
+}
+
+.review .review_container .box p {
+  font-size: 18px;
+  line-height: 1.8;
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.review .review_container .box .user {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  height: 7rem;
+  width: 7rem;
+  border: 2px solid #163234;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.review .review_container .box h2 {
+  font-size: 23px;
+}
+
+.review .review_container .box .stars i {
+  color: #f5b30e;
+  font-size: 24px;
+  margin-top: 15px;
+}
+
 footer {
   background: #143e42;
 }
@@ -161,7 +851,7 @@ footer .footer-details .footer_content {
   border-bottom: 0.5px solid #fff;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   footer .footer-details .footer_content {
     display: -ms-grid;
     display: grid;
@@ -198,5 +888,10 @@ footer .footer-details .footer_end {
 footer .footer-details .footer_end p {
   margin: 20px 0;
   color: #fff;
+}
+
+.lightmode {
+  background-color: #000;
+  color: white;
 }
 /*# sourceMappingURL=home.css.map */

@@ -1,13 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
+
+.header_one {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #143e42;
+  color: white;
+  padding: 15px;
+  border-bottom: 1px solid #aacccf;
+
+  @media (max-width: 1370px) {
+    width: 100%;
+  }
+  .open_bar {
+    display: none;
+    @media (max-width: 1070px) {
+      display: block;
+    }
+  }
+
+  i {
+    color: var(--icon);
+  }
+
+  .header_left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    @media (max-width: 600px) {
+      gap: 10px;
+      font-size: 15px;
+    }
+    @media (max-width: 380px) {
+      font-size: 13px;
+      gap: 2px;
+    }
+
+    .close_bar {
+      display: none;
+    }
+
+    .dark-mode {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      i {
+        color: white;
+      }
+    }
+    .location {
+      i {
+        color: white;
+      }
+    }
+    .open_bar {
+      i {
+        color: white;
+      }
+    }
+  }
+
+  .header_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 30px;
+      font-family: "El Messiri", sans-serif;
+      font-weight: 500;
+
+      @media (max-width: 600px) {
+        font-size: 20px;
+      }
+      @media (max-width: 335px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .header_right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    i {
+      color: white;
+    }
+    @media (max-width: 600px) {
+      gap: 15px;
+      font-size: 15px;
+    }
+    @media (max-width: 380px) {
+      font-size: 14px;
+      gap: 10px;
+    }
+  }
+}
+.navbar_two {
+  background: #598e93;
+  color: white;
+  .header_two {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    @media (max-width: 1070px) {
+      display: none;
+      background-color: #143e42;
+      color: white;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+    }
+    .jewellery {
+      @media (max-width: 1070px) {
+        margin-bottom: 25px;
+        font-size: 22px;
+        color: #fff;
+      }
+    }
+    .close_bar {
+      display: none;
+      border: 2px solid #fff;
+      width: 17px;
+      height: 23px;
+      margin-bottom: 20px;
+
+      @media (max-width: 1070px) {
+        display: block;
+      }
+    }
+
+    p {
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    .gold {
+      cursor: pointer;
+      padding: 5px;
+
+      @media (max-width: 900px) {
+        padding: 0;
+      }
+
+      p {
+        position: relative;
+        @media (max-width: 900px) {
+          margin-bottom: 25px;
+          font-size: 22px;
+        }
+      }
+      i {
+        margin-left: 1px;
+        font-size: 15px;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: rotate(180deg);
+        }
+      }
+
+      .gold_jewellery {
+        display: grid;
+        grid-template-columns: 1.5fr 3fr;
+        position: absolute;
+        left: 0;
+        top: 130px;
+        padding: 1em;
+        width: 100%;
+        background: #cae7ea;
+        color: black;
+        display: none;
+        transition: 0.3s;
+        list-style: none;
+        line-height: 40px;
+        transition: all 0.5s;
+        z-index: 100;
+        cursor: pointer;
+        @media (max-width: 700px) {
+          grid-template-columns: 1fr;
+          top: 220px;
+        }
+
+        // .golds {
+        //   border-right: 1px solid white;
+        //   margin-right: 100px;
+        // }
+
+        li {
+          width: 80%;
+          margin: auto;
+          margin-top: 10px;
+        }
+
+        h3 {
+          width: 80%;
+          margin: auto;
+        }
+        .drop_down_img {
+          margin-top: 30px;
+
+          img {
+            width: 200px;
+            height: 200px;
+            margin-left: 1em;
+          }
+        }
+      }
+    }
+
+    .gold p::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0%;
+      height: 1px;
+      background-color: black;
+      transition: 0.4s ease-out;
+    }
+
+    .gold p:hover::after {
+      left: 0;
+      width: 100%;
+    }
+
+    .gold:hover .gold_jewellery {
+      display: grid;
+    }
+
+    .necklace {
+      cursor: pointer;
+      p {
+        position: relative;
+
+        @media (max-width: 900px) {
+          margin-bottom: 25px;
+          font-size: 22px;
+        }
+      }
+      i {
+        font-size: 15px;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: rotate(180deg);
+        }
+      }
+
+      .necklace_drop {
+        background: #cae7ea;
+        position: absolute;
+        left: 0;
+        top: 130px;
+        width: 100%;
+        list-style: none;
+        display: none;
+        transition: 0.3s;
+        padding: 1em;
+        line-height: 40px;
+        transition: all 0.5s;
+        z-index: 100;
+        cursor: pointer;
+        .drop {
+          display: grid;
+          grid-template-columns: 1fr 1fr 2fr;
+          padding: 1em;
+          @media (max-width: 700px) {
+            top: 300px;
+          }
+          @media (max-width: 600px) {
+            grid-template-columns: 1fr;
+          }
+          .drop_down {
+            h3 {
+              color: black;
+            }
+          }
+        }
+
+        .drop_down_img {
+          img {
+            width: 200px;
+            height: 200px;
+            margin-left: 30px;
+            margin-top: 15px;
+          }
+        }
+
+        li {
+          width: 80%;
+          color: black;
+          margin: auto;
+        }
+
+        h3 {
+          width: 80%;
+          margin: auto;
+        }
+      }
+    }
+
+    .necklace p::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0%;
+      height: 1px;
+      background-color: black;
+      transition: 0.4s ease-out;
+    }
+
+    .necklace p:hover::after {
+      left: 0;
+      width: 100%;
+    }
+
+    .necklace:hover .necklace_drop {
+      display: block;
+    }
+  }
+}
+
 .products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2em;
   padding: 30px;
+  @media (max-width: 1310px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 620px) {
+    grid-template-columns: 1fr;
+  }
+  @media (max-width: 673px) {
+    padding: 6px;
+  }
   img {
     width: 250px;
     height: 250px;
@@ -71,7 +418,7 @@
       transition: 0.4s all;
       cursor: pointer;
       &:hover {
-        background: #286267;
+        background: #245357;
       }
     }
     .buy {
@@ -83,26 +430,113 @@
       margin-left: 8px;
       cursor: pointer;
       &:hover {
-        background: #286267;
+        background: #245357;
       }
     }
   }
 }
 
-@media (max-width: 900px) {
-  .products {
-    grid-template-columns: repeat(3, 1fr);
+.search {
+  display: flex;
+  justify-content: center;
+  padding: 18px;
+
+  input {
+    padding: 10px;
+    width: 50%;
+    outline: none;
+    border: none;
+    background: #d5eff1;
+  }
+  .sear_icon {
+    i {
+      background: #143e42;
+      color: white;
+      margin-top: 2px;
+      margin-left: 4px;
+      border: 1px solid black;
+      border: none;
+      padding: 8px;
+      cursor: pointer;
+    }
   }
 }
 
-@media (max-width: 700px) {
-  .products {
-    grid-template-columns: repeat(2, 1fr);
+.prices {
+  display: flex;
+  gap: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+  @media (max-width: 673px) {
+    display: block;
+    justify-items: center;
+    text-align: center;
+  }
+
+  li {
+    list-style: none;
+    h1 {
+      color: #143e42;
+      font-family: "El Messiri", sans-serif;
+      font-weight: 600;
+    }
+  }
+
+  .price_input {
+    margin-top: 8px;
+
+    input {
+      width: 200px;
+      padding: 5px 10px 5px;
+      @media (max-width: 416px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .search_btn {
+    margin-top: 8px;
+    @media (max-width: 673px) {
+      padding: 20px;
+    }
+    @media (max-width: 416px) {
+      padding: 2px;
+    }
+    button {
+      padding: 8px 15px 8px;
+      background: #143e42;
+      color: white;
+      border: none;
+      transition: 1s;
+      cursor: pointer;
+      &:hover {
+        background: #235a5f;
+      }
+    }
   }
 }
 
-@media (max-width: 500px) {
-  .products {
-    grid-template-columns: 1fr;
+.peacock_img {
+  text-align: center;
+  margin-top: 40px;
+  img {
+    width: 100%;
   }
 }
+
+// @media (max-width: 900px) {
+//   .products {
+//     grid-template-columns: repeat(3, 1fr);
+//   }
+// }
+
+// @media (max-width: 700px) {
+//   .products {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }
+
+// @media (max-width: 500px) {
+//   .products {
+//     grid-template-columns: 1fr;
+//   }
+// }

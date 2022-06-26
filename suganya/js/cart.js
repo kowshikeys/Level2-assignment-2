@@ -1,3 +1,5 @@
+//product data
+
 const products = [
   {
     id: 1,
@@ -183,10 +185,10 @@ const products = [
   {
     id: 13,
     title:
-      "Rectangle Faceted Sapphire Blue AD Rhinestone Rhodium Plated Crystal Necklace Set",
+      "Rectangle Faceted Sapphire Blue AD Rhinestone Rhodium Plated silver Necklace Set",
     price: 5993.1,
     description:
-      "American Diamond necklace studded with clear CZ stones and encrusted on Silver | Rhodium background. Floral designed settings of Necklace set.",
+      "Buy Silver-Toned Fashion Jewellery Sets for Women by Shining Diva Online in india at Rs. 238. Shop for more Shining Diva Fashion Jewellery Set.",
     category: "Jewellery",
     cart: "cart",
     buy: "buy",
@@ -1651,6 +1653,8 @@ const products = [
   },
 ];
 
+// function to get and save in cart page
+
 window.onload = () => {
   const product = document.querySelector(".products");
 
@@ -1689,7 +1693,6 @@ window.onload = () => {
     buy.innerHTML = i.buy;
     category.innerHTML = i.category;
     category.classList.add("category");
-    // rating.innerHTML = i.rating.rate + "/ 5";
     title.innerHTML = i.title;
     description.innerHTML = i.description;
     price.innerHTML = "&#8377;" + i.price;
@@ -1704,15 +1707,11 @@ window.onload = () => {
     product.appendChild(a);
 
     card.appendChild(image);
-    // card.appendChild(category);
     card.appendChild(title);
-
     card.appendChild(rating);
     card.appendChild(cart);
     card.appendChild(buy);
-
     card.appendChild(description);
-
     card.appendChild(price);
 
     cart.addEventListener("click", function (e) {

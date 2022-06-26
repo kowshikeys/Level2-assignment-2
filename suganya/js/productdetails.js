@@ -191,10 +191,10 @@ const products = [
   {
     id: 13,
     title:
-      "Rectangle Faceted Sapphire Blue AD Rhinestone Rhodium Plated Crystal Necklace Set",
+      "Rectangle Faceted Sapphire Blue AD Rhinestone Rhodium Plated Silver Necklace Set",
     price: 5993.1,
     description:
-      "American Diamond necklace studded with clear CZ stones and encrusted on Silver | Rhodium background. Floral designed settings of Necklace set.",
+      "Buy Silver-Toned Fashion Jewellery Sets for Women by Shining Diva Online in india at Rs. 238. Shop for more Shining Diva Fashion Jewellery Set.",
     category: "Jewellery",
     cart: "cart",
     buy: "buy",
@@ -1658,6 +1658,7 @@ const products = [
     },
   },
 ];
+// function for displaying product page
 
 window.onload = () => {
   const productId = document.querySelector(".productid");
@@ -1675,18 +1676,16 @@ window.onload = () => {
   const title = document.createElement("h3");
   const price = document.createElement("h2");
   const description = document.createElement("p");
-  // const rating = document.createElement("h5");
 
   image.src = singleProduct.image;
   cart.innerHTML = singleProduct.cart;
   buy.innerHTML = singleProduct.buy;
   category.innerHTML = singleProduct.category;
-  category.classList.add("category");
-  // rating.innerHTML = singleProduct.rating.rate + "/ 5";
   title.innerHTML = singleProduct.title;
   description.innerHTML = singleProduct.description;
   price.innerHTML = "&#8377;" + singleProduct.price;
 
+  category.classList.add("category");
   card.classList.add("card");
   description.classList.add("description");
   cart.classList.add("cart");
@@ -1696,13 +1695,10 @@ window.onload = () => {
 
   productId.appendChild(card);
   card.appendChild(category);
-
   card.appendChild(image);
   card.appendChild(title);
-  // card.appendChild(rating);
   card.appendChild(description);
   card.appendChild(cart);
-
   card.appendChild(buy);
   card.appendChild(price);
 
@@ -1728,7 +1724,7 @@ window.onload = () => {
     cartOld.push(singleProduct.id);
     localStorage.setItem("cart", JSON.stringify(cartOld));
 
-    cart.innerHTML = "dislike";
+    cart.innerHTML = "Remove";
   });
 
   buy.addEventListener("click", function (e) {

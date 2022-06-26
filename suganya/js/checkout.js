@@ -1,3 +1,5 @@
+// checkout function to fill the input box and proccess successfully
+
 const proceed = document.querySelector("#proceed");
 const cancel = document.querySelector("#cancel");
 proceed.addEventListener("click", () => {

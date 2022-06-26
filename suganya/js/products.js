@@ -1,26 +1,26 @@
-const products = [
+const projectProducts = [
   {
     id: 1,
-    title: "Padmaavat Collections: Special Gold Jewellery Design for Padmavati",
+    title: "Padmaavat Collections: Special Gold necklace Design for Padmavati",
     price: 243509.95,
     description:
       "Antique Floral Necklace with Kundan Stones crafted in 22 Karat Yellow Gold. This piece of gold necklace can be paired perfectly with anything you are wearing.Special Gold Jewellery Design for Padmavati",
     category: "Jewellery",
     cart: "cart",
     buy: "buy",
+    image:
+      "https://www.tanishq.co.in/wps/wcm/connect/tanishq/b629da6f-83f0-465d-ad64-7dfa6e871abc/images%252Fsecondary-collection-banner-mobile.jpg?MOD=AJPERES&CVID=",
     rating: {
       rate: 4.7,
       count: 500,
     },
-    image:
-      "https://www.tanishq.co.in/wps/wcm/connect/tanishq/b629da6f-83f0-465d-ad64-7dfa6e871abc/images%252Fsecondary-collection-banner-mobile.jpg?MOD=AJPERES&CVID=",
   },
   {
     id: 2,
-    title: "Manubhai Jewellers ",
+    title: "Manubhai gold necklace ",
     price: 223456.3,
     description:
-      "4,468 Likes, 163 Comments - Manubhai Jewellers (@manubhaijewels) on Instagram: “Out from the treasure trove  #MJBridalJewellery #MJGoldNeckpiece #MJGoldEarrings #Jewellery.”",
+      "4,468 Likes, 163 Comments - Manubhai Jewellers (@manubhaijewels) on Instagram: “Out from the treasure trove  #MJBridalJewellery #MJGoldNeckpiece #MJGoldEarrings #Jewellery. Gold Necklace.”",
     category: "Jewellery",
     cart: "cart",
     buy: "buy",
@@ -33,10 +33,10 @@ const products = [
   },
   {
     id: 3,
-    title: "South India Gold Jewellery",
+    title: "South India Gold Necklace",
     price: 5534.99,
     description:
-      "Buy 22K Gold Set from Manuhai Online Store. View and try jewellery from home with our video consultation. Select from latest collection of Gold Set with price or visit our jewellery store in Mumbai ",
+      "Buy 22K Gold Set from Manuhai Online Store. View and try jewellery from home with our video consultation. Select from latest collection of Gold Set with price or visit our jewellery store in Mumbai, Gold necklace ",
     category: "Jewellery",
     cart: "cart",
     buy: "buy",
@@ -49,10 +49,10 @@ const products = [
   },
   {
     id: 4,
-    title: "Peacock Gold Jewellery",
+    title: "Peacock Gold necklace",
     price: 3145.99,
     description:
-      "We offers an exclusive collection of finest quality 63632 CZ Peacock Necklace with matte gold plating Fashion Jewellery manufacturer in india.",
+      "We offers an exclusive collection of finest quality 63632 CZ Peacock Necklace with matte gold plating Fashion Jewellery manufacturer in india. Gold Necklace",
     category: "Jewellery",
     cart: "cart",
     buy: "buy",
@@ -64,9 +64,10 @@ const products = [
   },
   {
     id: 5,
-    title: "Manubhai Jewellers ",
+    title: "Manubhai gold necklace ",
     price: 6953.1,
-    description: "This stunning beauty in matt gold on florals GoldNeckpiece",
+    description:
+      "This stunning beauty in matt gold on florals GoldNeckpiece, Gold necklace.",
     category: "Jewellery",
     cart: "cart",
     buy: "buy",
@@ -79,7 +80,7 @@ const products = [
   },
   {
     id: 6,
-    title: "Beautiful antique gold short necklace designs",
+    title: "Beautiful antique gold  necklace designs",
     price: 8345.56,
     description:
       "These are the antique gold necklaces from bridal jewellery of  Manubhai jewellers. These jewellers have extraordinary gold necklaces which are carved and handcrafted by artisans with intricate care and love. Here, we have brought few of them from their wide collection of gold jewellery for the to-be bride. ",
@@ -95,7 +96,7 @@ const products = [
   },
   {
     id: 7,
-    title: "Gold plated ruby emerald CZ necklace",
+    title: "Gold necklace plated ruby emerald CZ necklace",
     price: 3562.2,
     description:
       "South indian gold plated ruby emerald CZ Necklace set with matching earings designer polki real pearl necklace jewelry bridal jewellery",
@@ -111,7 +112,7 @@ const products = [
   },
   {
     id: 8,
-    title: "Lavanyam jewellery",
+    title: "Lavanyam gold necklace",
     price: 56978.4,
     description: "Lavanyam-Explore Lavanyam Jewellery Designs by Tanishq",
     category: "Jewelery",
@@ -126,7 +127,7 @@ const products = [
   },
   {
     id: 9,
-    title: "Emerald Necklace Green Emerald Neclace",
+    title: "Emerald Necklace Green Emerald stones Jewellery",
     price: 16810.12,
     description:
       "Emerald necklace, Green Emerald , gold necklace, necklace, necklaces for women, Emerald jewelry, May birthstone, Emerald pendant, Green",
@@ -142,7 +143,7 @@ const products = [
   },
   {
     id: 10,
-    title: "Simple Birthstone Emerald Necklace",
+    title: "Simple Birthstone Emerald stones Jewellery",
     price: 2335,
     description:
       "Emerald Necklace, Gold Necklace, Simple Birthstone Necklace, Dainty Necklace, Silver Necklace, Rose Gold Necklace, Bridesmaid Gifts",
@@ -158,7 +159,7 @@ const products = [
   },
   {
     id: 11,
-    title: "Green Emerald Stones Layered Neckpiece",
+    title: "Green Emerald Stones Jewellery Layered Neckpiece",
     price: 7250,
     description:
       "Style this green emerald layered statement neckpiece for elegant and classy look. Emerald Stones Layered Neckpiece",
@@ -174,7 +175,8 @@ const products = [
   },
   {
     id: 12,
-    title: "Emerald Green: Vibrant Jewels | Most Fashionable Hue",
+    title:
+      "Emerald Green: Vibrant Jewels | Most Fashionable Hue, Emerald Stones Jewellery.",
     price: 4832.32,
     description:
       "Ideally, one would try and coordinate their clothes, shoes, accessories and jewellery to one another based on colour. That being said, it is easy to miss the mark and often true colour coordination is only attainable for fashion gurus.",
@@ -191,10 +193,10 @@ const products = [
   {
     id: 13,
     title:
-      "Rectangle Faceted Sapphire Blue AD Rhinestone Rhodium Plated Crystal Necklace Set",
+      "Rectangle Faceted Sapphire Blue AD Rhinestone Rhodium Plated Silver Necklace Set",
     price: 5993.1,
     description:
-      "American Diamond necklace studded with clear CZ stones and encrusted on Silver | Rhodium background. Floral designed settings of Necklace set.",
+      "Buy Silver-Toned Fashion Jewellery Sets for Women by Shining Diva Online in india at Rs. 238. Shop for more Shining Diva Fashion Jewellery Set.",
     category: "Jewellery",
     cart: "cart",
     buy: "buy",
@@ -271,7 +273,8 @@ const products = [
   },
   {
     id: 18,
-    title: "Cheerfeel Ne-235 Fashion Silver Necklace Bracelet Earrings",
+    title:
+      "Cheerfeel Ne-235 Fashion Silver Necklace Bracelet Earrings, Bridal Diamond Jewellery",
     price: 8943.7,
     description:
       "Cheerfeel NE-235 Fashion Silver Necklace Bracelet Earrings Ring Set Zircon Wedding Bridal Necklace Jewelry set.",
@@ -303,7 +306,7 @@ const products = [
   },
   {
     id: 20,
-    title: "Samara Pendant Set",
+    title: "Gold Chain Pendant Set",
     price: 2000,
     description:
       "Inspired by the beautiful sunshine of brilliantly sparkling sun, this glamorous necklace set is romantic and refined. The Rose Gold plating and the samara pendant set.",
@@ -367,7 +370,7 @@ const products = [
   },
   {
     id: 24,
-    title: "Silver Pendant Artificial Diamon Necklace",
+    title: "Silver Necklace Pendant Artificial Diamon Necklace",
     price: 4908.92,
     description:
       "Silver Pendant Artificial Diamond Necklace Set - Style Icon www.dressrent.in",
@@ -383,7 +386,7 @@ const products = [
   },
   {
     id: 25,
-    title: "Platinum Necklace",
+    title: "Gold Silver Necklace",
     price: 28720.12,
     description: "Gold Necklace & Platinum Necklace Manufacturer form Guwahati",
     category: "Jewellery",
@@ -414,7 +417,7 @@ const products = [
   },
   {
     id: 29,
-    title: "Custom Platinum Pear Shaped Diamond Wedding Necklace",
+    title: "Custom Platinum Pear Shaped Pearl Diamond Necklace",
     price: 2340.73,
     description:
       "Custom Platinum Pear Shaped Diamond Wedding Necklace Earrings Jewelry Set, Find Complete Details About Custom Platinum Pear Shaped Diamond",
@@ -430,7 +433,7 @@ const products = [
   },
   {
     id: 30,
-    title: "Platinum Jewellery Showrooms in Guwahati",
+    title: "Gold Silver Jewellery Showrooms in Guwahati",
     price: 43908.65,
     description:
       "Top 20 Platinum Jewellery Showrooms in Guwahati - Best Platinum Jewellery Showrooms - Justdial",
@@ -463,7 +466,7 @@ const products = [
   {
     id: 32,
     title:
-      "MEENAZ Jewellery Stainless Steel Valentine Long Chain Platinum Necklace Silver Chain for Men & Boys Stylish ",
+      "MEENAZ Jewellery Stainless Steel Valentine Long Chain Platinum Necklace Platinum Chain for Men & Boys Stylish ",
     price: 3240.87,
     description:
       "Package: 1 chain fancy chain for pendant for men in gold plated with silver diamond look jewellery for men Chain for men boys boy friend Stylish design daily wear chains latest design chains SIZE: 22 in Long. Suitable for all. High Quality 316L Stainless Steel Stylish Chain for Men and Boys",
@@ -478,7 +481,7 @@ const products = [
   },
   {
     id: 33,
-    title: "Shop Chains Online, Authentic Solid Platinum 950 Necklace.",
+    title: "Shop Platinum Chain Online, Authentic Solid Platinum 950 Necklace.",
     price: 5430.99,
     description:
       "Welcome to my shop Dear my friend: Please spend some time please feel free to look at the other items in my store: I believe you will fall in  Men & Women Wheat Shape Chain.",
@@ -510,7 +513,7 @@ const products = [
   },
   {
     id: 35,
-    title: "China Platinum Jewellery",
+    title: "China Platinum necklace set",
     price: 19821.99,
     description:
       "Platinum Jewellery, Platinum Jewellery Wholesale, Manufacturers, Price",
@@ -540,7 +543,7 @@ const products = [
   },
   {
     id: 37,
-    title: "Platinum Wedding Jewelry",
+    title: "Platinum Necklace Set",
     price: 20385.45,
     description:
       "Platinum wedding Jewelry Set Fashion Jewellery for Sale | shop New & Pre-Owned Jewellery",
@@ -571,7 +574,7 @@ const products = [
   },
   {
     id: 39,
-    title: "Stunning Kemp and Ruby Necklace Set ",
+    title: "Stunning Kemp and Ruby jewellery Set ",
     price: 5900,
     description:
       "Check out this stunning kemp and ruby necklace set by silver cravings jewellery  | ~ South India Jewels",
@@ -587,7 +590,7 @@ const products = [
   },
   {
     id: 40,
-    title: "Ruby Gold Beads Necklace Jewellery Designs",
+    title: "Ruby Gold Beads Necklace Jewellery Designs, Ruby Jewellery",
     price: 890,
     description:
       "Ruby’s lined gold beads studded necklace with trendy pendant.The pendant contains two peacocks on the both sides and hanged precious pearls across.This gold ball necklace grabs the attention of all the people.This elegant jewellery is from Nikitha jewellers.",
@@ -603,7 +606,7 @@ const products = [
   },
   {
     id: 41,
-    title: "Antique Ruby Necklace",
+    title: "Antique Ruby jewellery Set",
     price: 1050,
     description:
       "Ruby stone studded traditional style designer necklace with matching earrings. Keep it away from perfume/Sprays and water. Use airtight box to store the jewelry.",
@@ -619,7 +622,7 @@ const products = [
   },
   {
     id: 42,
-    title: "Multilayered Ruby Necklace Set",
+    title: "Multilayered Ruby jewellery Set",
     price: 1600.13,
     description:
       "This multilayered ruby swarowski crytstal necklace is handcrafted with small beads of crystals layered together in graduation . The necklace is very light in weight and looks beautiful when worn in occasions .",
@@ -635,7 +638,7 @@ const products = [
   },
   {
     id: 43,
-    title: "Silk Thread Necklace & Earrings set",
+    title: "Silk Thread chain & Earrings set",
     price: 890,
     description:
       "Silk Thread Necklace with anique pendant and silk thread Jhumka with antique stud. Available in Yellow, Green colours.",
@@ -651,8 +654,7 @@ const products = [
   },
   {
     id: 44,
-    title:
-      "Anique yellow - green silk thread necklace peacock designer Necklace",
+    title: "Anique yellow - green silk thread chain peacock designer Necklace",
     price: 550,
     description:
       "Product includes A Necklace and pair of Earrings, A Necklace comes with a dori.",
@@ -684,7 +686,7 @@ const products = [
   },
   {
     id: 46,
-    title: "Beautiful Blue Silk Thread necklace Peacock Necklace",
+    title: "Beautiful Blue Silk Thread chain Peacock Necklace",
     price: 768,
     description:
       "The Product includes A Pair of Earrings - Length: 5cm, Width: 2.5 cm A Necklace-Lenght:34 cm Earrings Types.",
@@ -700,7 +702,7 @@ const products = [
   },
   {
     id: 47,
-    title: "Unique Designer handmade black white peacock silk thread necklace",
+    title: "Unique Designer handmade black white peacock silk thread chain",
     price: 430,
     description:
       "Dreamjwell of DREAMJWELL Comes in multicolor color with 1 Nacklace: 1 pair od earings.",
@@ -732,7 +734,7 @@ const products = [
   },
   {
     id: 49,
-    title: "Antique Black Silk Thread Peacock Necklace",
+    title: "Antique Black Silk Thread silk thread chain",
     price: 220,
     description:
       "The product includes pair of Earrings - Length: 4.2em, Width: 2.5cm Necklace.",
@@ -764,7 +766,7 @@ const products = [
   },
   {
     id: 51,
-    title: "Beautiful handmade blue green silk thread necklace",
+    title: "Beautiful handmade blue green silk thread chain",
     price: 670,
     description:
       "Dreamjwell of DREAMJWELL Comes in Multicolor color with 1 Necklace:1 pair of earrings.",
@@ -780,7 +782,7 @@ const products = [
   },
   {
     id: 52,
-    title: "Beautiful Black-White Black Silk Thread",
+    title: "Beautiful Black-White Black Silk Thread chain",
     price: 320,
     description:
       "The Product include A pair of Earrings-Length: 2cm, width: 1cm A Necklace-Length: 13cm Earrings type - push back Necklace.",
@@ -796,7 +798,7 @@ const products = [
   },
   {
     id: 53,
-    title: "Ethnic Indian style Black Plated Red & Green Polki Necklace",
+    title: "Ethnic Indian style Black Plated Red & Green Silk thread chain",
     price: 440,
     description:
       "This jewellery is made using high quality materials. The alloy used is led free. It will be Comfortable on the skin when worn.",
@@ -827,7 +829,7 @@ const products = [
   },
   {
     id: 55,
-    title: "Gold Bead Chain",
+    title: "Gold Chain",
     price: 150,
     description:
       "14k Solid Gold Bead Chain Necklace Gold Beaded Necklace | Etsy in 2022 | Gold Bead Necklace",
@@ -891,7 +893,7 @@ const products = [
   },
   {
     id: 59,
-    title: "Light Weight Gold chain",
+    title: "Gold chain Light Weight ",
     price: 2909.24,
     description:
       "Latest simple and light weight gold chain designs - Simple Creft Ideas",
@@ -953,7 +955,7 @@ const products = [
   },
   {
     id: 63,
-    title: "Golden Heart Pendant handmade Earrings",
+    title: "Gold chain Heart Pendant handmade Earrings",
     price: 2983.98,
     description:
       "Buy golden heart pendant handmade earrings online in india at 2950, available only at Azilaa.com.",
@@ -985,7 +987,7 @@ const products = [
   },
   {
     id: 65,
-    title: "Gold Pendants",
+    title: "Gold chain Pendants",
     price: 34536.6,
     description:
       "Gold pendants - Buy Gold Pendants Online for Men, Women and boys.",
@@ -1002,7 +1004,7 @@ const products = [
 
   {
     id: 66,
-    title: "Simple Chain And Pendants",
+    title: "Simple Gold Chain And Pendants",
     price: 1090.3,
     description:
       "130 Simple Chain and Pendants ideas | Gold Jewellery fashion, gold pendant jewellery design..",
@@ -1018,7 +1020,7 @@ const products = [
   },
   {
     id: 67,
-    title: "Large Victorian Bull's-Eye Agate Pendant Necklace",
+    title: "Large Victorian Bull's-Eye Agate Druzy Pendant Chain",
     price: 200,
     description:
       "Black is Black! And in this case, it;s back 'big' time! Measuring a sizable 1 3/4 by 1 3/8 inches, this striking Victorian Pendant Necklace.",
@@ -1034,7 +1036,7 @@ const products = [
   },
   {
     id: 68,
-    title: "Moss Agate Pendant Boho Crystal Necklace",
+    title: "Moss Agate Pendant Boho Crystal Druzy Pendant Chain",
     price: 460,
     description:
       "Boho moss agate crystal slice teardrop-shaped pendant nacklace. Handmade nacklace by Estrella and Luna.",
@@ -1051,7 +1053,7 @@ const products = [
   {
     id: 69,
     title:
-      "Magic Agate Druzy Emperor Quartz stone Natural Gold Pendant Necklace Jewelry",
+      "Magic Agate Druzy Pendant Chain Emperor Quartz stone Natural Gold Pendant Necklace Jewelry",
     price: 380,
     description:
       "Features: \n100% brand new with great quality; \nDecorate your nacklace; \nContracted style make you energetic; \n Prefect for daily use and easy to take.",
@@ -1068,8 +1070,7 @@ const products = [
 
   {
     id: 70,
-    title:
-      "Druzy Necklace Round Druzy Pendant Gold Necklace Druzy | Etsy India",
+    title: "Druzy Necklace Round Druzy Pendant Chain Druzy | Etsy India",
     price: 950,
     description:
       "druzy necklace, round druzy pendant, gold necklace, druzy agate, champagne druzy, Boho, layering necklace",
@@ -1085,7 +1086,7 @@ const products = [
   },
   {
     id: 71,
-    title: "Druzy Agate Pendant",
+    title: "Druzy Pendant Chain",
     price: 250,
     description:
       "Natural Black druzy agate electroformed in pure Copper and hung on a 30 inch soldered soldered copper chain with wire wrapped red garnet. Other chain.",
@@ -1166,7 +1167,7 @@ const products = [
   },
   {
     id: 76,
-    title: "Green Emerald Beaded Necklace",
+    title: "Green Emerald Stones Necklace",
     price: 500,
     description:
       "Buy Green Emerald Beaded Necklace Beads Fashion Jewelry Necklace ? Pendants Shine All Season Sparkly Kundan inspired Pearl studded to complete.",
@@ -1214,7 +1215,7 @@ const products = [
   },
   {
     id: 79,
-    title: "Real Kemp Agate Beads Pendant Necklace ~ South India Jewels",
+    title: "Real Kemp Agate Beads Necklace  Pendant ~ South India Jewels",
     price: 2500,
     description:
       "Check out this beautiful real kemp agate beads pendant necklace that you can shop from shop.southindiajewels.com.",
@@ -1231,7 +1232,7 @@ const products = [
   {
     id: 80,
     title:
-      "Soft Pink Flower indo western Pendant Necklace set at Rs. 1550 | Azilaa",
+      "Soft Pink Flower indo western Beads Necklace set at Rs. 1550 | Azilaa",
     price: 1500,
     description:
       "Gorgeous soft pink modern flower indo western pendant gemstone necklace set. For fashionista in you! Enjoy and have fun !! Great as gifts!!",
@@ -1247,7 +1248,8 @@ const products = [
   },
   {
     id: 81,
-    title: "Agate Bead Nakshi Motif Lakshmi Choker Set ~ South India Jewels",
+    title:
+      "Agate Beads Necklace Nakshi Motif Lakshmi Choker Set ~ South India Jewels",
     price: 3046.2,
     description:
       "Check out this stunning maroon agate bead nakashi motif lakshmi choker necklace set by the brand Aarvee.",
@@ -1263,7 +1265,7 @@ const products = [
   },
   {
     id: 82,
-    title: "Black Beads Necklace",
+    title: "Pink Beads Necklace",
     price: 4500.24,
     description:
       "150 Black Beads Ideas | Black beaded jewelry, Gold jewelry Indian",
@@ -1374,7 +1376,7 @@ const products = [
   },
   {
     id: 89,
-    title: "SPECTACULAR BRIDAL JEWELLERY DESIGNS",
+    title: "SPECTACULAR BRIDAL NECKLACE DESIGNS",
     price: 8299.12,
     description:
       "The set up of base for making this exclusive bridal jewellery designs can be comparable like a vertical garden base. A base chain like a fabric with mugappu or side pendant attached is first created and then each ring is tied manually with the colour beads one by one and time consuming process and results in gorgeous looking medium long necklace. Just one bridal jewellery designs enough to get the attention of others.",
@@ -1406,7 +1408,7 @@ const products = [
   },
   {
     id: 91,
-    title: "Men's Necklace & Pendants",
+    title: "Pendants Men Chain",
     price: 23500.0,
     description:
       "Handcrafted by Tiffany artisans, our Necklace for men feature essential chains, ID. Tags that can be customm engraved and pendants in simple shapes that are classic and easy to wear.",
@@ -1422,7 +1424,7 @@ const products = [
   },
   {
     id: 92,
-    title: "PILLAR BAR NECKLACE FOR MEN - GOLD PLATING",
+    title: "Pillar Bar Necklace For Men - Gold Plating, Pendant Men Chain",
     price: 14500.0,
     description:
       "The Pillar Bar Necklace for Men in Gold Plating is an essential, dynamic piece for your wardrobe. Designed from a panzer chain, this piece is made for the urban adventurer as it is intriguingly different and bold to the bone.",
@@ -1438,7 +1440,7 @@ const products = [
   },
   {
     id: 93,
-    title: "Back To You Leaf Pendant Necklace in 925 Silver",
+    title: "Back To You Leaf Pendant Necklace in 925 Pendal Silver Chain",
     price: 1001,
     description:
       "Minimalistic Silver Pendant Necklace with a Leaf Motif, studded with AAA quality Cubic Zircons (CZ). Crafted in 925 Silver with an Oxidized Finish. Uniquely handcrafted, no two pieces are exactly alike!",
@@ -1455,7 +1457,7 @@ const products = [
   {
     id: 94,
     title:
-      "Pendal latter alphabet M name gold plated chain for girls and women",
+      "Pendal latter alphabet M name Pendal gold Chain plated chain for girls and women",
     price: 900,
     description:
       "Gold Pendants - Buy pendants Online form 13283+ Options at Lowest Price gold plated chain for girls and women",
@@ -1471,7 +1473,7 @@ const products = [
   {
     id: 95,
     title:
-      "Jewels Galaxy Jewellery For Women Gold Plated Layered Necklace Combos",
+      "Jewels Galaxy Jewellery For Women Gold Plated Layered Chain Necklace Combos",
     price: 3908,
     description:
       "Jewels Galaxy welcomes you to the world of designer jewellery. It was modest beginning a decade ago. In an endeavour to delightfully surprise its customers, travels around the country to procure exquisite and rare pieces of ornamentation",
@@ -1660,12 +1662,14 @@ const products = [
 ];
 
 const filtered = document.querySelector("#filter");
-const product = document.querySelector("#products");
+const productContainer = document.querySelector("#products");
 const filterproduct = document.querySelector("#filtered_products_container");
 const searchPrice = document.querySelector("#searchPrice");
 const startPrice = document.querySelector("#startPrice");
 const endPrice = document.querySelector("#endPrice");
 const cardElement = document.querySelectorAll(".card-parent");
+
+//common elements that need to be displayed in html
 
 const carts = (parentElement, i) => {
   const a = document.createElement("div");
@@ -1700,7 +1704,6 @@ const carts = (parentElement, i) => {
   card.appendChild(image);
   card.appendChild(title);
   card.appendChild(price);
-
   card.appendChild(cart);
   card.appendChild(buy);
 
@@ -1737,8 +1740,8 @@ const carts = (parentElement, i) => {
 };
 
 window.onload = () => {
-  for (let i of products) {
-    carts(product, i);
+  for (let i of projectProducts) {
+    carts(productContainer, i);
   }
 };
 
@@ -1748,25 +1751,25 @@ function filterProducts(values) {
     var ans = products.filter(function (v, i) {
       if (v.title.toLowerCase().indexOf(term) >= 0) {
         return true;
-      } else false;
+      } else return false;
     });
     return ans;
   }
   const filteredValues = filterByValue(products, values);
   console.log(filteredValues);
 
-  product.remove();
+  productContainer.remove();
   for (let i of filteredValues) {
     carts(filtered, i);
   }
 }
 
 searchPrice.addEventListener("click", function () {
-  let filterredMenu = products.filter(function (menu) {
+  let filterredMenu = projectProducts.filter(function (menu) {
     return menu.price >= startPrice.value && menu.price <= endPrice.value;
   });
   console.log(filterredMenu);
-  product.remove();
+  productContainer.remove();
 
   for (let i of filterredMenu) {
     carts(filterproduct, i);

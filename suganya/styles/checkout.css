@@ -16,10 +16,18 @@ body {
   background-size: cover;
 }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 110px;
+}
+
 .wrapper .container {
   max-width: 600px;
-  height: 550px;
-  margin: 120px auto;
   background: #143e42;
   padding: 20px 40px 30px;
   border-bottom-left-radius: 5px;

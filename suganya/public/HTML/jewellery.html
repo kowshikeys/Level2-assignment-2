@@ -9,72 +9,263 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Jewellery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
 
-    <link rel="stylesheet" href="/suganya/styles/jewellery.css" />
-    <link rel="stylesheet" href="/suganya/styles/home.css" />
-    
+    <link rel="stylesheet" href="../../styles/jewellery.css" />
   </head>
 
   <body>
-    <nav>
-      <div class="left-side">
-        <p>My store</p>
+    <div class="header_one">
+      <div class="header_left">
+        <div>
+          <span onclick="openMenu()" class="open_bar"
+            ><i class="fa fa-bars"></i
+          ></span>
+        </div>
       </div>
+      <div class="header_center">
+        <h1>My Store</h1>
+      </div>
+      <div class="header_right">
+        <a href="http://192.168.0.108:5501/suganya/public/HTML/cart.html"
+          ><i class="fa-solid fa-bag-shopping"></i
+        ></a>
+        <a href="http://192.168.0.108:5501/suganya/public/HTML/login.html"
+          ><i class="fa-solid fa-user"></i
+        ></a>
+      </div>
+    </div>
+    <div class="navbar_two">
+      <div class="header_two">
+        <span onclick="closeMenu()" class="close_bar">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
 
-      <div class="right-side">
-        <p><a href="../HTML/jewellery.html"> All Jewellery</a></p>
+        <div class="jewellery">
+          <p>
+            <a
+              href="http://192.168.0.108:5501/suganya/public/HTML/jewellery.html"
+              >All Jewellery</a
+            >
+          </p>
+        </div>
+        <div class="gold">
+          <p>Gold Jewellery <i class="fa-solid fa-angle-down"></i></p>
 
-        <div class="all">
-          <p> Necklaces</a></p>
+          <div class="gold_jewellery">
+            <div class="golds">
+              <h3>Gold</h3>
+              <li onclick="filterProducts('gold necklace')">Gold Necklace</li>
+              <li onclick="filterProducts('gold chain')">Gold Chain</li>
+              <li onclick="filterProducts('gold plated')">
+                Gold Plated Necklace
+              </li>
+            </div>
+            <div class="drop_down_img">
+              <img
+                src="/suganya/public/Assets/images/gold_necklace.jpg"
+                alt=""
+              />
+              <img
+                src="/suganya/public/Assets/images/gold_necklace_1.jpg"
+                alt=""
+              />
+              <img src="/suganya/public/Assets/images/gold_chain_2.webp" />
 
-          <div class="all_para">
-            <li onclick="filterProducts('diamond')">Diamond Necklace</li>
-            <li onclick="filterProducts('silver')">Silver Necklace</li>
-            <li onclick="filterProducts('gold')">Gold Chain</li>
-            <li onclick="filterProducts('silk')">Silk Thread Necklace</li>
-            <li onclick="filterProducts('beads')">Beads Necklace</li>
-            <li onclick="filterProducts('bridal')">Bridal Jewellery</li>
-            <li onclick="filterProducts('plating')">Gold Plating</li>
-            <li onclick="filterProducts('chain')">Layered chain Necklace</li>
-            <li onclick="filterProducts('leather')">Leather Necklace</li>
-            <li onclick="filterProducts('emerald')">Emerald Necklace</li>
-            
-            
+              <img
+                src="/suganya/public/Assets/images/gold_chain_1.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="necklace">
+          <p>Necklace Type <i class="fa-solid fa-angle-down"></i></p>
+          <div class="necklace_drop">
+            <div class="drop">
+              <div class="drop_down">
+                <h3>Necklace</h3>
+                <li onclick="filterProducts('butterfly lariat necklace')">
+                  Butterfly Lariat Necklace
+                </li>
+                <li onclick="filterProducts('matinee necklace')">
+                  Matinee Necklace
+                </li>
+                <li onclick="filterProducts('druzy pendant chain')">
+                  Druzy Pendant Chain
+                </li>
+                <li onclick="filterProducts('torque necklace')">
+                  Torque Necklace
+                </li>
+                <li onclick="filterProducts('layered necklace')">
+                  Layered Necklace
+                </li>
+              </div>
+              <div class="drop_down">
+                <li onclick="filterProducts('layered chain necklace')">
+                  Layered Chain Necklace
+                </li>
+                <li onclick="filterProducts('lariat necklace')">
+                  Lariat Necklace
+                </li>
+                <li onclick="filterProducts('pendal silver chain')">
+                  Pendal Silver Chain
+                </li>
+                <li onclick="filterProducts('pendal gold chain')">
+                  Pendal Gold Chain
+                </li>
+                <li onclick="filterProducts('pendant men chain')">
+                  Pendant Men Chain
+                </li>
+              </div>
+              <div class="drop_down_img">
+                <img src="/suganya/public/Assets/images/chain_img.jpg" />
+                <img
+                  src="/suganya/public/Assets/images/layered_necklace.webp"
+                />
+                <img src="/suganya/public/Assets/images/butterfly_image.webp" />
+              </div>
+            </div>
           </div>
         </div>
 
-        <p>Pendants</p>
-        <p>Earrings</p>
-        <p>Collections</p>
-        <p>Offers</p>
+        <div class="gold">
+          <p>Metals <i class="fa-solid fa-angle-down"></i></p>
 
-        <div id="search" class="search">
-          <input id="search" type="search" placeholder="search" />
-          <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+          <div class="gold_jewellery">
+            <div class="golds">
+              <h3>Gold</h3>
+              <li onclick="filterProducts('gold silver')">Gold Silver</li>
+              <li onclick="filterProducts('platinum necklace set')">
+                Platinum Necklace Set
+              </li>
+              <li onclick="filterProducts('platinum chain')">Platinum Chain</li>
+              <li onclick="filterProducts('silver necklace')">
+                Silver Necklace
+              </li>
+              <li onclick="filterProducts('steel jewellery')">
+                Steel Jewellery
+              </li>
+            </div>
+            <div class="drop_down_img">
+              <img src="/suganya/public/Assets/images/silver_necklace.jpg" />
+              <img src="/suganya/public/Assets/images/bridal_necklace.jpeg" />
+              <img src="/suganya/public/Assets/images/gold_silver_img.jpg" />
+
+              <img src="/suganya/public/Assets/images/traditional_img.jpg" />
+            </div>
+          </div>
         </div>
 
-        
+        <div class="gold">
+          <p>Materials <i class="fa-solid fa-angle-down"></i></p>
 
-        
+          <div class="gold_jewellery">
+            <div class="golds">
+              <h3>Materials</h3>
+              <li onclick="filterProducts('silk thread necklace')">
+                Silk Thread Necklace
+              </li>
+              <li onclick="filterProducts('silk thread chain')">
+                Silk Thread Chain
+              </li>
+              <li onclick="filterProducts('beads necklace')">Beads Necklace</li>
+              <li onclick="filterProducts('leather necklace')">
+                Leather Necklace
+              </li>
+            </div>
+            <div class="drop_down_img">
+              <img src="/suganya/public/Assets/images/gold_silk_thread.jpg" />
+              <img src="/suganya/public/Assets/images/silk_thread_chain.webp" />
+              <img src="/suganya/public/Assets/images/beads_img.webp" />
+
+              <img src="/suganya/public/Assets/images/leather_img.jpg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="gold">
+          <p>Stones <i class="fa-solid fa-angle-down"></i></p>
+
+          <div class="gold_jewellery">
+            <div class="golds">
+              <h3>Stones</h3>
+              <li onclick="filterProducts('ruby jewellery')">Ruby Jewellery</li>
+              <li onclick="filterProducts('platinum diamond necklace')">
+                Platinum Diamond Necklace
+              </li>
+              <li onclick="filterProducts('pearl diamond necklace')">
+                Pearl Diamond Necklace
+              </li>
+              <li onclick="filterProducts('bridal diamond jewellery')">
+                Bridal Diamond Jewellery
+              </li>
+            </div>
+            <div class="drop_down_img">
+              <img src="/suganya/public/Assets/images/ruby_necklace.jpg" />
+              <img
+                src="/suganya/public/Assets/images/platinum_diamond_img.jpeg"
+              />
+              <img src="/suganya/public/Assets/images/pearl_diamond.jpg" />
+
+              <img src="/suganya/public/Assets/images/bridal_jewellery.jpg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="gold">
+          <p>General <i class="fa-solid fa-angle-down"></i></p>
+
+          <div class="gold_jewellery">
+            <div class="golds">
+              <h3>General</h3>
+              <li onclick="filterProducts('peacock necklace')">
+                Peacock Necklace
+              </li>
+              <li onclick="filterProducts('bridal necklace')">
+                Bridal Necklace
+              </li>
+            </div>
+            <div class="drop_down_img">
+              <img src="/suganya/public/Assets/images/peacock-necklace.jpg" />
+              <img src="/suganya/public/Assets/images/peacock_chain.webp" />
+              <img src="/suganya/public/Assets/images/bridal_choker.jpg" />
+
+              <img src="/suganya/public/Assets/images/gold_bridal.jpg" />
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
 
-    
-    </nav>
+    <div id="searchWindow" class="search">
+      <input id="search" type="search" placeholder="search" />
+      <div class="sear_icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
 
     <ul>
-      <li><h1>pricing</h1></li>
-      <div class="pricing">
-        <div class="price-input">
-          <input
-            id="startPrice"
-            type="number"
-            placeholder="starting price"
-          />
+      <div class="prices">
+        <li><h1>Pricing</h1></li>
+
+        <div class="price_input">
+          <input id="startPrice" type="number" placeholder="starting price" />
           <input id="endPrice" type="number" placeholder="ending price" />
         </div>
-        <button id="searchPrice">search</button>
+
+        <div class="search_btn">
+          <button id="searchPrice">search</button>
+        </div>
       </div>
     </ul>
+
+    <div class="peacock_img">
+      <img src="../Assets/images/peacock_header_img.webp" />
+    </div>
 
     <div class="cards">
       <div id="filter" class="products"></div>
@@ -82,7 +273,7 @@
 
       <div id="filtered_products_container" class="products"></div>
     </div>
-
-    <script src="/suganya/js/products.js"></script>
+    <script src="../../js/home.js"></script>
+    <script src="../../js/products.js"></script>
   </body>
 </html>
