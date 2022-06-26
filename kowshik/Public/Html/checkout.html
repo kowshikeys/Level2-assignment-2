@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://kit.fontawesome.com/9dc5a48b67.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kdam+Thmor+Pro&family=Mirza:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,600&family=Mulish:wght@200;300;400;500;600;700&family=Nunito+Sans:wght@200;300&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../Css/checkout.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <h2 class="title">Payment Details</h2>
+        <form action="" class="checkout-form">
+            <div class="container">
+                <label for="name">Name on card</label>
+                <input type="text" name="name" id="name" placeholder="Your name and surname">
+            </div>
+            <div class="container">
+                <label for="card">card number</label>
+                <input type="text" name="card" id="card" placeholder="1111-2222-3333-4444">
+            </div>
+            <div class="input-container">
+                <div class="container">
+                    <label for="card">Expiring date</label>
+                    <input type="text" name="date" id="date" placeholder="09-21">
+                </div>
+                <div class="container">
+                    <label for="cvv">CVV</label>
+                    <input type="text" name="cvv" id="cvv" placeholder="***">
+                </div>
+            </div>
+
+            <div class="buttons">
+                <input type="button" class="done" value="Complete purchase">
+                <a href="../Html/landing-page.html"><input type="button" class="cancel" value="Cancel"></a>
+
+            </div>
+            
+            
+        </form>
+    </div>
+
+    <script src="../../javascript/checkout.js"></script>
+</body>
+</html>

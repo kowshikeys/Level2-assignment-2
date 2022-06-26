@@ -1659,8 +1659,14 @@ const products = [
     },
   ];
 
+
   window.onload = ()=>{
     const details = document.querySelector('.details');
+
+    const detailImg = document.querySelector(".image")
+    const detailTitle = document.querySelector(".title")
+    
+
 
     const url = new URLSearchParams(window.location.search);
     const name = url.get("id")
@@ -1672,6 +1678,7 @@ const products = [
     const buy = document.createElement("button")
     const brief = document.createElement("p")
   
+  
   title.innerHTML = productOne.title
   image.src = productOne.image
   price.innerHTML = productOne.price
@@ -1679,12 +1686,14 @@ const products = [
   buy.innerHTML = productOne.buy
   brief.innerHTML = productOne.description
   
-  details.appendChild(title)
-  details.appendChild(image)
-  details.appendChild(price)
-  details.appendChild(cart)
-  details.appendChild(buy)
-  details.appendChild(brief)
+  
+  detailTitle.appendChild(title)
+  detailTitle.appendChild(price)
+  detailImg.appendChild(image)
+  detailTitle.appendChild(buy)
+  detailTitle.appendChild(cart)
+  detailTitle.appendChild(brief)
+  
 
   cart.addEventListener("click", function (e) {
     e.stopPropagation();
@@ -1710,8 +1719,27 @@ const products = [
 
     cart.innerHTML = "Remove";
   });
+  buy.addEventListener("click",()=>{
+    window.location.href="http://127.0.0.1:5500/kowshik/Public/Html/checkout.html"
+  })
   
   }
+
+
+
+  const searchbars = document.querySelector("#search-input");
+
+
+function openMenus() {
+    searchbars.style.display = "flex";
+  }
+
+  function closeMenus() {
+    searchbar.style.display = "none";
+  }
+
+
+  
 
 
 

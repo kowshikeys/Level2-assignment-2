@@ -12,27 +12,36 @@
 // dark mode js 
 
 
-let mode = document.querySelector(".toggle");
+let mode = document.querySelector(".dark-mode");
  mode.addEventListener("click",() =>{
-     document.body.classList.remove("green","orange","sandal","blue")
+     
      document.body.classList.toggle("dark")
-    
-    if (document.body.classList.contains("dark")){
-         colortheme.style.display ="none";
-         return;
-    }
-      colortheme.style.display ="flex";
-           
-
+  
  })
 
 
 //  logout
 
-const btn = document.querySelector("#logOut");
+const btn = document.querySelector(".logout");
 
 btn.addEventListener("click", function () {
   sessionStorage.clear();
   window.location.href =
     "http://127.0.0.1:5500/kowshik/Public/Html/accountManagment.html?";
 });
+
+
+const menubtn = document.querySelector(".buttonX");
+const bar = document.querySelector(".hamburger");
+const sidebars = document.querySelector(".sec-topbar");
+
+      function openMenu() {
+        sidebars.style.display = "flex";
+      }
+
+      function closeMenu() {
+        sidebars.style.display = "none";
+      }
+
+
+

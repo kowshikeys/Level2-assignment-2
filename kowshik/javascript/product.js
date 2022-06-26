@@ -1763,6 +1763,111 @@ const search = (value) => {
 
 }
 
+// let searchDrop = document.querySelector(".search-drop")[0];
+// window.addEventListener("load",()=>{
+//     products.forEach((oneItem)=>{
+        
+//         const {image,title} = oneItem;
+//         const find = document.createElement("a")
+    
+        
+//         find.innerHTML = `<img src="${image}" alt=""><div class="items">
+        
+//         <h2>${title}</h2>
+//              </div> `
+    
+//              searchDrop.appendChild(find);
+    
+    
+//     });
+// })
+
+// const getInput = document.querySelector("#bar")
+
+// getInput.addEventListener("keyup",()=>{
+//     let getValue = getInput.value
+//     let tag = searchDrop.getElementsByTagName("a")
+//     for(i=0;i<tag.length;i++){
+//         let getElement = tag[i].getElementsByClassName("items")[0]
+//         let h2Tag = getElement.getElementsByTagName("h2")[0]
+//         let findText = h2Tag.textContent||h2Tag.innerText
+//         if(findText.indexOf(getValue)>-1){
+//             tag[i].style.display=""
+//         }
+//         else{
+//             tag[i].style.display="none"
+//         }
+//     }
+// })
+
+let searchBx2 = document.getElementsByClassName("search-bx2")[0];
+
+window.addEventListener("load", () => {
+  products.forEach((element) => {
+    const { image, title, price } = element;
+
+    let searchCard = document.createElement("a");
+    searchCard.classList.add("search-child");
+    searchCard.href = `http://127.0.0.1:5500/kowshik/Public/Html/productDetails.html?id=${element.id}`;
+    searchCard.innerHTML = `<img src="${image}" alt="" />
+    <div class="content2">
+      <h6>${title}</h6>
+     
+      <p>${price}</p>
+    </div>`;
+
+    searchCard.style.display = "none";
+
+    searchBx2.appendChild(searchCard);
+  });
+});
+
+let searches = document.getElementById("searchBar");
+
+searches.addEventListener("keyup", () => {
+  let filter = searches.value.toUpperCase();
+  let a = searchBx2.getElementsByTagName("a");
+  for (let i = 0; i < a.length; i++) {
+    let b = a[i].getElementsByClassName("content2")[0];
+    let c = b.getElementsByTagName("h6")[0];
+
+    let textValue = c.textContent || c.innerText;
+    if (textValue.toUpperCase().indexOf(filter) > -1) {
+        a[i].style.display = "";
+      } else {
+        a[i].style.display = "none";
+      }
+    }
+  });
+
+
+
+const menubtn = document.querySelector(".buttonX");
+const bar = document.querySelector(".hamburger");
+const sidebars = document.querySelector(".sec-topbar");
+
+      function openMenu() {
+        sidebars.style.display = "flex";
+      }
+
+      function closeMenu() {
+        sidebars.style.display = "none";
+      }
+
+const searchbar = document.getElementsByTagName("form");
+
+
+function openMenus() {
+    searchbar.style.display = "flex";
+  }
+
+  function closeMenus() {
+    searchbar.style.display = "none";
+  }
+
+
+
+
 
 
 

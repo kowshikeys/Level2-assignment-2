@@ -43,7 +43,7 @@ const loginadd = () => {
         alert("password incorrect");
         return;
     }
-
+    console.log("success")
     sessionStorage.setItem("user",JSON.stringify(loginstorage));
     window.location.herf =
     "http://127.0.0.1:5500/kowshik/Public/Html/landing-page.html#";

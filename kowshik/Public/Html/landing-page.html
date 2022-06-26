@@ -48,19 +48,22 @@
                     <i class="fa-solid fa-moon"><span></span></i>
 
                 </div> 
-                <div class="wishlist">
-                    <i class="fa-solid fa-palette"><span></span></i>
+                <div class="shop">
+                   <a href="../Html/product.html"><i class="fa-solid fa-shop"></i></a> 
 
                 </div>
 
                 <div class="logout">
-                    <a href="../Html/accountManagment.html"><i class="fa-solid fa-arrow-right-from-bracket"><span>Log out</span></i></a>
+                    <i class="fa-solid fa-arrow-right-from-bracket"><span>Log out</span></i>
                 </div>
                
             </div>
         </div>
         <div class="sec-topbar">
+           
+
             <div class="sec-topbar-left">
+                <button class="buttonX" onclick="closeMenus()">&times;</button> 
                 <div class="new-product">
                     <p>NEW</p>
                     
@@ -68,11 +71,12 @@
                         <div class="whats-new">
                             <div class="types">
                                 <h3>What's New</h3>
-                                <li onclick="filter('diamond')">Diamond Necklace</li>
-                                <li onclick="filter('silver')">Silver Necklace</li>
-                                <li onclick="filter('gold')">Gold Chain</li>
-                                <li onclick="filter('silk')">Silk Thread Necklace</li>
-                                <li onclick="filter('beads')">Beads Necklace</li>
+                               <a href="../Html/product.html">Shell Necklace</a> 
+                               <a href="../Html/product.html">Rose gold Necklace</a>
+                               <a href="../Html/product.html">Peal Necklace</a> 
+                               <a href="../Html/product.html">Customize Necklace </a>
+                               
+                              
                             </div>
                             
                             <div class="relative-img">
@@ -97,11 +101,14 @@
                     <p>JEWELRY</p>
                     <div class="product-list">
                         <div class="div">
-                            <li onclick="filter('diamond')">Diamond Necklace</li>
-                            <li onclick="filter('silver')">Silver Necklace</li>
-                            <li onclick="filter('gold')">Gold Chain</li>
-                            <li onclick="filter('silk')">Silk Thread Necklace</li>
-                            <li onclick="filter('beads')">Beads Necklace</li>
+                           <a href="../Html/product.html">Diamond Necklace</a> 
+                          <a href="../Html/product.html">Silver Necklace</a> 
+                          <a href="../Html/product.html">Gold Chain</a> 
+                          <a href="../Html/product.html">Beads Necklace</a> 
+                          <a href="../Html/product.html">Silk Thread Necklace</a> 
+                            
+                            
+                           
                         </div>
                         
 
@@ -120,11 +127,11 @@
                     <p>ANTIQUE</p>
                     <div class="antiq-list">
                         <div class="div">
-                            <li onclick="filter('diamond')"> Necklace</li>
-                            <li onclick="filter('silver')">Silver Necklace</li>
-                            <li onclick="filter('gold')">Gold Chain</li>
-                            <li onclick="filter('silk')">Silk Thread Necklace</li>
-                            <li onclick="filter('beads')">Beads Necklace</li>
+                         <a href="../Html/product.html">Antique Gold</a>   
+                         <a href="../Html/product.html">Antique Rosegold</a>    
+                         <a href="../Html/product.html">Antique Platinum</a>   
+                         <a href="../Html/product.html">Antique Ancient</a>   
+                         <a href="../Html/product.html">Antique Chain</a>   
                         </div>
                       
 
@@ -139,7 +146,7 @@
                     <div class="wedding-product">
                         <div class="div">
                             <h3>New collections</h3>
-                            <li onclick="filter('diamond')"> Model</li>
+                            <a href="../Html/product.html">Collections</a> 
 
                            
                         </div>
@@ -239,7 +246,7 @@
     </div>
 
 
-
+<footer>
     <div class="footer-container">
         <div class="section-1">
             <h6>About us</h6>
@@ -278,6 +285,10 @@
             <button>SUBSCRIBE</button>
         </div>
     </div>
+</footer>
+   
+
+    <script src="../../javascript/landing-page.js"></script>
 
 </body>
 
