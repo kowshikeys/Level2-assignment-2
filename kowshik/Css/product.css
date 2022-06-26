@@ -123,8 +123,10 @@ a {
 .topbar .top-right-list .search .search-form .search-bx2 {
   position: absolute;
   top: 120px;
-  background-color: #fff;
   height: 50vh;
+  width: 250px;
+  right: 20px;
+  overflow: hidden;
 }
 
 .topbar .top-right-list .search .search-form .search-bx2 img {

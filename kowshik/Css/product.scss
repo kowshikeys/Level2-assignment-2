@@ -129,8 +129,13 @@ a {
                 .search-bx2{
                     position: absolute;
                     top: 120px;
-                    background-color: #fff;
+                    // background-color: #c3955a;
                     height: 50vh;
+                    width: 250px;
+                    right: 20px;
+                    overflow: hidden;
+                    // display: none;
+
                     img{
                         width: 150px;
                         

@@ -1,3 +1,11 @@
+// Author:kowshik
+// Project-start-date: 07/06/2022
+// Project-end-date: 26/06/2022
+
+
+
+
+
 const completed = document.querySelector(".done");
 const cancel = document.querySelector(".cancel");
 completed.addEventListener("click", () => {
