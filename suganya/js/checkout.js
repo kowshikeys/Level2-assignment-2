@@ -25,10 +25,10 @@ proceed.addEventListener("click", () => {
     return;
   }
   window.location.href =
-    "http://192.168.0.108:5501/suganya/public/HTML/successed.html";
+    "http://192.168.0.100:5500/suganya/public/HTML/successed.html";
 });
 
 cancel.addEventListener("click", () => {
   window.location.href =
-    "http://192.168.0.108:5501/suganya/public/HTML/jewellery.html";
+    "http://192.168.0.100:5500/suganya/public/HTML/jewellery.html";
 });

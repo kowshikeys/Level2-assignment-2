@@ -15,7 +15,7 @@ const signStore = () => {
   localStorage.setItem("user", JSON.stringify(signStorage));
   sessionStorage.setItem("user", JSON.stringify(signStorage));
   window.location.href =
-    "http://192.168.0.108:5501/suganya/public/HTML/home.html";
+    "http://192.168.0.100:5500/suganya/public/HTML/home.html";
 };
 
 const loginStore = () => {
@@ -40,5 +40,5 @@ const loginStore = () => {
 
   sessionStorage.setItem("user", JSON.stringify(loginStorage));
   window.location.href =
-    "http://192.168.0.108:5501/suganya/public/HTML/home.html";
+    "http://192.168.0.100:5500/suganya/public/HTML/home.html";
 };

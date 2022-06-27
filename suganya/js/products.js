@@ -1682,7 +1682,7 @@ const carts = (parentElement, i) => {
   const price = document.createElement("h2");
 
   a.onclick = () => {
-    window.location.href = `http://192.168.0.108:5501/suganya/public/HTML/productdetails.html?id=${i.id}`;
+    window.location.href = `http://192.168.0.100:5500/suganya/public/HTML/productdetails.html?id=${i.id}`;
   };
 
   image.src = i.image;
@@ -1735,7 +1735,7 @@ const carts = (parentElement, i) => {
   buy.addEventListener("click", function (e) {
     e.stopPropagation();
     window.location.href =
-      "http://192.168.0.108:5501/suganya/public/HTML/checkout.html";
+      "http://192.168.0.100:5500/suganya/public/HTML/checkout.html";
   });
 };
 
