@@ -1730,6 +1730,6 @@ window.onload = () => {
   buy.addEventListener("click", function (e) {
     e.stopPropagation();
     window.location.href =
-      "http://192.168.0.100:5500/suganya/public/HTML/checkout.html";
+      "http://192.168.0.108:5500/suganya/public/HTML/checkout.html";
   });
 };

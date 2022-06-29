@@ -1682,7 +1682,7 @@ const carts = (parentElement, i) => {
   const price = document.createElement("h2");
 
   a.onclick = () => {
-    window.location.href = `http://192.168.0.100:5500/suganya/public/HTML/productdetails.html?id=${i.id}`;
+    window.location.href = `http://192.168.0.108:5500/suganya/public/html/productDetails.html?id=${i.id}`;
   };
 
   image.src = i.image;
@@ -1722,7 +1722,7 @@ const carts = (parentElement, i) => {
     if (isOldId) {
       const filterData = cartOld.filter((p) => p !== i.id);
       localStorage.setItem("cart", JSON.stringify(filterData));
-      cart.innerHTML = "cart";
+
       return;
     }
 
@@ -1735,7 +1735,7 @@ const carts = (parentElement, i) => {
   buy.addEventListener("click", function (e) {
     e.stopPropagation();
     window.location.href =
-      "http://192.168.0.100:5500/suganya/public/HTML/checkout.html";
+      "http://192.168.0.108:5500/suganya/public/HTML/checkout.html";
   });
 };
 
@@ -1773,5 +1773,49 @@ searchPrice.addEventListener("click", function () {
 
   for (let i of filterredMenu) {
     carts(filterproduct, i);
+  }
+});
+
+//search bar filter
+
+let searchBx2 = document.getElementsByClassName("search_box")[0];
+
+window.addEventListener("load", () => {
+  searchBx2.style.display = "none";
+  projectProducts.forEach((element) => {
+    const { image, title, price } = element;
+
+    let searchCard = document.createElement("a");
+    searchCard.classList.add("search-child");
+    searchCard.href = `http://192.168.0.108:5500/suganya/public/html/productDetails.html?id=${element.id}`;
+    searchCard.innerHTML = `<img src="${image}" alt="" />
+    <div class="content2">
+      <h6>${title}</h6>
+      <p>${price}</p>
+    </div>`;
+
+    // searchCard.style.display = "none";
+
+    searchBx2.appendChild(searchCard);
+  });
+});
+
+let search = document.getElementById("searchBar");
+
+search.addEventListener("keyup", () => {
+  let filter = search.value.toUpperCase();
+  if (!filter) return (searchBx2.style.display = "none");
+  searchBx2.style.display = "grid";
+  let a = searchBx2.getElementsByTagName("a");
+  for (let i = 0; i < a.length; i++) {
+    let b = a[i].getElementsByClassName("content2")[0];
+    let c = b.getElementsByTagName("h6")[0];
+
+    let textValue = c.textContent || c.innerText;
+    if (textValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
   }
 });

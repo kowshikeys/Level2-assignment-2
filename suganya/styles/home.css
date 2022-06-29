@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: sans-serif;
 }
 
@@ -13,7 +13,7 @@
   bottom: 45px;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 15px #bbb7b7;
-  box-shadow: 0 0 15px #bbb7b7;
+          box-shadow: 0 0 15px #bbb7b7;
   font-size: 22px;
   width: 65px;
   height: 65px;
@@ -22,11 +22,11 @@
   display: flex;
   text-align: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   outline: none;
   cursor: pointer;
   border: none;
@@ -44,7 +44,7 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   padding: 15px;
   border-bottom: 1px solid #aacccf;
   background-color: #143e42;
@@ -72,11 +72,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
 }
 
@@ -103,11 +103,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 30px;
   height: 30px;
   border-radius: 5px;
@@ -153,11 +153,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header_one .header_center h1 {
@@ -183,11 +183,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 40px;
 }
 
@@ -220,10 +220,10 @@
   display: flex;
   width: 70%;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
   padding: 20px;
 }
@@ -310,7 +310,7 @@
 
 .navbar_two .header_two .gold p i:hover {
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .navbar_two .header_two .gold .gold_jewellery {
@@ -391,8 +391,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 15px;
 }
 
@@ -451,31 +451,31 @@
 .jewellery_icons {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (6, 1fr);
-  grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
   padding: 50px;
   justify-items: center;
 }
 
 @media (max-width: 950px) {
   .jewellery_icons {
-    -ms-grid-columns: (3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     padding: 20px;
   }
 }
 
 @media (max-width: 635px) {
   .jewellery_icons {
-    -ms-grid-columns: (2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 340px) {
   .jewellery_icons {
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -485,16 +485,16 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 950px) {
@@ -531,30 +531,30 @@
 .card_container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (4, 1fr);
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   cursor: pointer;
 }
 
 @media (max-width: 1170px) {
   .card_container {
-    -ms-grid-columns: (3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 900px) {
   .card_container {
     -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 700px) {
   .card_container {
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -568,26 +568,26 @@
   gap: 10px;
   margin-top: 50px;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   -webkit-transform: perspective(400px) rotate(0deg);
-  transform: perspective(400px) rotate(0deg);
+          transform: perspective(400px) rotate(0deg);
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 
 .card_container .card:hover {
   -webkit-transform: perspective(400px) rotateY(15deg);
-  transform: perspective(400px) rotateY(15deg);
+          transform: perspective(400px) rotateY(15deg);
 }
 
 .card_container .card img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -599,7 +599,7 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 @media (max-width: 500px) {
@@ -611,7 +611,7 @@
 @media (max-width: 1100px) {
   .design {
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -654,14 +654,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   background: #d4e9ec;
   width: 100%;
@@ -692,8 +692,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 25px;
 }
 
@@ -714,14 +714,14 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   padding: 50px;
 }
 
 @media (max-width: 1100px) {
   .content {
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -777,8 +777,8 @@
 .review .review_container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -786,8 +786,8 @@
   .review .review_container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1, 1fr);
-    grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -822,7 +822,7 @@
   border: 2px solid #163234;
   border-radius: 50%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .review .review_container .box h2 {
@@ -846,8 +846,8 @@ footer .footer-details {
 footer .footer-details .footer_content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (4, 1fr);
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   border-bottom: 0.5px solid #fff;
 }
 
@@ -855,8 +855,8 @@ footer .footer-details .footer_content {
   footer .footer-details .footer_content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1, 1fr);
-    grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 

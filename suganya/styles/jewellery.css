@@ -565,25 +565,17 @@
   background: #245357;
 }
 
-.search {
+.sear {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 18px;
+  padding: 20px;
 }
 
-.search input {
-  padding: 10px;
-  width: 50%;
-  outline: none;
-  border: none;
-  background: #d5eff1;
-}
-
-.search .sear_icon i {
+.sear .search i {
   background: #143e42;
   color: white;
   margin-top: 2px;
@@ -592,6 +584,86 @@
   border: none;
   padding: 8px;
   cursor: pointer;
+}
+
+.sear .search_form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sear .search_form form input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  background: #d5eff1;
+}
+
+.sear .search_box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 60px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 1390px) {
+  .sear .search_box {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1270px) {
+  .sear .search_box {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .sear .search_box {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .sear .search_box {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.sear .search_box .search-child {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+}
+
+.sear .search_box a {
+  text-decoration: none;
+}
+
+.sear .search_box a img {
+  width: 50%;
+  height: 50%;
+}
+
+.sear .content2 h6 {
+  color: #143e42;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.sear .content2 p {
+  color: #143e42;
+  margin-top: 20px;
 }
 
 .prices {
@@ -674,4 +746,4 @@
 .peacock_img img {
   width: 100%;
 }
-/*# sourceMappingURL=jewellery.css.map */
+/*# sourceMappingURL=Jewellery.css.map */

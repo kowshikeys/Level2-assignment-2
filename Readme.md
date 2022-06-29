@@ -1,4 +1,4 @@
-# E-COMMERCE WEBSITE BASED ON NECKLACE
+# E-COMMERCE
 
 ### Main purpose of the project is to make an ecommerce website.
 

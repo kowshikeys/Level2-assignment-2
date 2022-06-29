@@ -436,19 +436,12 @@
   }
 }
 
-.search {
+.sear {
   display: flex;
   justify-content: center;
-  padding: 18px;
+  padding: 20px;
 
-  input {
-    padding: 10px;
-    width: 50%;
-    outline: none;
-    border: none;
-    background: #d5eff1;
-  }
-  .sear_icon {
+  .search {
     i {
       background: #143e42;
       color: white;
@@ -458,6 +451,62 @@
       border: none;
       padding: 8px;
       cursor: pointer;
+    }
+  }
+  .search_form {
+    form {
+      display: flex;
+      justify-content: center;
+      input {
+        padding: 10px;
+        // width: 60%;
+        outline: none;
+        border: none;
+        background: #d5eff1;
+      }
+    }
+  }
+  .search_box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 60px;
+    text-align: center;
+    margin-top: 30px;
+    @media (max-width: 1390px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: 1270px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+
+    .search-child {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      padding: 20px;
+    }
+    a {
+      text-decoration: none;
+
+      img {
+        width: 50%;
+        height: 50%;
+      }
+    }
+  }
+  .content2 {
+    h6 {
+      color: #143e42;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    p {
+      color: #143e42;
+      margin-top: 20px;
     }
   }
 }

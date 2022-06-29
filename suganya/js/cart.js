@@ -1,6 +1,6 @@
 //product data
 
-const products = [
+const cartProducts = [
   {
     id: 1,
     title: "Padmaavat Collections: Special Gold Jewellery Design for Padmavati",
@@ -1656,10 +1656,10 @@ const products = [
 // function to get and save in cart page
 
 window.onload = () => {
-  const product = document.querySelector(".products");
+  const products = document.querySelector(".products");
 
   const cartOld = JSON.parse(localStorage.getItem("cart"));
-  const singleProduct = products.filter((p) => {
+  const singleProduct = cartProducts.filter((p) => {
     const pro = cartOld.find((f) => f === p.id);
     return pro ? true : false;
   });
@@ -1679,13 +1679,13 @@ window.onload = () => {
     const rating = document.createElement("h5");
 
     a.onclick = () => {
-      window.location.href = `http://192.168.0.100:5500/suganya/public/HTML/productdetails.html?id=${i.id}`;
+      window.location.href = `http://192.168.0.108:5500/suganya/public/HTML/productdetails.html?id=${i.id}`;
     };
 
     buy.addEventListener("click", function (e) {
       e.stopPropagation();
       window.location.href =
-        "http://192.168.0.100:5500/suganya/public/HTML/checkout.html";
+        "http://192.168.0.108:5500/suganya/public/HTML/checkout.html";
     });
 
     image.src = i.image;
@@ -1704,7 +1704,7 @@ window.onload = () => {
     description.classList.add("description");
 
     a.appendChild(card);
-    product.appendChild(a);
+    products.appendChild(a);
 
     card.appendChild(image);
     card.appendChild(title);
