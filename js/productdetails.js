@@ -1265,7 +1265,7 @@ window.onload = () => {
 
   buy.addEventListener("click", function (e) {
     e.stopPropagation();
-    window.location.href = "http://127.0.0.1:5500/Public/HTML/checkout.html";
+    window.location.href = "http://127.0.0.1:5500/public/HTML/checkout.html";
   });
 
   title.appendChild(titleContent);
@@ -1346,7 +1346,7 @@ for (let pro of singleProducts) {
   const cartTitle = document.createElement("h2");
   const cartPrice = document.createElement("h3");
   cartProductDetail.onclick = () => {
-    window.location.href = `http://127.0.0.1:5500/Public/HTML/productdetails.html?id=${pro.id}`;
+    window.location.href = `http://127.0.0.1:5500/public/HTML/productDetails.html?id=${pro.id}`;
   };
   cartImage.classList.add("cart-image");
   cartContent.classList.add("cart-content");
@@ -1374,7 +1374,7 @@ for (let pro of singleProducts) {
   });
   cartBuy.addEventListener("click", function (e) {
     e.stopPropagation();
-    window.location.href = "http://127.0.0.1:5500/Public/HTML/checkout.html";
+    window.location.href = "http://127.0.0.1:5500/public/HTML/checkout.html";
   });
 
   cart.appendChild(cartProductDetail);
@@ -1399,7 +1399,7 @@ window.addEventListener("load", () => {
 
     let searchCard = document.createElement("a");
     searchCard.classList.add("search-child");
-    searchCard.href = `http://127.0.0.1:5500/Public/HTML/productdetails.html?id=${element.id}`;
+    searchCard.href = `http://127.0.0.1:5500/public/HTML/productDetails.html?id=${element.id}`;
     searchCard.innerHTML = `<img src="${image}" alt="" />
     <div class="content2">
       <h6>${title}</h6>

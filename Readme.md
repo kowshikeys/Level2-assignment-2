@@ -2,7 +2,7 @@
 
 ## Login Page
 
-##### While opening the website the starting page will be the login page after loging in the website only allows the user to go further. The details entered in login page will be stored in local storage and session storage even after the user logs out the wesite the etails will be stored in the local storage for later use.
+##### While opening the website the starting page will be the login page after loging in the website only allows the user to go further. The details entered in login page will be stored in local storage and session storage even after the user logs out the wesite the details will be stored in the local storage for later use.
 
 ## Home Page
 

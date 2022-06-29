@@ -1210,10 +1210,11 @@ const searchProducts = [
       "This Outstanding Emerald Green Necklace carries a Splendorous High Quality 1.8ct Cushion Cut Simulated Emerald from Russia. The Emerald Simulant is set in a 92,5% Pure Silver pendant and surrounded by 30 Simulated Diamonds. The emerald necklace comes with a matching 45cm silver chain.",
   },
 ];
+
 window.onload = () => {
   const user = JSON.parse(sessionStorage.getItem("user"));
   if (!user) {
-    window.location.href = "http://127.0.0.1:5500/Public/HTML/login.html";
+    window.location.href = "http://127.0.0.1:5500/public/HTML/login.html";
   }
 };
 
@@ -1221,7 +1222,7 @@ const button = document.querySelector("#button");
 
 button.addEventListener("click", function () {
   sessionStorage.clear();
-  window.location.href = "http://127.0.0.1:5500/Public/HTML/login.html";
+  window.location.href = "http://127.0.0.1:5500/public/HTML/login.html";
 });
 
 const btn = document.querySelector(".close-nav-menu");
@@ -1266,7 +1267,7 @@ window.addEventListener("load", () => {
 
     let searchCard = document.createElement("a");
     searchCard.classList.add("search-child");
-    searchCard.href = `http://127.0.0.1:5500/Public/HTML/productdetails.html?id=${element.id}`;
+    searchCard.href = `http://127.0.0.1:5500/public/HTML/productDetails.html?id=${element.id}`;
     searchCard.innerHTML = `<img src="${image}" alt="" />
     <div class="content2">
       <h6>${title}</h6>

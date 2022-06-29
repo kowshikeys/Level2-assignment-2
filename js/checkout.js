@@ -26,9 +26,9 @@ proceed.addEventListener("click", function () {
     return;
   }
   window.location.href =
-    "http://127.0.0.1:5500/subaa/Public/HTML/paymenysucess.html";
+    "http://127.0.0.1:5500/public/HTML/paymentSuccess.html";
 });
 
 cancel.addEventListener("click", function () {
-  window.location.href = "http://127.0.0.1:5500/Public/HTML/alljwelery.html";
+  window.location.href = "http://127.0.0.1:5500/public/HTML/allJwellery.html";
 });

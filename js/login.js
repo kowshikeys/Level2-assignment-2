@@ -21,7 +21,7 @@ const signIn = () => {
 
   console.log("success");
   sessionStorage.setItem("user", JSON.stringify(storageSignIn));
-  window.location.href = "http://127.0.0.1:5500/Public/HTML/home.html";
+  window.location.href = "http://127.0.0.1:5500/public/html/home.html";
 };
 
 //sign up through local storage
@@ -52,7 +52,7 @@ const signUp = () => {
   }
   localStorage.setItem("user", JSON.stringify(storageSignUp));
   sessionStorage.setItem("user", JSON.stringify(storageSignUp));
-  window.location.href = "http://127.0.0.1:5500/Public/HTML/home.html";
+  window.location.href = "http://127.0.0.1:5500/public/HTML/home.html";
 };
 
 //signin signup slide changer

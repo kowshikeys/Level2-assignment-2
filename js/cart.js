@@ -1238,7 +1238,7 @@ window.onload = () => {
     const price = document.createElement("h3");
 
     a.onclick = () => {
-      window.location.href = `http://127.0.0.1:5500/Public/HTML/productdetails.html?id=${pro.id}`;
+      window.location.href = `http://127.0.0.1:5500/public/HTML/productDetails.html?id=${pro.id}`;
     };
     image.classList.add("image");
     content.classList.add("content");
@@ -1272,7 +1272,7 @@ window.onload = () => {
 
     buy.addEventListener("click", function (e) {
       e.stopPropagation();
-      window.location.href = "http://127.0.0.1:5500/Public/HTML/checkout.html";
+      window.location.href = "http://127.0.0.1:5500/public/HTML/checkout.html";
     });
 
     a.appendChild(card);
