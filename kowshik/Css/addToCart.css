@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  --white: white;
+  --background-color: #f5f0e9;
+  --main-theme: #d49a4e;
+  --main-theme-two:#cd9449;
+  --light-two-theme:#f0d29b;
+  --black: #000000;
+  --light-main-theme: #EEC373;
+  --mid-color: #ba8d39;
+  --border-bottom:rgb(230, 228, 228);
+  --sec:#fff;
+}
+
+.add-cart {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.add-cart .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--light-two-theme);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.add-cart .card button {
+  width: 70px;
+  height: 20px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--black);
+  background-color: #f16c6c;
+  margin-bottom: 5px;
+}
+
+.add-cart .card button:hover {
+  background-color: var(--black);
+  color: var(--background-color);
+}
+
+.add-cart .card img {
+  width: 250px;
+  height: 200px;
+}
+
+.add-cart .card h3 {
+  font-size: 18px;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: grey;
+}
+
+.add-cart .card h2 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.add-cart .card p {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .add-cart {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+  .add-cart {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 505px) {
+  .add-cart {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=addToCart.css.map */

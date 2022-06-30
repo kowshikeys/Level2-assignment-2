@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body {
+    --white: white;
+    --background-color: #f5f0e9;
+    --main-theme: #d49a4e;
+    --main-theme-two:#cd9449;
+    --light-two-theme:#f0d29b;
+    --black: #000000;
+    --light-main-theme: #EEC373;
+    --mid-color: #ba8d39;
+    --border-bottom:rgb(230, 228, 228);
+    --sec:#fff;
+
+}
+
+.add-cart{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--light-two-theme);
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        button{
+            
+            width: 70px;
+            height: 20px;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            cursor: pointer;
+            color: var(--black);
+            background-color: rgb(241, 108, 108);
+            margin-bottom: 5px;
+        }
+        button:hover{
+
+            background-color: var(--black);
+            color: var(--background-color);
+
+        }
+        img{
+            width: 250px;
+                height: 200px;
+        }
+        h3{
+            font-size: 18px;
+            width:200px;
+            overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          white-space: normal;
+          font-weight: 400;
+          margin-bottom: 10px;
+          color: grey;
+        }
+
+        
+
+        h2{
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        p{
+            display: none;
+        }
+    }
+}
+
+@media (max-width:1000px){
+ 
+    .add-cart{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width:750px){
+ 
+    .add-cart{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media (max-width:505px){
+ 
+    .add-cart{
+        grid-template-columns:  1fr ;
+    }
+}
